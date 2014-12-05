@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<config>
-  <modules>
-    <Lacrosse_CustomTallyExport>
-      <active>true</active>
-      <codePool>local</codePool>
-    </Lacrosse_CustomTallyExport>
-  </modules>
-</config>

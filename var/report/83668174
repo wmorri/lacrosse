@@ -1,9 +1,0 @@
-a:5:{i:0;s:241:"Error in file: "E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\local\Amasty\Customerattr\sql\amcustomerattr_setup\mysql4-install-1.0.1.php" - SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'is_filterable_in_search'";i:1;s:1108:"#0 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\Resource\Setup.php(645): Mage::exception('Mage_Core', 'Error in file: ...')
-#1 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\Resource\Setup.php(421): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '4.1.0')
-#2 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\Resource\Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('4.1.0')
-#3 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\Resource\Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
-#4 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\App.php(417): Mage_Core_Model_Resource_Setup::applyAllUpdates()
-#5 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\code\core\Mage\Core\Model\App.php(343): Mage_Core_Model_App->_initModules()
-#6 E:\Work\www\lc.devrack.lacrosseunlimited.com\app\Mage.php(686): Mage_Core_Model_App->run(Array)
-#7 E:\Work\www\lc.devrack.lacrosseunlimited.com\index.php(88): Mage::run('', 'store')
-#8 {main}";s:3:"url";s:1:"/";s:11:"script_name";s:10:"/index.php";s:4:"skin";s:7:"default";}
