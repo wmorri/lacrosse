@@ -1,0 +1,51 @@
+<?php
+/**
+ *
+ */
+?>
+<?php
+$write = Mage::getSingleton('core/resource')->getConnection('core_write');
+$bRs = $write->query("select * from wp_options where option_name ='widget_videobox'");
+				$brow1=$bRs->fetch();
+			$new=unserialize($brow1['option_value']);
+			//print_r($new);
+			//echo $new[2]['video_text'];	
+?>
+<div class="wp-sidebar">
+<aside class="blog_sidebar">
+<h6 class="red-heading2">New Brine Cyber Defense Head</h6>
+<div class="imgone-blog">
+<div class="blog_side_video"><?php echo $new[2]['video_text']; ?></div></div>
+<h6 class="red-heading2">LAX UNLIMITED ON TWITTER</h6>
+<p class="conn-para2">
+<a class="twitter-timeline" href="https://twitter.com/LAXUNLIMITED" data-widget-id="378087948836564992">Tweets by @LAXUNLIMITED</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</p>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<div id="fb-root"></div>
+<!--<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=559154410788540";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="200" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>-->
+<h6 class="red-heading2">LAX UNLIMITED ON Instagram</h6>
+<ul class="blog-list clearfix">
+<iframe src="http://snapwidget.com/in/?u=bGFjcm9zc2V1bmxpbWl0ZWR8aW58NjV8M3w1fHxub3w1fG5vbmV8b25TdGFydHxubw==&v=27813" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:210px; height: 350px" ></iframe>
+<!--<li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img1.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img2.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img3.jpg'); ?>"></li>
+<li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img4.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img5.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img6.jpg'); ?>"></li>
+<li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img7.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img8.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img9.jpg'); ?>"></li>
+<li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img10.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img11.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img12.jpg'); ?>"></li>
+<li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img13.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img14.jpg'); ?>"></li><li><img alt="" src="<?php echo $this->getSkinUrl('images/blog-img15.jpg'); ?>"></li>-->
+</ul>
+<h6 class="red-heading2">LAX UNLIMITED ON facebook</h6>
+<div class="facebook-area">
+<div data-header="false" data-stream="false" data-show-faces="true" data-height="418" data-width="235" data-href="http://www.facebook.com/LacrosseUnlimited" class="fb-like-box fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;header=false&amp;height=418&amp;href=http%3A%2F%2Fwww.facebook.com%2FLacrosseUnlimited&amp;locale=en_GB&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=235"><span style="vertical-align: bottom; width: 235px; height: 418px;"><iframe height="418px" frameborder="0" width="235px" scrolling="no" name="f3e55c97fdbec4e" allowtransparency="true" title="fb:like_box Facebook Social Plugin" style="border: medium none; visibility: visible; width: 235px; height: 418px;" src="http://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D26%23cb%3Df334f3387a52a76%26domain%3Dlacrosseunlimited.com%26origin%3Dhttp%253A%252F%252Flacrosseunlimited.com%252Ff5cae77a9e09d8%26relation%3Dparent.parent&amp;header=false&amp;height=418&amp;href=http%3A%2F%2Fwww.facebook.com%2FLacrosseUnlimited&amp;locale=en_GB&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=235" class=""></iframe></span></div>
+<!--<img alt="" src="<?php echo $this->getSkinUrl('images/facebook.jpg'); ?>">-->
+</div>
+</aside>
+	<?php echo $this->getChildHtml() ?>
+</div>

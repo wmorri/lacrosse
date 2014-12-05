@@ -1,0 +1,146 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+body {
+}
+a {
+	outline: none;
+}
+.bg_magento {
+	background:url(img/bg-body.png) left top repeat;
+	width:1052px;
+	height:941px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.circle {
+	background: url("img/bg.png") no-repeat scroll 0 0 transparent;
+	height: 202px;
+	margin: 0 0 0 -106px;
+	position: absolute;
+	top: 10%;
+	width: 200px;
+	left:50%;
+	z-index:9996;
+}
+a img {
+	/*border:1px;*/
+}
+.icoblock {
+	height:70px;
+	margin-left:25px;
+}
+.circle .item {
+	position:absolute;
+	width:25px;
+	height:25px;
+	z-index: 9998;
+}
+.ico-1 {
+	left: 89px;
+	top: 19px;
+}
+.ico-2 {
+	left: 129px;
+	top: 31px;
+}
+.ico-3 {
+	left: 155px;
+	top: 63px;
+}
+.ico-4 {
+	left: 159px;
+	top: 100px;
+}
+.ico-5 {
+	left: 143px;
+	top: 139px;
+}
+.ico-6 {
+	left: 109px;
+	top: 162px;
+}
+.ico-7 {
+	left: 66px;
+	top: 161px;
+}
+.ico-8 {
+	left: 30px;
+	top: 138px;
+}
+.ico-9 {
+	left: 13px;
+	top: 97px;
+}
+.ico-10 {
+	left: 18px;
+	top: 59px;
+}
+.ico-11 {
+	left: 49px;
+	top: 30px;
+}
+.ico-12 {
+	left: 110px;
+	top: 51px;
+}
+.circle .item img {
+	position:absolute;
+	width:25px;
+	height:25px;
+	float:left;
+	display:block;
+}
+.circle .item img:hover {
+	width:35px;
+	height:35px;
+	left:-2px;
+	-moz-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.circle .item img:active {
+	width:35px;
+	height:5px;
+	-moz-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.ref {
+	width:50px;
+	height:50px;
+	margin-top:40px;
+	opacity:0.2;
+	filter: alpha(opacity=20);
+	position:absolute;
+}
+
+.circle-close{
+	padding:8px;
+	display:block;
+	position:absolute;
+	top:2px;
+	right:2px;
+	z-index:9999;
+}
+.hide-wrapper{
+	position:absolute;
+	background:#AAA;
+	height:100%;
+	z-index:9995;
+	-webkit-opacity:0.4;
+	-moz-opacity:0.4;
+	opacity:0.4;
+	filter: alpha(opacity=40);
+	width:100%;
+	left:0;
+	top:0;
+}
+
+.ea-user-main .button{
+	clear:both;
+	display:block;
+}

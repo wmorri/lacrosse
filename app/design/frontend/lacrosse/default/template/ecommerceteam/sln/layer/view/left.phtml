@@ -1,0 +1,77 @@
+<?php
+    /**
+    * EcommerceTeam.com
+    *
+    * Seo Layered Navigation
+    *
+    * @category     Magento Extension
+    * @copyright    Copyright (c) 2011 Ecommerce Team (http://www.ecommerce-team.com)
+    * @author       Ecommerce Team
+    * @version      3.0
+    */
+
+
+/** @var $this EcommerceTeam_Sln_Block_Layer_View */
+?>
+
+<?php /*?>
+<?php if($this->canShowBlock()): ?>
+<div id="firstpane" class="menu_list">
+    <h3>shop by</h3>    
+        <?php echo $this->getStateHtml() ?>       
+        <?php if($this->canShowOptions()): ?>
+            <ul id="narrow-by-list">
+                <?php $_filters = $this->getFilters() ?>
+                <?php foreach ($_filters as $_filter):?>
+                <?php if($_filter->canShow()):?>
+                <li>
+					<span class="menu_head"><?php echo $this->__($_filter->getName()) ?></span>
+					<?php if($filterComment = $_filter->getComment()):?>
+                        <img onmouseover="showFilterComment('<?php echo $_filter->getRequestVar()?>', this)"
+                              onmouseout="hideFilterComment('<?php echo $_filter->getRequestVar()?>', this)"
+                              class="filter-details"
+                              src="<?php echo $this->getSkinUrl('images/ecommerceteam/sln/help.png')?>"
+                              alt="Filter Details" />
+                        <?php endif;?>		
+					<?php echo $_filter->getHtml() ?>		
+				</li>  
+                <?php endif; ?>
+                <?php endforeach; ?>
+            </ul>
+            <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+   
+</div>
+<?php endif; */ ?>
+
+<?php /*================================== Default Code =============================== */?>
+<?php if($this->canShowBlock()): ?>
+<div id="firstpane" class="menu_list block-layered-nav-new">
+    <h3>shop by</h3>  
+    
+        <?php echo $this->getStateHtml() ?>
+        <?php if($this->canShowOptions()): ?>
+           <ul id="narrow-by-list">            
+                <?php $_filters = $this->getFilters() ?>
+                <?php foreach ($_filters as $_filter):?>
+                <?php if($_filter->canShow()):?>
+                 <li>
+					<span class="menu_head"><?php echo $this->__($_filter->getName()) ?></span>
+					<?php if($filterComment = $_filter->getComment()):?>
+                        <img onmouseover="showFilterComment('<?php echo $_filter->getRequestVar()?>', this)"
+                              onmouseout="hideFilterComment('<?php echo $_filter->getRequestVar()?>', this)"
+                              class="filter-details"
+                              src="<?php echo $this->getSkinUrl('images/ecommerceteam/sln/help.png')?>"
+                              alt="Filter Details" />
+                        <?php endif;?>		
+					<?php echo $_filter->getHtml() ?>		
+				</li>  
+                <?php endif; ?>
+                <?php endforeach; ?>
+           </ul>
+           <script type="text/javascript">decorateDataList('narrow-by-list')</script>
+        <?php endif; ?>
+    
+</div>
+<?php endif; ?>
+<?php /*======================================== END ================================== */?>

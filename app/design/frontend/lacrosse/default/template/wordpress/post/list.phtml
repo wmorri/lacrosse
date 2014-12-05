@@ -1,0 +1,97 @@
+<?php
+/**
+ * @category    Fishpig
+ * @package     Fishpig_Wordpress
+ * @license     http://fishpig.co.uk/license.txt
+ * @author      Ben Tideswell <help@fishpig.co.uk>
+ */
+?>
+<!--<style>
+img.aligncenter{float:left !important;width:553px !important;height:313px !important;}
+</style>-->
+<h4 class="inter-heading">
+<img alt="" src="<?php echo $this->getSkinUrl('images/laxunation-text.jpg'); ?>"></h4>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "b77d5264-c3f3-426e-ada2-c072ffc7cee3", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<!-- <script type="text/javascript" src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"></script> -->
+<?php $posts = $this->getPosts() ?>
+<?php if (count($posts) > 0): ?>
+	<?php if ($this->helper('wordpress/plugin_shareThis')->canDisplayOnPost()): ?>
+		<?php echo $this->helper('wordpress/plugin_shareThis')->getJavascriptHtml() ?>
+	<?php endif; ?>
+	<div class="post-list">
+		<ul id="post-list">
+			<?php $i=0; foreach($posts as $post): ?>
+			<?php if($i<3): ?>
+				<?php $author = $post->getAuthor() ?>
+				<?php
+$html = $post->getPostContent();
+$doc = new DOMDocument();
+$doc->loadHTML($html);
+$xpath = new DOMXPath($doc);
+$src = $xpath->evaluate("string(//img/@src)");
+?>
+				<li class="item">
+					<a style="text-decoration:none;" href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>">
+<?php if(isset($src) && $src!='') { ?><div class="blog_video"><img style="width:553px;" alt="" src="<?php echo $src; ?>"></div><?php } ?><h6 class="blog_heading"><?php echo $this->escapeHtml($post->getPostTitle()) ?></h6></a>
+					<p class="post-date on"><?php echo $this->__('Posted on %s', $post->getPostDate()) ?></p>
+					<div class="post-entry entry<?php if ($post->getFeaturedImage): ?> post-entry-with-image<?php endif; ?>">
+						<?php if ($post->isViewableForVisitor()): ?>
+							<?php if ($featuredImage = $post->getFeaturedImage()): ?>
+								<div class="featured-image left">
+									<a href="<?php echo $post->getPermalink() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"><img src="<?php echo $featuredImage->getAvailableImage() ?>" alt="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"/></a>
+								</div>
+							<?php endif; ?>
+							<?php if ($this->displayExcerptInFeed() || $post->hasMoreTag()): ?>
+								<?php echo $post->getPostExcerpt() ?>
+							<?php else: ?>
+								<p style="color: #000000;
+    font: 18px/22px Arial,Helvetica,sans-serif;
+    padding-bottom: 15px;"><?php echo strip_tags($post->getPostContent()) ?></p>
+								<!--<div class="social_icons"><img align="left" alt="" src="<?php echo $this->getSkinUrl('images/blog-social.jpg'); ?>"></div>-->
+<?php /*?><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent('<?php echo $post->getPermalink() ?>'),'facebook-share-dialog','width=626,height=436');return false;">Share on Facebook</a><?php */?>
+
+<div class="social_icons">
+<span class="st_facebook_hcount" displayText="Facebook" st_url="<?php echo $post->getPermalink() ?>" st_summary="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" st_title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"></span>
+<span class="st_twitter_hcount" displayText="Tweet" st_url="<?php echo $post->getPermalink() ?>" st_summary="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" st_title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"></span>
+<span class="st_googleplus_hcount" displayText="+" st_url="<?php echo $post->getPermalink() ?>" st_summary="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" st_title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>"></span>
+</div>
+<?php /*
+<span url="<?php echo $post->getPermalink() ?>" summary="<?php echo $post->getPostExcerpt() ?>" title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" displaytext="facebook" class="st_facebook_hcount" processed="yes">
+<span st_url="<?php echo $post->getPermalink() ?>" st_summary="<?php echo $post->getPostExcerpt() ?>" st_title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" displaytext="twitter" class="st_twitter_hcount" st_processed="yes">
+<span st_url="<?php echo $post->getPermalink() ?>" st_summary="<?php echo $post->getPostExcerpt() ?>" st_title="<?php echo $this->escapeHtml($post->getPostTitle()) ?>" displaytext="plusone" class="st_plusone_hcount" st_processed="yes">
+*/?>
+
+							<?php endif; ?>
+						<?php else: ?>
+							<?php echo $this->getPasswordProtectHtml($post) ?>
+						<?php endif; ?>
+					</div>
+					<!--<p class="post-meta details">
+						<?php $categories = $post->getParentCategories() ?>
+						<?php if (count($categories) > 0): ?>
+							<span><?php echo $this->__('Posted in') ?> </span> 
+							<?php $it = count($categories) ?>
+							<?php foreach($categories as $category): ?><a href="<?php echo $category->getUrl() ?>"><?php echo $category->getName() ?></a><?php if (--$it > 0): ?>, <?php endif; ?><?php endforeach; ?>
+						<?php endif; ?>
+						<?php $tags = $post->getTags() ?>
+						<?php if (count($tags) > 0): ?>
+							<span><?php echo (count($categories) == 0) ? $this->__('Tagged with') : $this->__('and tagged with') ?> </span> 
+							 <?php $it = count($tags) ?>
+							 <?php foreach($tags as $tag): ?>	<a href="<?php echo $tag->getUrl() ?>"><?php echo $this->escapeHtml($tag->getName()) ?></a><?php if (--$it > 0): ?>, <?php endif; ?><?php endforeach; ?>
+						<?php endif; ?>
+						<?php echo $this->__('by') ?> <a href="<?php echo $author->getUrl() ?>"><?php echo $this->escapeHtml($author->getDisplayName()) ?></a>. 
+						<?php if ($post->getCommentCount() > 0): ?>
+							<span><a href ="<?php echo $post->getPermalink() ?>#comments"><?php echo $post->getCommentCount() ?> <?php if ($post->getCommentCount() == 1): ?><?php echo $this->__('Reply') ?><?php else: ?><?php echo $this->__('Replies') ?><?php endif; ?></a></span>
+						<?php endif; ?>
+					</p>-->
+					<?php if ($this->helper('wordpress/plugin_shareThis')->canDisplayOnPost()): ?>
+						<div class="sharethis-icons" id="sharethis-icons-<?php echo $post->getId() ?>"><?php echo $this->helper('wordpress/plugin_shareThis')->getIcons($post) ?></div>
+					<?php endif; ?>
+				</li>
+			<?php endif; ?>
+			<?php $i++; endforeach; ?>
+		</ul>
+		<?php echo $this->getPagerHtml() ?>
+	</div>
+<?php endif; ?>

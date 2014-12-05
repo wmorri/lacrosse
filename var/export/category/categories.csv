@@ -1,0 +1,942 @@
+"Name","Path","Position","Is Active","Url Key","Description","Image","Page Title","Meta Keywords","Meta Description","Include In Menu","Display Mode","CMS Block","Is Anchor","Availabe Sort By","Default Sort By","Page Layout","Custom Layout Update"
+"Yellow Jackets- 5654","Root team","44","No","yellow-jackets-5654","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Jackets</txt></action>
+</block>
+</reference>"
+"TCNJ- 5191","Root team","45","No","tcnj-5191","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Xaverian Brothers- 5119","Root team","46","No","xaverian-brothers-5119","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Brothers</txt></action>
+</block>
+</reference>"
+"Wantagh Lacrosse- 5850","Root team","47","No","wantagh-lacrosse-5850","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>WARRIORS</txt></action>
+</block>
+</reference>"
+"Recon Lacrosse- 5786","Root team","48","No","recon-lacrosse-5786","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Lacrosse Unlimited College Lacrosse GAME OF THE WEEK ","Root Category","18","Yes","college-lacrosse-game-of-the-week","Featured College Lacrosse Games of the Week. Brought to you by Lacrosse Unlimited. Exclusive Custom Lacrosse gear.","","Featured College Lacrosse Game of the Week | Top 5 College Lacrosse Gear","","","No","Products only","","No","","","No layout updates",""
+"Rumson Lacrosse- 5429","Root team","43","No","rumson-lacrosse-5429","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Fair</txt></action>
+</block>
+</reference>"
+"South Brunswick Lacrosse- 5225","Root team","42","No","south-brunswick-hs-lacrosse-5225","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Brunswick</txt></action>
+</block>
+</reference>"
+"SUNY Maritime- 5549","Root team","41","No","suny-maritime-5549","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Privateers</txt></action>
+</block>
+</reference>"
+"Canterbury Girl\'s Lacrosse- 5074","Root team","40","No","canterbury-girl-s-lacrosse-5074","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Saints</txt></action>
+</block>
+</reference>"
+"CSH Girl\'s Lacrosse- 5321","Root team","39","No","csh-girl-s-lacrosse-5321","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lax</txt></action>
+</block>
+</reference>"
+"Syosset Girl\'s Lacrosse- 4854","Root team","38","No","syosset-girl-s-lacrosse-4854","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Braves</txt></action>
+</block>
+</reference>"
+"West Islip Lacrosse- 4595","Root team","36","No","west-islip-lacrosse-4595","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lions</txt></action>
+</block>
+</reference>"
+"Babylon Boys Lacrosse- 5475","Root team","37","No","babylon-high-school-boys-lacrosse-5475","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Spartans Lacrosse- 5063","Root team","35","No","spartans-lacrosse-5063","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Spartan</txt></action>
+</block>
+</reference>"
+"South Windsor Lacrosse- 5735","Root team","49","No","south-windsor-lacrosse-5735","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lacrosse</txt></action>
+</block>
+</reference>"
+"Eastchester High School- 5516","Root team","50","No","eastchester-high-school-5516","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Sachem Booster Club- 6083","Root team","51","No","sachem-booster-club-6083","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Arrows</txt></action>
+</block>
+</reference>"
+"Westlake Youth Lacrosse- 6535","Root team","65","No","westlake-youth-lacrosse-6535","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Paragon Lacrosse- 6540","Root team","64","No","paragon-lacrosse-6540","Please allow 4-6 weeks from time of STORE CLOSING for delivery. ","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Paragon</txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>
+"
+"Salt Shakerz- 6085","Root team","63","No","salt-shakerz-6085","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Shakerz</txt></action>
+</block>
+</reference>"
+"Blue Devil Elite- 6477","Root team","61","No","blue-devil-elite-6477","<p><span style=""font-size: small;"">STORE CLOSES 5/3/13: Orders Take 5-6 Weeks From Store Closing Date</span></p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Blue Devil Elite</txt></action>
+<action method=""setPassWord""><txt>BDE</txt></action>
+</block>
+</reference>"
+"Legacy Lacrosse- 5563","Root team","62","No","legacy-lacrosse-5563","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lacrosse</txt></action>
+</block>
+</reference>"
+"West Babylon Boys Lax- 6149","Root team","60","No","west-babylon-boys-lax-6149","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>WBLax</txt></action>
+</block>
+</reference>"
+"Bulldog Lacrosse Club- 5268","Root team","59","No","bulldog-lacrosse-club-5268","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Prime Time- 6134","Root team","58","No","prime-time-6134","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>PT</txt></action>
+</block>
+</reference>"
+"Up To 35% Percent Off Lacrosse Equipment","Root Category","21","Yes","35-percent-off-select-brine-warrior-lax-equipment","<h2>Save Up To 35% with Mid-Season Markdown Pricing on Select Brine and Warrior Lax Equipment</h2>","","35% Percent OFF Brine Warrior Lacrosse Equipment | Discount Lax Gear","Price,Discounts,Brine,Lax,Lacrosse,Equipment,Save,20 Percent,Brine,Heads,Discounted,markdowns,deals","Save 35% Off on Top Brands Brine & Warrior Lax Equipment at Lacrosse Unlimited. Get it FAST! FREE Shipping on qualified orders. ","No","Products only","","No","Best Value,Brand,Price","","No layout updates",""
+"Pitt Physical Therapy- 5521","Root team","57","No","pitt-physical-therapy-5521","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>PT</txt></action>
+</block>
+</reference>"
+"Trumbull Youth Lacrosse- 6199","Root team","56","No","trumbull-youth-lacrosse-6199","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Northport Girls Lacrosse- 5967","Root team","55","No","northport-girls-lacrosse-5967","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lacrosse</txt></action>
+</block>
+</reference>"
+"RVC Lacrosse- 5656","Root team","54","No","rvc-lacrosse-5656","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"North Shore- 4870","Root team","53","No","north-shore-4870","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Vikings</txt></action>
+</block>
+</reference>"
+"Amherst Lacrosse- 5422","Root team","52","No","amherst-lacrosse-5422","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Ward Melville Lacrosse- 5318","Root team","34","No","ward-melville-lacrosse-5318","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lax</txt></action>
+</block>
+</reference>"
+"Huntington Lacrosse- 5445","Root team","33","No","huntington-lacrosse-5445","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Devils</txt></action>
+</block>
+</reference>"
+"Villanova Parents- 5451","Root team","32","No","villanova-parents-5451","","","","","","No","Products only","","No","Best Value","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>nova</txt></action>
+</block>
+</reference>"
+"New Lacrosse Products","Root Category","20","Yes","new-lacrosse-product-arrivals","<h2><span style=""color: #000000; font-size: large;"">New Lacrosse Products Release! </span></h2>
+<p><span style=""color: #000000; font-size: large;"">Lacrosse Unlimited is THE place to check-out ALL the new lacrosse products before anyone else. Bookmark this page to find the newest lacrosse heads, lacrosse shorts, and all your new lacrosse gear right in one place. </span></p>","","New Lacrosse Products - Warrior NOZ and Warrior Kryptolyte Hot Sauce","","New Warrior Noz Lacrosse head, and Warrior Kryptolyte Hot Sauce Limited Edition Shaft. ONLY at Lacrosse Unlimited. FREE Shipping On 100\'s Of Products!","No","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"USCGA- 4591","Root team","15","No","uscga-4591","","","","","","No","Products only","","No","Brand,Price,Color","Brand","2 columns with left bar","  <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Bears</txt></action>
+</block>
+</reference> "
+"Sachem Booster Club- 4613","Root team","14","No","sachem-booster-club-4613","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Arrows</txt></action>
+</block>
+</reference> "
+"Dulles South Youth Lacrosse-4585","Root team","13","No","dulle-south-youth-lacrosse-4585","","","","","","No","Products only","","No","Best Value","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>South</txt></action>
+</block>
+</reference> "
+"Connetquot Lacrosse- 4431","Root team","12","No","connetquot-booster-club-lacrosse-4431","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Tbirds</txt></action>
+</block>
+</reference> "
+"Prime Time- 4683","Root team","11","No","prime-time-4683","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>PT Lax</txt></action>
+</block>
+</reference> "
+"Yellow Jackets Lacrosse- 4652","Root team","10","No","yellow-jackets-lacrosse-4652","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Jackets</txt></action>
+</block>
+</reference> "
+"Drew Univ. Womens Lacrosse- 4331","Root team","9","No","drew-univ-womens-lacrosse-4331","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Rangers</txt></action>
+</block>
+</reference> "
+"Bentley College Womens Lacrosse- 4479","Root team","8","No","bentley-college-womens-lacrosse-4479","","","","","","No","Products only","","No","","","No layout updates","<reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Sienna Panthers- 4597","Root team","7","No","sienna-panther-4597","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Panthers</txt></action>
+</block>
+</reference> "
+"Trumbull Youth Lacrosse- 4499","Root team","6","No","trumbull-youth-lacrosse-4499","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"University of Pitt Hockey- 4032","Root team","5","No","university-of-pitt-hockey-4032","","","","","","No","Products only","","No","Best Value,Brand,Price","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Hockey</txt></action>
+</block>
+</reference> "
+"Smithtown West Soccer- 4282","Root team","4","No","smithtown-west-soccer-4282","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Soccer</txt></action>
+</block>
+</reference> "
+"Carroll Manor Youth Lacrosse- 4538","Root team","3","No","carroll-manor-youth-lacrosse-4538","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Danvers Youth Lacrosse- 4015","Root team","2","No","danvers-youth-lacrosse-4015","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Salt Shakerz - 4732","Root team","16","No","salt-shakerz-4732","","","","","","No","Products only","","No","","","No layout updates","  <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Shakerz</txt></action>
+</block>
+</reference> "
+"St. Peters Prep- 5940","Root team","17","No","st-peters-prep-5940","","","","","","No","Products only","","No","","","No layout updates","  <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Prep</txt></action>
+</block>
+</reference> "
+"Fort Hunt Youth Lacrosse- 5493","Root team","31","No","fort-hunt-youth-lacrosse-5493","","","","","","No","Products only","","No","Best Value","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference>"
+"Montville Lacrosse Club- 5460","Root team","30","No","montville-lacrosse-club-5460","","","","","","No","Products only","","No","Best Value,Brand,Price","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Warriors</txt></action>
+</block>
+</reference>"
+"University of Pitt Golf- 4679","Root team","29","No","university-of-pitt-golf-4679","","","","","","No","Products only","","No","Best Value,Brand,Price,Color","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Golf</txt></action>
+</block>
+</reference>"
+"Youth","Root Category","16","Yes","youth-lacrosse","","","Youth Lacrosse Clothes | Youth Lacrosse Equipment | Youth Lacrosse Footwear ","","Free Shipping on All Orders over $99. In-stock items ship within 24 Hours direct to your Home with our BEST PRICES GUARANTEED. Youth Lacrosse Apparel and Equipment by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"Prime Time- 5287","Root team","27","No","prime-time-5287","","","","","","No","Products only","","No","Brand","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>PT</txt></action>
+</block>
+</reference>"
+"Red Bank- 5253","Root team","26","No","red-bank-5253","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>RB</txt></action>
+</block>
+</reference>"
+"Coyote Lacrosse- 4781","Root team","25","No","coyote-lacrosse-4781","","","","","","No","Products only","","No","Brand","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lax</txt></action>
+</block>
+</reference>"
+"Cougars Lacrosse- 4549","Root team","24","No","cougars-lacrosse-4549","","","","","","No","Products only","","No","Brand","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>lax</txt></action>
+</block>
+</reference> "
+"Long Island FBI-4790","Root team","23","No","long-island-fbi-4790","","","","","","No","Products only","","No","Best Value","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Long Island</txt></action>
+</block>
+</reference> "
+"Riverdale Country School-4829","Root team","22","No","riverdale-country-school-4829","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>RCS</txt></action>
+</block>
+</reference> "
+"University of Pitt Lacrosse-5009","Root team","21","No","university-of-pitt-lacrosse-5009","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Smithtown East Lacrosse- 4216","Root team","20","No","smithtown-east-lacrosse-4216","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Bulls</txt></action>
+</block>
+</reference> "
+"Briar Woods Boys Lacrosse- 5936","Root team","18","No","briar-woods-boys-lacrosse-5936","","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Falcons</txt></action>
+</block>
+</reference> "
+"Briar Woods Girls Lacrosse- 5899","Root team","19","No","briar-woods-girls-lacrosse-5899","","","","","","No","Products only","","No","","","No layout updates","<reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Falcons</txt></action>
+</block>
+</reference> "
+"Long Island Express","Root Category","19","Yes","long-island-express","","","Long Island Express Team Gear","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Wesleyan Lacrosse- 4472","Root team","1","No","wesleyan-university-4472","","","","","","No","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Goals & Training","Root Category","13","Yes","lacrosse-goals-training","","Goals_Sub_Category_Banner_1.png","Lacrosse Goal | Lacorsse Shooting Targets | Rebounder Walls | Lacrosse Balls","","FREE SHIPPING ALL ORDERS Over $99! Top Quality & Great Selection. Best Prices Guaranteed On LACROSSE GOAL & TRAINING TARGETS","Yes","Static block only","sub_goals","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"Pacific Lacrosse Festival - 6766","Root team","68","No","pacific-lacrosse-festival-6766","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Pacific</txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Long Island Express- 5297","Root team","28","No","long-island-express-5297","","","","","","No","Products only","","No","Best Value","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt></txt></action>
+</block>
+</reference>"
+"Main Line Lacrosse- 6415","Root team","69","No","main-line-lacrosse-6415","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Main Line</txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Mens","Root Category","22","Yes","mens","","halmet-banner2.jpg","","","","Yes","Static block only","mens_category_page_block","No","","","No layout updates",""
+"University of Illinois Lax- 7048","Root team","74","Yes","university-of-illinois-lax-7048","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates","<reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>illinois</txt></action>
+<action method=""setPassWord""><txt>lax</txt></action>
+</block>
+</reference> "
+"Farmingdale Lady Dalers Lacrosse- 6975","Root team","73","No","lady-dalers-lacrosse","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","Farmingdale Lady Dalers Lacrosse Store","","","No","Products only","","No","Best Value,Brand,Price,Color","","No layout updates","<reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Lady Dalers</txt></action>
+<action method=""setPassWord""><txt>LAX</txt></action>
+</block>
+</reference> "
+"FSU Lacrosse- 6071","Root team","72","No","fsu-lacrosse-6071","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>FSU</txt></action>
+<action method=""setPassWord""><txt>LAX</txt></action>
+</block>
+</reference> "
+"New England Storm- 6794","Root team","70","No","new-england-storm-6794","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>Storm</txt></action>
+<action method=""setPassWord""><txt>Lacrosse</txt></action>
+</block>
+</reference> "
+"Womens","Root Category","23","Yes","womens","","halmet-banner2_1.jpg","","","","Yes","Static block only","women_category_page_block","No","","","No layout updates",""
+"St. Lucie Lions- 6887","Root team","71","No","st-lucie-lions-6887","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Lions</txt></action>
+</block>
+</reference> "
+"Shop By","Root Category","1","Yes","shop-by","","","","","","No","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"Stores","Root Category","24","Yes","stores","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Footwear","Root Category","6","Yes","lacrosse-footwear","","Footwear_Sub_Category_Banner.png","Lacrosse Footwear | Lacrosse Cleats | Lacrosse Turfs | Sneakers","","Lacrosse Footwear, Cleats, Turfs, Volt Socks, Sandals, Slides By NIKE & Warrior. FAST Delivery+FREE Shipping on 100s of Items. Service, Selection, Quality You Can Trust.","Yes","Static block only","sub_footwear","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Protective","Root Category","12","Yes","lacrosse-protective-equipment","","Protective_Sub_Category_Banner_Regulator_1.png","Lacrosse Protective Equipment | Lacrosse Gloves | Helmets | Arm Protection | Shoulder Pads","","Fast, Easy, & Free Shipping Over $99. BEST PRICES GUARANTEED On LACROSSE Protective Equipment. Top Quality,Great Selection & Expert Advice.","Yes","Static block only","sub_protective","Yes","Brand,Price,Color,gender","Brand","No layout updates",""
+"Apparel","Root Category","2","Yes","lacrosse-apparel","<h2>Lacrosse Apparel - Lacrosse Unlimited Exclusives: Lacrosse Shorts, Socks, Tee\'s, Hats and More.</h2>
+<p><span style=""font-size: small;"">Shop by: Category, Size, Brands, Color, Price, and Favorite Schools</span></p>","","Men\'s Lacrosse Apparel - Lacrosse Shorts, T Shirts, Hats & Nike Socks","","Find The Latest Men\'s Lacrosse Clothing At Lacrosse Unlimited. Free Exchanges On Lacrosse Shorts, T Shirts, Socks, Hats & More From Lax Unlimited, Nike & Fit2win. ","Yes","Static block only","sub_apparel","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Lifestyle/Gifts","Root Category","14","Yes","lacrosse-lifestyle-gifts","","Lifestyle_Sub_Category_Banner_1.png","LACROSSE LIFESTYLE GIFTS | Gift Ideas For Your Lacrosse Player | Gift Cards","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED! Need Gift Ideas? Gift Cards & More. Top Quality & Great Selection Since 1990","Yes","Static block only","sub_lifestyle","Yes","Best Value,Brand,Price,Color","Brand","No layout updates",""
+"East Hampton Youth Lacrosse- 6731","Root team","66","No","east-hampton-youth-lacrosse-6731","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","East Hampton Youth Lacrosse- 6731","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt></txt></action>
+<action method=""setPassWord""><txt>Bonac</txt></action>
+</block>
+</reference> "
+"Clearance","Root Category","17","Yes","clearance-sale","<h1><span style=""color: #ff0000;""><span style=""color: #ff0000;""><span style=""font-size: large;"">Clearance Lacrosse Equipment and Lacrosse Apparel Sales</span></span></span></h1>
+<p><span style=""color: #ff0000;""><span style=""color: #ff0000;""><span style=""font-size: large;"">Up To 90% OFF Lacrosse Equipment and Apparel</span></span></span></p>
+<p><span style=""color: #ff0000;""><span style=""color: #ff0000;""><span style=""font-size: large;"">&nbsp;</span></span></span></p>
+<p><span style=""color: #ff0000;""><span style=""color: #ff0000;""><span style=""font-size: large;""><br /></span></span></span></p>","halmet-banner.jpg","Clearance Lacrosse Equipment, Lacrosse Shorts, and Lacrosse Apparel Sale | Daily Deals On Lacrosse Gear","","Shop Now For Hot Deals and Sales On Lacrosse Equipment and Apparel. FREE Shipping on all qualified orders. Selection, Quality, and Service You Can Trust","Yes","Static block only","clearance_category_page_block","No","","","No layout updates",""
+"Team RWB- 6773","Root team","67","No","team-rwb-6773","<p><span style=""font-size: small;"">All Team Store Orders are CUSTOM Made, There are <span style=""text-decoration: underline;""><strong>NO RETURNS, REFUNDS or EXCHANGES</strong></span>. ALL SALES are Final. Once your order is placed, <span style=""text-decoration: underline;""><strong>NO CHANGES</strong></span>&nbsp;can be made to your order. Please <span style=""text-decoration: underline;""><strong>REVIEW</strong></span> your order, and the size charts before confirming your order. Orders will<strong> SHIP approx 5-6 weeks</strong>&nbsp;AFTER the store <strong>CLOSE</strong> date.</span>&nbsp;</p>","","Team RWB ","","","No","Products only","","No","","","No layout updates"," <reference name=""header"">
+<block type=""core/template"" name=""pass"" template=""password/pass.phtml"">
+<action method=""setUserName""><txt>RWB</txt></action>
+<action method=""setPassWord""><txt>Team</txt></action>
+</block>
+</reference> "
+"GIRLS","Root Category","15","Yes","girls-lacrosse","","Womens_Sub_Category_Banner_1.png","Girls Lacrosse Apparel | Girls Lacrosse Sticks | Girls Lacrosse Goggles | Womens Lacrosse","","Fast, Easy, & Free Shipping Over $99. BEST PRICES GUARANTEED! Lacrosse Unlimited Largest Selection of Girls Lacrosse Equipment & Apparel.","Yes","Static block only","sub_women","Yes","Best Value,Brand,Price,Color","Brand","No layout updates",""
+"PINNIES","Root Category/Apparel","8","Yes","lacrosse-pinnies","","","Lacrosse Pinnies | Nike Pinnies | Mesh Pinnies | Sublimated Pinnies ","","Best Price Guaranteed On CUSTOM LACROSSE PINNIES! Fast, Easy, FREE Shipping and Returns. Most Trusted Name For 22 Years. Customer Satisfaction Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"HATS","Root Category/Apparel","2","Yes","lacrosse-hats","","","Lacrosse Hats - Nike Snapback Hats, Zypher Flat Brim, & LU Winter Hats","","Find The Latest Lacrosse Hats At Lacrosse Unlimited. Free Exchanges On Snapback Hats From Top Brands Nike, Zephyr & Lax Unlimited with Free Shipping On 100\'s of Items","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"SOCKS","Root Category/Apparel","6","Yes","socks","","","Nike Volt Socks | Lacrosse Unlimited Socks | Nike Lacrosse Socks | Nike Vapor Socks","","FREE U.S. STANDARD SHIPPING On ALL ORDERS $50 or Over! Shop Now For Nike Vapor Crew Socks, & Lacrosse Unlimited Socks. BEST PRICE GUARANTEED Since 1990","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Price","No layout updates",""
+"FOOTWEAR","Root Category/Youth","3","Yes","youth-lacrosse-footwear","","","Youth Lacrosse Footwear | Nike Youth Lacrosse Footwear | Warrior Youth Lacrosse Footwear | Youth Lacrosse Socks | Lax Socks |","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Youth Lacrosse FOOTWEAR by Nike and Warrior. Lacrosse Cleats, Turfs, Volt Socks, Sandals, Slides.","Yes","Products only","","No","","","No layout updates",""
+"T SHIRTS","Root Category/Apparel","3","Yes","lacrosse-t-shirts","","","LACROSSE T SHIRTS | COLLEGE LACROSSE T SHIRTS | Lifestyle T Shirts | Performance T","","LACROSSE T SHIRTS -Lacrosse Unlimited. FAST Delivery + FREE Shipping on 100s of Items.  Selection, Quality, Service You Can Trust. NEW Fresh Lax T\'S DAILY!","Yes","Products only","","Yes","","","No layout updates",""
+"GIFT IDEAS","Root Category/Apparel","9","Yes","lacrosse-birthday-gifts","","","Lacrosse Neck Ties | Sunglasses | Blankets | Gifts","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"WOMENS","Root Category/Clearance","5","Yes","womens","","2013-STX-girls-apparel.jpg","","","","Yes","Products only","","Yes","","","No layout updates",""
+"PERFORMANCE","Root Category/Apparel","5","Yes","performance-apparel","","","Performance Lacrosse Apparel | Nike Performance ","","FREE U.S. STANDARD SHIPPING On ALL ORDERS $50 & Over! Shop Now For Nike Dri-Fit College T. Notre Dame Cuse Duke and More BEST PRICE GUARANTEED Since 1990.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"EQUIPMENT","Root Category/Youth","2","Yes","youth-lacrosse-equipment","","","Youth Lacrosse Equipment - Arm Pads, Sticks, Shoulder Pads & Starter Packages","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Equipment by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"LACROSSE BAGS","Root Category/Protective","9","Yes","lacrosse-bags","","","Lacrosse Equipment Bags | Lacrosse Backpacks ","","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW Lacrosse Equipment Bags and Backpacks.","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"APPAREL","Root Category/Youth","1","Yes","youth-lacrosse-apparel","","","Youth Lacrosse Clothes | Youth Lacrosse Shorts | Youth Lacrosse Tees | Boys Youth Lacrosse shirts | Youth Lacrosse sweatshirts | ","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Apparel and Clothes by Lacrosse Unlimited, Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","Brand,Price,Color,apparel sizes","Brand","No layout updates",""
+"CLEATS","Root Category/Footwear","1","Yes","lacrosse-cleats","<h2><span style=""font-size: large;"">Best Selling Lacrosse Cleats: Nike Huarache 3 Lax, Warrior Burn 6.0, and Warrior Adonis</span></h2>","","Lacrosse Cleats - Nike Huarache 3 | Nike SpeedLax | Warrior Adonis | Warrior Burn 6 Cleats","Lacrosse Cleats, Nike cleats, warrior cleats, Nike lacrosse, cleats, spikes, kicks,","Fast, Easy, and Free Shipping Over $50. BEST PRICES GUARANTEED On Nike Huarache 3, Warrior Burn 6.0, Warrior Adonis, Nike SpeedLax Lacrosse Cleats","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"SWEATS","Root Category/Apparel","7","Yes","lacrosse-sweats","","","Lacrosse Sweatshirts | College Hooded Sweatshirts | Crew Neck Sweatshirts | College Sweatpants","","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW for Lacrosse College Hooded Sweatshirts, Sweatpants and Crew Necks.","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"LACROSSE SHORTS","Root Category/Apparel","1","Yes","lacrosse-shorts","<h2><span style=""font-size: medium;"">We carry all the top brands: Nike Lacrosse - Lacrosse Unlimited - FlyBy-&nbsp;</span><span style=""font-size: medium;"">Licensed College Lacrosse Shorts</span></h2>","","Lacrosse Shorts - Lax Unlimited, Nike Lacrosse & FlyBy Lax Shorts","","Find The Latest Styles of Lacrosse Shorts At Lacrosse Unlimited. Free Exchanges On Shorts From Lax Unlimited, Nike, Fit2win, FlyBy & More. Free Shipping On 100s of Items.","Yes","Products only","","Yes","","","No layout updates",""
+"Coaching","Root Category/Shop By","11","Yes","coaching","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Position","Root Category/Shop By","6","Yes","position","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Brand","Root Category/Shop By","5","Yes","brand","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Clearance","Root Category/Shop By","4","Yes","clearance","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Top Rated","Root Category/Shop By","3","Yes","top-rated","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Best Sellers","Root Category/Shop By","2","Yes","best-sellers","","","","","","Yes","Products only","","No","","","No layout updates",""
+"COACHES","Root Category/Goals & Training","6","Yes","lacrosse-coaches-corner","Ordering over 12+ pieces? Call Toll Free 855-4TEAMLU (483-2658) for our Team Sales Department for a FREE Quote for your team.","coaches_sub_category_banner_1.png","Lacrosse Coaches Supplies | Dry Erase | Score Books | Whistles | Training","","Fast, Easy, & Free Shipping Over $50 BEST PRICE GUARANTEED Hey Coach! Get Deals ScoreBooks Dry Erase Boads, Cones and Whistles Lacrosse Unlimited Since 1990","Yes","Static block only","sub_coaches","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"GOGGLES","Root Category/Protective","10","Yes","goggles","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"LAX GIFTS","Root Category/Lifestyle/Gifts","2","Yes","lacrosse-gift-ideas","","","Lacrosse Gifts | Lax Gifts | Birthday Gifts | Player Awards |","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On LACROSSE GIFT IDEAS","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sticks","Root Category/Mens","1","Yes","lacrosse-sticks","","Stick_Sub_Category_Banner_Them_YOU_1_1.png","Lacrosse Sticks | Custom Dyes | Unstrung Heads | Custom Stringing","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Sticks, Custom Lacrosse Heads & Lacrosse Shafts Since 1990. BUILD YOUR STICK YOUR WAY!","Yes","Static block only","sub_sticks","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Cleats","Root Category/Apparel","11","Yes","cleats","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sticks","Root Category/Shop By","12","Yes","sticks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Women","Root Category/Shop By","13","Yes","women","","","","","","Yes","Products only","","No","","","No layout updates",""
+"GIFT CARDS","Root Category/Lifestyle/Gifts","3","Yes","lacrosse-unlimited-gift-cards","","","Lacrosse Unlimited Gift Cards ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Get A Lacrosse Unlimited Gift Card For The Special Player In Your Life","Yes","Products only","","No","","","No layout updates",""
+"College","Root Category/Shop By","10","Yes","college-lacrosse","","","Shop By College Lacrosse Team ","","","Yes","Products only","","No","","","No layout updates",""
+"Price","Root Category/Shop By","9","Yes","price","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Age","Root Category/Shop By","8","No","age","","","","","","Yes","Products only","","No","","","No layout updates",""
+"FLYBY","Root Category/Apparel","4","Yes","flyby-lacrosse-apparel","","","FlyBy Lacrosse Apparel | FlyBy Shorts | FlyBy Hoodies | Eruption Sweatpants | FlyBy T Shirts ","","Fast, Easy, FREE SHIPPING Over $50. BEST PRICE GUARANTEED On NEW FLYBY LACROSSE APPAREL. NEW FLYBY Eruption Hooded Sweatshirt, & Pants AVAILABLE. SHOP NOW!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"LACROSSE TEES","Root Category/GIRLS","2","Yes","girls-lacrosse-tees","","","Girls Lacrosse Tees - Girls T Shirts, Athletic Tops, & Sweats","","Shop a wide variety of Girls Lacrosse T Shirts, Athletic Tops, & Sweats at Lacrosse Unlimited. Top brands such as Nike, Under Armour, Lax Unlimited & More.","Yes","Products only","","Yes","","","No layout updates",""
+"Gender","Root Category/Shop By","1","Yes","gender","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Products","Root Category/Shop By","7","Yes","products","","","","","","Yes","Products only","","No","","","No layout updates",""
+"ACCESSORIES & GIFTS","Root Category/GIRLS","5","Yes","accessories-gifts","","","Girls Lacrosse Gloves | Womens Mouthpieces | Athletic Tape | Headbands | Gifts |","","Girls Lacrosse Gloves and Headbands - Best Price Guaranteed! Fast, Easy, FREE Shipping Orders Over $50. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Protective","Root Category/Clearance","8","No","protective","","Clearance_Protective_1.png","","","","Yes","Products only","","No","","","No layout updates",""
+"GIFTS","Root Category/Youth","4","Yes","youth-lacrosse-accessories-gifts","","","Youth Lacrosse Gifts | Youth Lacrosse Accessories | Youth Lacrosse Lifestyle | Lacrosse Birthday Gifts | Lax Gifts | Player Awards |","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Birthday or Player Gifts and by Lacrosse Unlimited, Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"APPAREL","Root Category/Clearance","1","Yes","lacrosse-apparel","CLEARANCE...means we need to clear some room and you SCORE a Great Deal. Up to 50% OFF!","2013-clearance-slider_1.jpg","Clearance Sale on Lacrosse Apparel | Clearance Sale on Lacrosse Clothes | Discounted Lax Clothes |  Deal on Lacrosse Shorts","Clearance Sale on Lacrosse Apparel,Clearance Sale on Lacrosse Clothes,Discounted Lax Clothes,Deal on Lacrosse Shorts,Tees,Sweats,Socks,Hats","Shop Now For Hot Deals and Sales On Lacrosse Equipment and Apparel. FREE Shipping on all qualified orders. Selection, Quality, and Service You Can Trust","Yes","Products only","","Yes","","","No layout updates",""
+"MINI LAX","Root Category/Lifestyle/Gifts","5","Yes","mini-lax","Lacrosse Unlimited offers the Best Selection of Exclusive Colors in the Most Popular Mini Lax Sticks. Lax Unlimited can Professionally string your next Mini Lax Head with Real Dura mesh stringing for your next Mini Lax Game with Friends. All Mini Sticks are LIMITED EDITION with LIMITED QUANTITIES so get them before they are GONE. ","","Mini Lacrosse Sticks | Mini Lacrosse Goals | Mini Lax Balls","","FREE SHIPPING ALL ORDERS Over $99! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Mini Lacrosse Sticks and Mini Goals.","Yes","Products only","","Yes","","","No layout updates",""
+"GIFT CARDS","Root Category/Lifestyle/Gifts","4","No","gift-cards","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"BACKSTOPS","Root Category/Goals & Training","5","Yes","lacrosse-goal-backstops","","","Lacrosse Goal Backstops | Backstop Nets Behind Lacrosse Goals","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Deals On Lacrosse Goal Backstops.","Yes","Products only","","Yes","","","No layout updates",""
+"TARGETS","Root Category/Goals & Training","4","Yes","lacrosse-shooting-targets","","","Lacrosse Shooting Targets | Lacrosse Goal Corner Targets | Shooting Training","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Deals On Lacrosse Shooting Targets and Corner Targets.","Yes","Products only","","Yes","","","No layout updates",""
+"REBOUNDERS","Root Category/Goals & Training","3","Yes","lacrosse-rebounder-walls","","","Lacrosse Rebounder Walls | Lacrosse Wall Ball Trainer | Brine Rebounder Wall","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Deals On Lacrosse Rebounder Walls and Bounce Back Nets.","Yes","Products only","","Yes","","","No layout updates",""
+"BAGS","Root Category/Lifestyle/Gifts","6","Yes","lacrosse-bags","","","Lacrosse Bags | Mens Lacrosse Bags | Coaches Lacrosse Bags","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Lacrosse Equipment Bags","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"BALLS","Root Category/Goals & Training","2","Yes","lacrosse-balls","","","Lacrosse Balls | Balls For Lacrosse | Lacrosse Game Balls","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Balls. Get 1 or 50!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"GAME DAY","Root Category/Protective","8","Yes","lacrosse-player-bags-and-accessories","","","Equipment Bags | Water Bottles | Eyeblack | Pocket Pounder | Stink Out Spray | Tape","","FREE SHIPPING ALL ORDERS Over $49! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Game Day Accessories.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"College Lacrosse Game of The Week - Big City Classic By Inside Lacrosse","Root Category/Lacrosse Unlimited College Lacrosse GAME OF THE WEEK ","1","Yes","big-city-classic-by-inside-lacrosse","<h2>Need tickets? <a title=""Click Here For Tickets To Big City Classic!"" href=""http://bit.ly/XRfiXh"" target=""_blank"">Lacrosse Unlimited Customers get 20% off the ticket price. </a></h2>
+<h2><a title=""Click Here For Tickets To Big City Classic!"" href=""http://bit.ly/XRfiXh"" target=""_blank"">Use Code LAXUNLIM</a></h2>
+<p><span style=""font-size: medium;"">Check out our entire site for the latest lacrosse gear from Cornell, Syracuse, Princeton and Notre Dame. Get this lax gear before its gone....</span></p>","","Lacrosse Unlimited College Lax Game of the Week: Big City Classic By Inside Lacrosse","","Checkout The Lacrosse Gear From Lacrosse Unlimited College Lacrosse Game of the Week Featuring Villanova Wildcats vs. Notre Dame Fighting Irish Lacrosse.","No","Products only","","No","Best Value,Brand,Price","","No layout updates",""
+"GOALIE GEAR","Root Category/Protective","7","Yes","lacrosse-goalie-gear","","","Lacrosse Goalie Equipment | Goalie Equipment For Lacrosse Players","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Equipment. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"LIFESTYLE","Root Category/Lifestyle/Gifts","1","Yes","lacrosse-lifestyle","","","Sunglasses | Rubber Lax Wrist Bands | Necklaces | Bracelets | Lacrosse Ties","","Free Shipping Over $50. Need a gift for that special Lacrosse Player. Sunglasses, Neck Ties, and Rubber Wrist bands. Perfect for everyone. ","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"SANDALS","Root Category/Footwear","5","Yes","sandals","","","SANDALS | FLIP FLOPS | SLIDES ","sandals, flip flops, slides","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On LACROSSE SANDALS, FLIP FLOPS, AND SLIDES Since 1990. Great for Pre and Post Game.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"FOOTWEAR","Root Category/Clearance","2","Yes","footwear","","2013-cleat-2ND-sale-slider.png","Sale Lacrosse Cleats and Turfs | Clearance Lacrosse Footwear | Sandals | Slides | FOOTWEAR I Nike I Warrior I Rainbow I","Sale Lacrosse Cleats and Turfs | Clearance Lacrosse Footwear | Sandals | Slides | FOOTWEAR I Nike I Warrior I Rainbow I","Shop Now For Hot Deals and Sales On Lacrosse Cleats and Footwear. FREE Shipping on all qualified orders. Selection, Quality, and Service You Can Trust","Yes","Products only","","Yes","Brand,Price,Color,gender","Price","No layout updates",""
+"STICKS","Root Category/Clearance","3","Yes","lacrosse-sticks-sales","","","Clearance Lacrosse Heads | Unstrung Lacrosse Heads Sale | Clearance Lacrosse Shafts Sale","","Shop Now For Hot Deals and Sales On Lacrosse Equipment and Apparel. FREE Shipping on all qualified orders. Selection, Quality, and Service You Can Trust","Yes","Products only","","Yes","","","No layout updates",""
+"PROTECTIVE","Root Category/Clearance","4","Yes","lacrosse-equipment-sale","<h2><span style=""color: #ff0000;"">Over&nbsp;<strong>50% OFF Top Lacrosse Equipment brands STX, Warrior and Brine.&nbsp;</strong></span></h2>
+<p><span style=""color: #333333; font-family: helvetica; font-size: large;"">Take advantage of these great deals before they are gone. Limited quantities available and when its gone they\'re gone forever!</span></p>","","Clearance Sale On Top Lacrosse Equipment Brands, STX, Warrior, Brine and Nike Lacrosse","","These Deals Wont Last! Huge selection of discount STX, Warrior and Brine lacrosse gloves, shoulder pads and lacrosse arm pads at closeout prices. ","Yes","Products only","","Yes","","","No layout updates",""
+"GOALS & TRAINING","Root Category/Clearance","6","No","goals-training","","Clearance_GoalsTraining_1.png","","","","Yes","Products only","","No","","","No layout updates",""
+"LIFESTYLE / GIFTS","Root Category/Clearance","7","No","lifestyle-gifts","","Clearance_LifestyleGifts_1.png","","","","Yes","Products only","","No","","","No layout updates",""
+"EQUIPMENT","Root Category/GIRLS","3","Yes","equipment","","","Girls Lacrosse Equipment | Womens Lacrosse Equipment | Goggles | Lacrosse Gloves | Complete Sticks | Lacrosse Handles | Lax Shafts | Lacrosse Bags |","","Girls Lacrosse Equipment  - Best Prices Guaranteed! Fast, Easy, FREE Shipping Orders Over $99. Top Quality & Great Selection.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"LACROSSE SHORTS","Root Category/GIRLS","1","Yes","girls-lacrosse-shorts","","","Girls Lacrosse Apparel | Girls Lacrosse T Shirts | Girls Lacrosse Shorts","","FREE SHIPPING ALL ORDERS Over $99! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Girls Lacrosse Apparel.","Yes","Products only","","Yes","","","No layout updates",""
+"FOOTWEAR","Root Category/GIRLS","4","Yes","footwear","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color,gender","Best Value","No layout updates",""
+"Endless Summer Savings","Root Category/Clearance","9","Yes","jamboree-lacrosse-sale","<p>Lacrosse Unlimited Endless Summer Savings Sale continues to bring you Incredible Sale Price on Lax Equipment and Clothing. Get them while supplies last. Because when the summer is Over so are these great deals...</p>","2013-Home-May-Madness-Promo.png","Lax Unlimited Deals All Summer - Same Great Clearance Deals You Get at Our Tent Sales","","Shop the LOWEST Prices of the YEAR with our Daily Deals all Summer. Up To 80% OFF Lacrosse Equipment and Apparel. FREE Shipping on 100\'s of Products.","Yes","Products only","","No","","","No layout updates",""
+"ACCESSORIES","Root Category/Lifestyle/Gifts","7","No","lacrosse-accessories","","","","","","No","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"ATHLETIC CUPS","Root Category/Protective","6","Yes","athletic-cups","","","Lacrosse Athletic Cups | Jock Staps | Compression Shorts With Cup","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Athletic Cups. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"MOUTH PIECES","Root Category/Protective","4","Yes","lacrosse-mouth-pieces","","","Lacrosse Mouthpieces | Color Mouthpieces","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Mouthpieces Now. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"TURFS","Root Category/Footwear","2","Yes","lacrosse-turfs","","","Lacrosse Turfs | Nike Huarache 3 Turfs | Lacrosse Footwear","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On LACROSSE TURFS Since 1990. Nike Lacrosse Huarache Turfs - LACROSSE TURFS","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Footwear Accesories","Root Category/Footwear","6","Yes","misc","","Footwear_Misc_1.png","","","","No","Products only","","No","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"GOALS","Root Category/Goals & Training","1","Yes","lacrosse-goals","","","Lacrosse Goals | Lacrosse Nets | Foldable Lacrosse Goal | Backyard Lacrosse Goal","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals Lacrosse Goals and Nets.","Yes","Products only","","Yes","","","No layout updates",""
+"SOCKS","Root Category/Footwear","4","Yes","socks","","","Nike Vapor Volt SOCKS | NIKE VOLT SOCKS | LAXMAN SOCKS","","Shop Nike Vapor LACROSSE SOCKS at Lacrosse Unlimited. Fast Delivery + FREE Shipping on all qualified orders Selection, Quality, Service You Can TrusFast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Nike  Since 1990. Nike VOLT LACROSSE SOCKS","Yes","Products only","","Yes","","","No layout updates",""
+"GLOVES","Root Category/Protective","2","Yes","lacrosse-gloves","<p><span style=""font-size: large;"">Free</span><span style=""font-size: large; font-family: helvetica;""> Shipping on All Lacrosse Gloves over $99.00 with Fast Fed Ex Delivery</span></p>","","Lacrosse Gloves - Mens & Youth Lacrosse Gloves ","","Shop Now for the BEST Lacrosse Gloves. Top quality, great selection and expert advice you can trust. FREE SHIPPING ALL ORDERS Over $99!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"SNEAKERS","Root Category/Footwear","3","Yes","lacrosse-sneakers","<h2>Air Max 90 Limited Edition Sneakers | Nike Air Flight Falcon Limited Edition</h2>
+<p><span style=""font-size: medium;"">Only available at Lacrosse Unlimited....</span></p>","","Air Max 90 Limited Edition Sneakers | Nike Air Flight Falcon Limited Edition","sneakers, Nike, Warrior","Sneakers by Nike and Warrior Lacrosse at Lacrosse Unlimited. FAST Delivery+FREE Shipping on 100s of Items. Service, Selection, Quality You Can Trust.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"HELMETS","Root Category/Protective","1","Yes","lacrosse-helmets","<p><strong><a title=""See Exchange Policy For Custom Lacrosse Helmets."" href=""/exchanges"" target=""_blank"">All Helmets Are CUSTOM Built For your Order.</a> Custom Helmets Ship Within 48 hours + delivery time..</strong></p>","2013-Cascade-CPXR-Matte-Black-interior.png","Lacrosse Helmets | Cascade Lacrosse Helmets | Warrior Helmets | Chin Straps","Cascade,Warrior,CPX-R,CPXR,CS,CPV,PRO7,Tii,Custom,shell,chin,facemask,visor,team orders,titanium,chrome,matte black,","FREE SHIPPING on All Lacrosse Helmets with Top Quality & Great Selection. We sell the Most Cascade R and Warrior Helmets in Lacrosse.","Yes","Products only","","Yes","","","No layout updates",""
+"Shootout For Soldiers","Root Category/Apparel","10","No","shootout-for-soldiers-gear","<h3><span style=""color: #000000;"">Shootout For Soldiers Powered By Lacrosse Unlimited</span></h3>
+<p>&nbsp; &nbsp;<span style=""color: #000000;""><strong>24 Hour Lacrosse Game To Support The Wounded Warrior Project As Featured on ESPN.GO.COM</strong></span></p>
+<script type=""text/javascript"" src=""http://player.espn.com/player.js?playerBrandingId=4ef8000cbaf34c1687a7d9a26fe0e89e&amp;adSetCode=91cDU6NuXTGKz3OdjOxFdAgJVtQcKJnI&amp;pcode=1kNG061cgaoolOncv54OAO1ceO-I&amp;width=576&amp;height=324&amp;externalId=espn:9396717&amp;thruParam_espn-ui[autoPlay]=false&amp;thruParam_espn-ui[playRelatedExternally]=true""></script>
+<p><span style=""color: #000000; font-size: medium;""><br /></span></p>
+<p><span style=""color: #000000; font-size: medium;"">This is a </span><strong style=""color: #000000; font-size: medium;""><span style=""color: #ff0000;"">PRE-ORDER SALE</span></strong><span style=""color: #000000; font-size: medium;"">. This Page Will Only Be Up For 2 weeks!</span></p>
+<p><span style=""color: #000000; font-size: medium;"">Please Allow For 4-6 Weeks Delivery AFTER The Store Is Closed</span></p>
+<p><span style=""color: #000000; font-size: medium;"">A Portion Of the Sales Will Go To Shootout For Soldiers!</span></p>","shootoutgirlsand_guys.jpg","Shootout For Soldiers Apparel - Pinnies, T\'s, Shorts, and Hat","","Help Support the Shootout For Soldiers Powered By Lacrosse Unlimited Benefiting The Wounded Warrior Project. Only 2 weeks to get Shootout Gear! ","No","Products only","","No","","","No layout updates",""
+"SHOULDER PADS","Root Category/Protective","5","Yes","lacrosse-shoulder-pads","","","Lacrosse Shoulder Pads - STX, Warrior, Brine, Nike, Reebok & Gait","","Lacrosse Unlimited - The Largest Selection Of Lacrosse Shoulder Pads In The World. Shop Top Brands Warrior, Brine, STX, Maverik, Gait, & Reebok.","Yes","Products only","","Yes","","","No layout updates",""
+"ARM PROTECTION","Root Category/Protective","3","Yes","lacrosse-arm-protection","","","Lacrosse Arm Protection | Lacrosse Arm Pads | Lacrosse Arm Guards | Elbow Guards","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Now: Lacrosse Arm Pads and Elbow Pads. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Equipment Bags","Root Category/Protective/GAME DAY","2","Yes","lacrosse-bags","","","Lacrosse Equipment Bags | Lacrosse Bags and Backpacks","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Equipment Bags.","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Turfs","Root Category/Clearance/FOOTWEAR","2","Yes","turfs","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Cleats","Root Category/Clearance/FOOTWEAR","1","Yes","cleats","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Bags","Root Category/Clearance/APPAREL","8","No","bags","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Buckets","Root Category/Goals & Training/BALLS","2","Yes","buckets-of-lacrosse-balls","","","Bucket of Lacrosse Balls | 50 Lacrosse Balls With Bucket","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Bucket Of Lacrosse Balls.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Performance","Root Category/Clearance/APPAREL","7","Yes","performance","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sweats","Root Category/Clearance/APPAREL","6","Yes","sweats","Lacrosse Unlimited Clearance Sale section for Sweats and performance apparel","","Discounted Lacrosse Apparel and Sweats | Lacrosse Sweatshirts on Sale | Lax Sweats Discount Prices |","Discounted,Lax,Lacrosse,Apparel,Sweats,Sweatshirts,Sale,Lax Sweatpants,Discount,Prices,half-off savings,","Lacrosse Unlimited offer Deep Discounts on Lacrosse Sweats and other Lax Apparel along with Lacrosse equipment","Yes","Products only","","No","","","No layout updates",""
+"Tape","Root Category/Protective/GAME DAY","5","Yes","athletic-tape","","","Athletic Tape | Rolls of Tape | Cases Of Athletic Tape","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Athletic Tape.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Eye Black","Root Category/Protective/GAME DAY","4","Yes","eye-black","","","Eye Black | Stick Of Eye Black","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Eye Black For Lacrosse.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Stink Out Spray","Root Category/Protective/GAME DAY","1","Yes","nhl-stink-out-spray","","","NHL Stink Out - Spray Deodorizer For Lacrosse Equipment","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On NHL Stink Out Spray Deodorizer.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Single","Root Category/Goals & Training/BALLS","1","Yes","single-lacrosse-ball","","","Single Lacrosse Ball | White - Pink - Blue - Red - Orange - Yellow Lacrosse Balls","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Balls.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Pre-Wrap","Root Category/Protective/GAME DAY","6","No","pre-wrap","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sneakers","Root Category/Clearance/FOOTWEAR","3","No","sneakers","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Socks","Root Category/Clearance/FOOTWEAR","4","No","socks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goggles","Root Category/Clearance/PROTECTIVE","6","No","goggles","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Rib Protection","Root Category/Clearance/PROTECTIVE","5","Yes","rib-protection","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Shoulder Pads","Root Category/Clearance/PROTECTIVE","4","Yes","shoulder-pads","Get Amazing Clearance Deals on Lacrosse Shoulder Protection from Brine, Gait, STX, Reebok, and Warrior for your next season while supplies LAST. New styles added weekly.","","Clearance Sale on Lacrosse Shoulder Pads -  Warrior, Brine, Maverik and STX Shoulder Pads","","Get Amazing Clearance Deals on Lacrosse Shoulder Pads from Brine, Gait, STX, Reebok, and Warrior for your next season while supplies LAST at Lax Unlimited","Yes","Products only","","No","","Price","No layout updates",""
+"Arm Protection","Root Category/Clearance/PROTECTIVE","3","Yes","arm-protection","Get Amazing Clearance Deals on Lacrosse Arm Pads from Brine, Gait, STX, Reebok, and Warrior for your next season while supplies LAST. New styles added weekly.","","Clearance Deals On Lacrosse Arm Pads & Arm Guards - Now $9.99!","","Get Amazing Clearance Deals on Lacrosse Arm Protection Now 9.99. Top Brands Brine, Gait, STX, Reebok, & Warrior. Get These While Supplies LAST at Lax Unlimited.","Yes","Products only","","No","","","No layout updates",""
+"Gloves","Root Category/Clearance/PROTECTIVE","2","Yes","gloves","","","Clearance Sale - Lacrosse Gloves - Top Brands STX, Warrior, Brine, Maverik & Nike Lacrosse","","These Deals Wont Last! Huge Selection of Discount Lacrosse Gloves from STX, Brine, Warrior at closeout prices. ","Yes","Products only","","No","Best Value,Brand,Price","","No layout updates",""
+"Helmets","Root Category/Clearance/PROTECTIVE","1","No","helmets","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mini Lax","Root Category/Clearance/STICKS","6","No","mini-lax","","","","","","No","Products only","","No","","","No layout updates",""
+"Supplies","Root Category/Clearance/STICKS","5","No","supplies","","","","","","No","Products only","","No","","","No layout updates",""
+"Stringing Supplies","Root Category/Clearance/STICKS","4","No","stringing-supplies","","","","","","No","Products only","","No","","","No layout updates",""
+"Shafts","Root Category/Clearance/STICKS","3","Yes","lacrosse-shafts","<h2><span style=""font-family: helvetica;""><span style=""font-size: medium;""><span style=""font-family: helvetica;"">Amazing Lacrosse Shaft&nbsp; </span>Discounted to make room...Your WIN</span><br /></span></h2>","","Clearance Sale on Lacrosse Shafts | Clearance Sale on Lacrosse Handle | Discounted Lax Shafts |  ","Clearance,Sale,lax,Lacrosse,Shafts,Handle,deals,best value,top,hot deals,up to half off,  ","Clearance Sale and Discount on Lacrosse shaft and handles for all levels of Lax Players ","Yes","Products only","","No","","","No layout updates",""
+"Heads","Root Category/Clearance/STICKS","2","Yes","lacrosse-heads","<h2>Largest Selection of Lacrosse Heads Under $40</h2>","","Lacrosse Heads on Sale | Clearance Lax Heads | Discount on Lacrosse Heads","","Shop Clearance Pricing on Lacrosse Heads direct from Lacrosse Unlimited with FREE Shipping on All Orders over 99.00","Yes","Products only","","No","","","No layout updates",""
+"Complete","Root Category/Clearance/STICKS","1","No","complete","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Misc.","Root Category/Clearance/FOOTWEAR","7","No","misc","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sandals","Root Category/Clearance/FOOTWEAR","6","Yes","sandals","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Slides","Root Category/Clearance/FOOTWEAR","5","No","slides","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mouth Pieces","Root Category/Clearance/PROTECTIVE","7","No","mouth-pieces","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Bulk (100+)","Root Category/Goals & Training/BALLS","3","Yes","lacrosse-balls-in-bulk-100-balls","","","Bulk Orders Of Lacrosse Balls | Lacrosse Balls In Bulk","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Deals On Bulk Orders Of Lacrosse Balls.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Pinnes","Root Category/Clearance/APPAREL","5","Yes","pinnes","","","Lacrosse Pinnies On Sale | Clearance Sale On Lacrosse Pinnies As Low as $19.99","","Lax Unlimited Lacrosse Pinnies Save Up To Half OFF! Shop Now Because These Daily Deals Won\'t Last!","Yes","Products only","","No","","","No layout updates",""
+"Womens","Root Category/Lifestyle/Gifts/BAGS","2","No","womens","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mens","Root Category/Lifestyle/Gifts/BAGS","1","Yes","mens-lacrosse-equipment-bags","","","Mens Lacrosse Equipment Bags | Boys Lacrosse Bags","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Boys Lacrosse Equipment Bags.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Stocking Stuffers","Root Category/Lifestyle/Gifts/LAX GIFTS","5","Yes","misc","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"iphone cases","Root Category/Lifestyle/Gifts/LIFESTYLE","1","Yes","lacrosse-iphone-cases","Lacrosse inspired Apple iphone 4 and  5 cases for Lax Player cell phones","","Lacrosse iphone case | Lax iphone case | Lacrosse iphone 4 / 5 cover | Cell Phone Cover for Lax Players |","Lacrosse,Lax,iphone case,Lax iphone case,Lacrosse iphone 4, iphone 5 case,cell,mobile,Phone Cover,Lax Players,protective,","Shop Exclusive Lacrosse themed Apple iphone 4 / 5 cases in multiple designs from Lax Unlimited and get it FASTER ","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Belts","Root Category/Lifestyle/Gifts/LIFESTYLE","8","No","belts","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Ties","Root Category/Lifestyle/Gifts/LIFESTYLE","7","Yes","lacrosse-neck-ties","","","Lacrosse Neck Ties ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On LACROSSE NECK TIES","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Retail Use","Root Category/Lifestyle/Gifts/GIFT CARDS","2","Yes","lacrosse-unlimited-gift-cards-retail-use","<p><span style=""color: #3366ff;"">THIS GIFT CARD CAN ONLY BE USED AT ONE OF OUR RETAIL STORE LOCATIONS.</span> <a title=""Lacrosse Unlimited Store Locations"" href=""/lacrosse-unlimited-store-locator"" target=""_blank"">CLICK HERE FOR LOACTIONS NEAR YOU</a>.</p>","","Lacrosse Unlimited Gift Cards For IN STORE USE ONLY!","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Get A Lacrosse Unlimited Gift Card For The Special Player In Your Life","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Necklaces","Root Category/Lifestyle/Gifts/LIFESTYLE","5","No","lacrosse-necklaces","","","Lacrosse Necklaces ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On LACROSSE NECKLACES.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Headphones","Root Category/Lifestyle/Gifts/LIFESTYLE","4","No","headphones","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Wristbands","Root Category/Lifestyle/Gifts/LIFESTYLE","3","No","lacrosse-wristbands","","","Rubber Lacrosse Wristband | Live Strong Style Rubber Wristbands","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On LACROSSE Rubber Wristbands.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Build Your Own","Root Category/Lifestyle/Gifts/MINI LAX","1","No","build-your-own","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sunglasses","Root Category/Lifestyle/Gifts/LIFESTYLE","2","Yes","lacrosse-sunglasses","","","Lax Sunglasses | Jumpman Lacrosse Sunglasses | Lax Player sun glasses |","","FREE SHIPPING ALL ORDERS Over $99! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Laxman Sunglasses.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Balls","Root Category/Lifestyle/Gifts/MINI LAX","4","Yes","mini-lacrosse-balls","","","Mini Lax Balls | Mini Lacrosse Ball Sets Of Two","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Mini Lacrosse Ball Sets Of Two.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goal Sets","Root Category/Lifestyle/Gifts/MINI LAX","3","Yes","mini-lacrosse-goal-sets","","","Mini Lax Goal Sets | Mini Lacrosse Goals With Mini Sticks Sets","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Mini Lacrosse Goals and Sticks.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Coaches","Root Category/Lifestyle/Gifts/BAGS","3","Yes","coaches-lacrosse-bags","","","Coaches Lacrosse Bags","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Lacrosse Coaches Bags","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Lanyards","Root Category/Lifestyle/Gifts/LIFESTYLE","9","Yes","lanyards","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Hats","Root Category/Clearance/APPAREL","4","Yes","hats","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Complete","Root Category/Goals & Training/GOALS","1","Yes","complete-lacrosse-goal","","","Regulation Lacrosse Goal With Net ","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals Lacrosse Goals and Nets.","Yes","Products only","","Yes","","","No layout updates",""
+"Bracelets","Root Category/Lifestyle/Gifts/LIFESTYLE","6","No","bracelets","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Foldable","Root Category/Goals & Training/GOALS","2","Yes","foldable-lacrosse-goal","","","Rage Cage Lacrosse Goal | Bow Net Foldable Lacrosse Goal With Net","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals Rage Cage - Bow Net Foldable Lacrosse Goals.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Socks","Root Category/Clearance/APPAREL","3","No","socks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Shirts","Root Category/Clearance/APPAREL","2","Yes","sale-shirts","","","Lacrosse Tee Shirts On Sale | Clearance Sale On Lacrosse T Shirts As Low as $9.99","","Lax Unlimited Lacrosse T Shirts Save Up To 70% OFF! Shop Now Because These Daily Deals Won\'t Last!","Yes","Products only","","No","","","No layout updates",""
+"Shorts","Root Category/Clearance/APPAREL","1","Yes","shorts","<h1>Clearance Lacrosse Shorts Sale - Lacrosse Shorts as low as $6!</h1>
+<p>&nbsp;<span style=""font-size: medium;"">We created the Mystery Lacrosse Shorts Sale. You pick the size we pick the lacrosse shorts. The only Mystery is how we are doing it.</span><span style=""font-size: medium;"">&nbsp;With lax shorts as low as $6 you can\'t go wrong. Now you can get the same great deal on college lacrosse shorts. Want to pick your own lacrosse shorts? No problem we have you covered with shorts as low as $10.&nbsp;</span></p>","","Clearance Lax Unlimited Lacrosse Shorts On Sale | Clearance Sale On Lacrosse Shorts As Low as $6","","Lax Unlimited Lacrosse Shorts As Low As $6. Save Up To 90%! Shop Now Because These Daily Deals Won\'t Last!","Yes","Products only","","No","","","No layout updates",""
+"Stickers","Root Category/Lifestyle/Gifts/LAX GIFTS","2","Yes","stickers","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Street Signs","Root Category/Lifestyle/Gifts/LAX GIFTS","4","Yes","street-signs","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Note Cards","Root Category/Lifestyle/Gifts/LAX GIFTS","1","Yes","note-cards","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Gifts","Root Category/Lifestyle/Gifts/ACCESSORIES","2","Yes","birthday-gifts","Lacrosse items for and ideas for Holiday, Birthday and Player Gifts","","Lacrosse Birthday and Player Gifts","Lacrosse Birthday and Player Gifts","Lacrosse Birthday and Player Gifts for all ages from youth to college lacrosse","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Goal Accessories","Root Category/Goals & Training/GOALS","4","Yes","lacrosse-goal-accessories","","","Lacrosse Goal Net Fasteners | Lacrosse Backstop Nets 10 x 30 ","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goal Fasteners.","Yes","Products only","","Yes","","","No layout updates",""
+"Web Use","Root Category/Lifestyle/Gifts/GIFT CARDS","1","Yes","lacrosse-unlimited-gift-cards-web-use","<p>*<span style=""color: #3366ff;"">THIS GIFT CARD CAN ONLY BE USED FOR PURCHASES ON OUR WEBSITE</span>*</p>","","Lacrosse Unlimited Gift Cards For WEB USE ONLY!","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Get A Lacrosse Unlimited Gift Card For The Special Player In Your Life","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Magnets","Root Category/Lifestyle/Gifts/ACCESSORIES","1","Yes","magnets","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Sticks","Root Category/Lifestyle/Gifts/MINI LAX","2","Yes","mini-lacrosse-sticks","","","Mini Lacrosse Sticks | Mini Lax","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Mini Lacrosse Sticks.","Yes","Products only","","Yes","","","No layout updates",""
+"Cleats","Root Category/Youth/FOOTWEAR","1","Yes","youth-lacrosse-cleats","","","Youth Lacrosse Cleats | Youth Lax Cleats | Nike Lacrosse Boys Cleats | Warrior Lacrosse Cleats for Youth Boys |","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Youth Lacrosse FOOTWEAR by Nike and Warrior. Lacrosse Cleats, Turfs, Volt Socks, Sandals, Slides.","Yes","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"Lax Unlimited","Root Category/GIRLS/LACROSSE SHORTS","3","Yes","girls-lacrosse-sprinter-shorts","","","Girls Lacrosse Mesh Shorts | Womens Lacrosse Running Shorts | LaxGirl Practice Shorts |","","FREE U.S. STANDARD SHIPPING On ALL ORDERS $50 or Over! Shop Now For Lacrosse Unlimited Girls Lacrosse shorts. BEST PRICE GUARANTEED Since 1990","Yes","Products only","","Yes","","","No layout updates",""
+"LAX GIFTS","Root Category/GIRLS/ACCESSORIES & GIFTS","1","Yes","lacrosse-player-gifts","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Dyes","Root Category/GIRLS/EQUIPMENT","1","Yes","custom-dyed-girl-lacrosse-heads","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sports Bras","Root Category/GIRLS/LACROSSE TEES","2","Yes","sports-bra","","","Girls Lacrosse Sports Bra\'s | Animal Prints and Tie Dye Designs","","","Yes","Products only","","No","","","No layout updates",""
+"Sweats","Root Category/GIRLS/LACROSSE TEES","3","Yes","sweats","","","Girls Lacrosse Sweatshirts I  Womens Lacrosse Sweat Pants I Girls Lacrosse Yoga Pants I Youth Lacrosse Pajamas I ","Girls Lacrosse Sweatshirts I  Womens Lacrosse Sweat Pants I Girls Lacrosse Yoga Pants I Youth Lacrosse Pajamas I ","Girls Lacrosse Hooded Sweatshirts - Best Price Guaranteed! Fast, Easy, FREE Shipping Orders Over $50. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","","","No layout updates",""
+"Bags","Root Category/GIRLS/EQUIPMENT","6","Yes","girls-lacrosse-bags","","","Girls Lacrosse Stick Bags | Girls Lacrosse Backpacks ","","Shop Girls Lacrosse Backpacks and Stick bags at LacrosseUnlimited.com- FREE Shipping on all qualified orders. Selection, Quality, and Service You Can Trust","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"Boxercraft Shorties","Root Category/GIRLS/LACROSSE SHORTS","2","No","cotton-blend-boxercraft","","","Cotton Blend Short Womens Lacrosse Shorts | ""Sophie Shorts""","","Girls Boxercraft Cotton Lacrosse Shorts  - Best Price Guaranteed! Fast, Easy, FREE Shipping Orders Over $50. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Socks","Root Category/Youth/FOOTWEAR","2","Yes","youth-lacrosse-socks","","","Youth Lacrosse Socks | Custom Youth Socks | Lacrosse Unlimited Socks | Boys Lax Socks |","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Youth Lacrosse FOOTWEAR by Nike and Warrior. Lacrosse Cleats, Turfs, Volt Socks, Sandals, Slides.","Yes","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"Socks","Root Category/GIRLS/FOOTWEAR","3","Yes","socks","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color,gender","Best Value","No layout updates",""
+"Shafts","Root Category/GIRLS/EQUIPMENT","5","Yes","shafts","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Sticks","Root Category/GIRLS/EQUIPMENT","4","Yes","womens-lacrosse-sticks","","","Womens Lacrosse Sticks | Girls Lacrosse Sticks","","Fast, Easy, and FREE SHIPPING On Orders Over $50! STX Crux Womens Lacrosse Sticks, and MUCH MORE! Shop with Confidence.","Yes","Products only","","Yes","","","No layout updates",""
+"Turfs","Root Category/GIRLS/FOOTWEAR","2","Yes","turfs","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color,gender","Best Value","No layout updates",""
+"Cleats","Root Category/GIRLS/FOOTWEAR","1","Yes","cleats","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color,gender","Best Value","No layout updates",""
+"Performance","Root Category/GIRLS/LACROSSE SHORTS","4","Yes","girls-lacrosse-performance-shorts","","","Girls Mesh Lacrosse Shorts | Girls Crazy Shorts | Womens Lacross Shorts | Girls performance Lax Shorts |","","Girls Lacrosse Shorts  - Best Price Guaranteed! Fast, Easy, FREE Shipping Orders Over $99. Top Quality & Great Selection Since 1990.","Yes","Products only","","No","","","No layout updates",""
+"Youth Starter Packages","Root Category/Youth/EQUIPMENT","7","Yes","yout-lacrosse-starter-packages","<h2>STX Youth Starter Sets with Stick and Helmet.&nbsp;</h2>","","Youth Lacrosse Starter Packages With Helmets","","Show Now: Youth Lacrosse Starter Sets at Lacrosse Unlimited Fast Delivery + FREE Shipping on all qualified orders Selection, Quality, Service You Can Trus","Yes","Products only","","No","","","No layout updates",""
+"Car Magnets","Root Category/Lifestyle/Gifts/LAX GIFTS","3","Yes","lacrosse-car-magnets","","","Lacrosse Goalie Car Magnets | Girls Lacrosse Magnets | Boys Lacrosse Car Magnets","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On LACROSSE Player Car Magnets.","Yes","Products only","","No","","","No layout updates",""
+"CONES","Root Category/Goals & Training/COACHES","7","Yes","cones","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Helmets","Root Category/Youth/EQUIPMENT","4","Yes","youth-lacrosse-helmets","","","Youth Lacrosse Helmets | Youth Lacrosse Cascade CS | Cascade CPV Youth Lacrosse Helmets | Youth mouthpieces from Mogo and Shockdoctor |","","Free Shipping within 24 Hours on All HELMETS direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse HELMETS by Cascade and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Complete Sticks","Root Category/Youth/EQUIPMENT","2","Yes","youth-lacrosse-complete-sticks","","","Youth Lacrosse Complete Sticks | Youth Lax Complete Sticks | Boys Lacrosse Complete Sticks | Kids Lax Complete Head and Stick | STX Youth Lacrosse Complete Sticks | Brine Youth Complete Sticks | Warrior Youth Lacrosse Sticks | Maverik Youth Lacrosse Compl","Youth,Lacrosse,lax,Complete Stick,Boys,Kids,STX,Brine,Warrior,Nike,Maverik,boys,Youth,pole,mens,beginner,","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Sticks by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Shoulder Pads","Root Category/Youth/EQUIPMENT","6","Yes","youth-lacrosse-shoulder-pads","","","Youth Lacrosse Shoulder Pads | Youth Lax Shoulder Pads | Boys Lacrosse Shoulder Pads | Kids Lax Shoulder Pads | STX Youth Shoulder Pads | Brine Youth Shoulder Pads | Warrior Youth Shoulder Pads | Nike Youth Shoulder Pads |","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Shoulder Pads by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Gloves","Root Category/Youth/EQUIPMENT","3","Yes","youth-lacrosse-gloves","","","Youth Lacrosse Gloves | Youth Lax Gloves | Boys Lacrosse Gloves | Kids Lax Gloves | STX Youth Gloves | Brine Youth Gloves | Warrior Youth Gloves | Nike Youth Gloves |","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Gloves by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Arm Pads","Root Category/Youth/EQUIPMENT","1","Yes","arm-pads","","","Youth Lacrosse Equipment | Youth Arm Pads | Boys Lacrosse Arm Protection | Kids elbow pads | STX Youth Arm Pads | Brine Youth Arm Pads | Warrior Youth Arm Pads |","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Arm Pads by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Sweats","Root Category/Youth/APPAREL","3","Yes","sweats","","","Youth Lacrosse Clothes | Youth Lacrosse Sweats | Youth Lacrosse Hoodies | Boys Youth NCAA Lacrosse Hoodys  | Boys Lax sweat pants | ","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Sweats by Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","Best Value,Brand,Price,Color,apparel sizes","Best Value","No layout updates",""
+"Shorts","Root Category/Youth/APPAREL","2","Yes","shorts","","","Youth Lacrosse Clothes | Youth Lacrosse Shorts | Youth Lacrosse Crazy Shorts | Boys Youth Lacrosse shorts | Boys Lax Dynamic shorts | ","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Shorts by Lacrosse Unlimited, Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Shirts","Root Category/Youth/APPAREL","1","Yes","shirts","","","Youth Lacrosse T Shirts | Youth Lacrosse Tees | Boys Youth Lacrosse shirts | Boys Lax T-shirts | ","","Free Shipping on All Orders over $50.00 and in-stock items ship within 24 Hours direct to your Home with our BEST PRICE GUARANTEED. Youth Lacrosse Tee Shirts by Lacrosse Unlimited, Brine, Nike, STX, Maverik, Under Armour and Warrior.","Yes","Products only","","No","","","No layout updates",""
+"Shorts 3 For $50","Root Category/Apparel/LACROSSE SHORTS","4","Yes","shorts-3-for-50-dollars","<h2>Pick Any 3 Shorts Below And Get Them For $50 - $120 Value</h2>
+<p>*Discount applied in Shopping Cart*</p>","","Lacrosse Shorts 3 For $50 | Shorts Sale 3 for 50","","Get 3 Pairs of Lax Unlimited Lacrosse Shorts For $50! This weekend ONLY!","Yes","Products only","","No","","","No layout updates",""
+"Shafts","Root Category/Youth/EQUIPMENT","5","Yes","youth-lacrosse-shafts","","","Youth Lacrosse handles | Youth Lacrosse Shafts | Youth Lacrosse sticks | Boys Youth Lacrosse pole | Youth Boys Lacrosse shaft | Youth Lacrosse handle |","Lacrosse, Unlimited, Brine,STX,Warrior,Maverik,Nike,Youth,Lacrosse,lax,handles,Shafts,sticks,pole,Boys,beginner,middle school","FREE SHIPPING and FAST Delivery on Orders over 50.00 and ship within 24 hours on in-stock items. Most Trusted & Largest Lacrosse Retailer since 1990","Yes","Products only","","No","","","No layout updates",""
+"Apparel","Root Category/Clearance/WOMENS","1","Yes","tees","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Gloves","Root Category/GIRLS/EQUIPMENT","2","Yes","womens-lacrosse-glove","","","","","","Yes","Products only","","No","","","No layout updates",""
+"College","Root Category/GIRLS/LACROSSE SHORTS","1","Yes","girls-college-lacrosse-shorts","","2013-womans-college-shorts.png","Girls College Lacrosse Shorts | Womens College Lacrosse Shorts","","Girls College Lacrosse Shorts  - Best Price Guaranteed! Fast, Easy, FREE Shipping Orders Over $50. Top Quality & Great Selection Since 1990.","Yes","Products only","","No","","","No layout updates",""
+"Towson","Root Category/Shop By/College","27","Yes","towson","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Pocket Radar","Root Category/Shop By/Brand","12","Yes","pocket-radar","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Hofstra","Root Category/Shop By/College","11","Yes","hofstra","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Accessories","Root Category/Clearance/LIFESTYLE / GIFTS","4","Yes","accessories","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Bags","Root Category/Clearance/LIFESTYLE / GIFTS","3","Yes","bags","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Lifestyle","Root Category/Clearance/LIFESTYLE / GIFTS","2","Yes","lifestyle","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mini Lax","Root Category/Clearance/LIFESTYLE / GIFTS","1","Yes","mini-lax","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Replacement Nets","Root Category/Clearance/GOALS & TRAINING","6","Yes","replacement-nets","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Backstops","Root Category/Clearance/GOALS & TRAINING","5","Yes","backstops","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Corner Targets","Root Category/Clearance/GOALS & TRAINING","4","Yes","corner-targets","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Rebounder Walls","Root Category/Clearance/GOALS & TRAINING","3","Yes","rebounder-walls","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goals","Root Category/Clearance/GOALS & TRAINING","2","Yes","goals","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Balls","Root Category/Clearance/GOALS & TRAINING","1","Yes","balls","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Player Accessories","Root Category/Clearance/PROTECTIVE","10","No","player-accessories","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goalie Gear","Root Category/Clearance/PROTECTIVE","9","Yes","goalie-gear","Get Amazing Clearance Deals on Lacrosse Goalie Pads and Protection from Brine, Gait, STX, Reebok, and Warrior for your next season while supplies LAST. New styles added weekly.","","Sale on Lax Goalie Pads | Clearance on Lacrosse Goalie Protection | Lax Goalie Guards Close-out Sale | Great Deal on Lax Goal Pads | Cheap Lacrosse Goalie Pads |","","Get Amazing Clearance Deals on Lacrosse Goalie Pads from Brine, Gait, STX, Reebok, and Warrior for your next season while supplies LAST at Lax Unlimited","Yes","Products only","","No","Brand,Price","Price","No layout updates",""
+"Notre Dame","Root Category/Shop By/College","18","Yes","notre-dame","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Hofstra","Root Category/Shop By/College","33","Yes","hofstra","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Texas","Root Category/Shop By/College","26","Yes","texas","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Rage Cage","Root Category/Shop By/Brand","13","Yes","rage-cage","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Bow Net","Root Category/Shop By/Brand","1","Yes","bow-net","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Build Your Own","Root Category/Shop By/Sticks","2","Yes","build-your-own","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Stringing Supplies","Root Category/Shop By/Sticks","1","Yes","stringing-supplies","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Rainbow","Root Category/Shop By/Brand","14","Yes","rainbow","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Equipment","Root Category/Clearance/WOMENS","3","Yes","equipment","","","Girls Lacrosse Equipment Sales | Womens Lax Equipment Deals | Goggles | Lacrosse Gloves | Complete Sticks | Lacrosse Handles | Lax Shafts |","Girls Lacrosse Equipment Sales | Womens Lax Equipment Deals | Goggles | Lacrosse Gloves | Complete Sticks | Lacrosse Handles | Lax Shafts |","Shop Girls Lacrosse Equipment Clearance Sales from Brine, STX, Cascade, and Lacrosse Unlimited with Lowest Prices in Lacrosse","Yes","Products only","","No","","","No layout updates",""
+"Short Sleeve","Root Category/GIRLS/LACROSSE TEES","1","Yes","girls-lacrosse-t-shirts","Short Sleeve Lax Tees and T-Shirts for All Girls or Women Lacrosse Players ","","Girls Lacrosse T Shirts - Nike Girls Lacrosse T-Shirts & Graphic T Shirts","","Shop a wide variety of Girls Lacrosse T Shirts, Nike Womens Lacrosse T-Shirts & Graphic T\'s at Lacrosse Unlimited. Top brands such as Nike & Lax Unlimited.","Yes","Products only","","No","","","No layout updates",""
+"Footwear","Root Category/Clearance/WOMENS","2","Yes","girls-lacrosse-footwear-on-sale","","","Girls Lacrosse Cleats on Sale | Womens Lax Cleats on Sale | Nike Cleats on Clearance | Discount Girls Cleats |","Girls Lacrosse Cleats on Sale | Womens Lax Cleats on Sale | Nike Cleats on Clearance | Discount Girls Cleats |","Shop Girls Lacrosse Cleats on SALE direct from Lacrosse Unlimited with FREE Shipping on All Orders over 99.00","Yes","Products only","","No","","","No layout updates",""
+"Sandals","Root Category/GIRLS/FOOTWEAR","4","Yes","sandals","","","Rainbow Sandals | Girls Flip Flops | Girls Sandals | Girls Slides | Womens Sandals | ","Rainbow Sandals | Girls Flip Flops | Girls Sandals | Girls Slides | Womens Sandals | ","Shop Girls and Womens Lacrosse Sandals Direct from Lacrosse Unlimited with FREE SHIPPING on All Orders over 99.00 ","Yes","Products only","","No","","","No layout updates",""
+"Sandals","Root Category/Youth/FOOTWEAR","3","Yes","sandals","","","Youth Flip Flops | Boys Slides | Kids Flip Flops | Rainbow Sandals | Nike Slides |","Youth Flip Flops | Boys Slides | Kids Flip Flops | Rainbow Sandals | Nike Slides |","Shop Youth Lacrosse Slides and Flip Flops Direct from Lacrosse Unlimited with FREE SHIPPING on All Orders over 99.00","Yes","Products only","","No","","","No layout updates",""
+"Games","Root Category/Lifestyle/Gifts/LAX GIFTS","6","No","lacrosse-games","","","Lacrosse Game | Chalk Talk Liddle Lax Game","","","Yes","Products only","","No","","","No layout updates",""
+"ChalkTalk","Root Category/Shop By/Brand","4","Yes","chalktalk","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Champion","Root Category/Shop By/Brand","21","Yes","champion","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Athletic Cups","Root Category/Clearance/PROTECTIVE","8","Yes","athletic-cups","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Middle School","Root Category/Shop By/Age","2","Yes","middle-school","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Maryland","Root Category/Shop By/College","14","Yes","maryland","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Navy","Root Category/Shop By/College","15","Yes","navy","","","","","","Yes","Products only","","No","","","No layout updates",""
+"North Carolina","Root Category/Shop By/College","16","Yes","north-carolina","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Northwestern","Root Category/Shop By/College","17","Yes","northwestern","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Ohio State","Root Category/Shop By/College","19","Yes","ohio-state","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Oregon","Root Category/Shop By/College","20","Yes","oregon","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Penn State","Root Category/Shop By/College","21","Yes","penn-state","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Princeton","Root Category/Shop By/College","22","Yes","princeton","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Stony Brook","Root Category/Shop By/College","23","Yes","stony-brook","","","","","","Yes","Products only","","No","","","No layout updates",""
+"St. Johns","Root Category/Shop By/College","24","Yes","st-johns","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Syracuse","Root Category/Shop By/College","25","Yes","syracuse","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Turtles","Root Category/Shop By/College","28","Yes","turtles","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Umass","Root Category/Shop By/College","29","Yes","umass","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Loyola","Root Category/Shop By/College","13","Yes","loyola","","","","","","Yes","Products only","","No","","","No layout updates",""
+"John Hopkins","Root Category/Shop By/College","12","Yes","john-hopkins","","","","","","Yes","Products only","","No","","","No layout updates",""
+"High School","Root Category/Shop By/Age","3","Yes","high-school","","","","","","Yes","Products only","","No","","","No layout updates",""
+"College","Root Category/Shop By/Age","4","Yes","college","","","","","","Yes","Products only","","No","","","No layout updates",""
+"All","Root Category/Shop By/Age","5","Yes","all","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Army","Root Category/Shop By/College","1","Yes","army","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Boston College","Root Category/Shop By/College","2","Yes","boston-college","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Colgate","Root Category/Shop By/College","3","Yes","colgate","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Cornell","Root Category/Shop By/College","4","Yes","cornell","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Dartmouth","Root Category/Shop By/College","5","Yes","dartmouth","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Denver","Root Category/Shop By/College","6","Yes","denver","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Duke","Root Category/Shop By/College","7","Yes","duke","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Florida","Root Category/Shop By/College","8","Yes","florida","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Georgetown","Root Category/Shop By/College","9","Yes","georgetown","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Harvard","Root Category/Shop By/College","10","Yes","harvard","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Vanderbilt","Root Category/Shop By/College","30","Yes","vanderbilt","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Villanova","Root Category/Shop By/College","31","Yes","villanova","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Virginia","Root Category/Shop By/College","32","Yes","virginia","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Lax Unlimited","Root Category/Apparel/LACROSSE SHORTS","2","Yes","lax-unlimited-lacrosse-shorts","<h2>Lacrosse Unlimited Custom Lacrosse Shorts</h2>
+<p>Lacrosse Unlimited&nbsp;<strong>INVENTED</strong>&nbsp;custom lacrosse shorts. We have used our 21+ years of experience to craft the ultimate lacrosse shorts. Long inseam, top of the line materials and re-designed drawstring enhances your level of comfort. &nbsp;We added side pockets to all our Lax Unlimited lacrosse shorts. Why? Because when we were going to the beach or going out to shoot around, we needed a place to stash our cash. Don\'t just order one...grab a couple pairs. You won\'t regret it....</p>","","Lacrosse Shorts - Lax Unlimited Shorts Only Available At","","Find The Latest Styles of Lax Unlimited Shorts At Lacrosse Unlimited. Free Exchanges On Shorts By Lax Unlimited. As Always Free Shipping On 100s of Items.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"Lifestyle","Root Category/Apparel/LACROSSE SHORTS","3","Yes","lifestyle-lacrosse-shorts","","","Lifestyle Lacrosse Shorts - From Nike Lacrosse, Lax Unlimited & FlyBy","","Find The Latest Styles of Lifestyle Lacrosse Shorts At Lacrosse Unlimited. Free Exchanges On Shorts From Top Brands Nike & FlyBy with Free Shipping On 100s of Items. ","Yes","Products only","","Yes","","","No layout updates",""
+"Lifestyle T-Shirts","Root Category/Apparel/T SHIRTS","1","Yes","lifestyle-lacrosse-t-shirt","","","Lax Unlimited Lacrosse T Shirts | Nike Dri Fit T Shirts | NEW Fresh Lax T\'S DAILY!","","Lax Unlimited and Nike Lacrosse T Shirts. -Lacrosse Unlimited. FAST Delivery + FREE Shipping on 100s of Items. Quality, Selection, Service You Can Trust.","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"College T Shirts","Root Category/Apparel/T SHIRTS","2","Yes","college-lacrosse-t-shirts","","","College Lacrosse T Shirts | Nike Lacrosse College Dri-Fit T Shirts | UNC-Duke-Syracuse-Texas-Oregon","","NIKE DRI-FIT College T Shirts- Duke,Hopkins,Syracuse, Maryland! FAST Delivery + FREE Shipping on 100s of Items. Quality, Selection, Service You Can Trust.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Long Sleeve","Root Category/Apparel/T SHIRTS","3","No","long-sleeve","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Sweats","Root Category/Apparel/T SHIRTS","4","No","lacrosse-sweatshirts","","","LACROSSE Sweatshirt | Hooded Sweatshirt | Crew Neck Sweatshirt","","Fast, Easy, FREE SHIPPING Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW for Flyby Hooded Sweatshirts, and Crew Neck Sweatshirts.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Performance T","Root Category/Apparel/T SHIRTS","5","Yes","performance-lacrosse-shirts","","","Lacrosse Performance T Shirts | FLYBY Performance T Shirts","","Lax Unlimited Performance T Shirts by FlyBy lacrosse. Fast Delivery + Free Shipping on qualified orders. Selection, Quality, and Service You Can Trust.","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"High","Root Category/Apparel/SOCKS","1","No","high","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Crew","Root Category/Apparel/SOCKS","2","Yes","mid-socks","","","Nike Vapor Crew Volt Socks | Lacrosse Unlimited Socks | Nike Vapor Football Crew Socks","","Shop For Nike Vapor Crew Socks & Lax Unlimited Socks at Lacrosse Unlimited. FAST Delivery+FREE Shipping on 100s of Items. Service, Selection, Quality You Can Trust.","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"No Show","Root Category/Apparel/SOCKS","3","Yes","no-show","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"Snap Back","Root Category/Apparel/HATS","1","Yes","college-snap-back-hats","","","College Lacrosse Snap Back Hats- Nike, Zephyr, and Lax Unlimited College Hats","","Shop Lacrosse Unlimited For Nike Snap Back College Lacrosse Hats. Duke, Syracuse, Denver and All The Top Colleges. ","Yes","Products only","","Yes","Best Value,Brand,Price,Color","","No layout updates",""
+"Low Profile","Root Category/Apparel/HATS","2","Yes","low-profile","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Winter","Root Category/Apparel/HATS","3","Yes","winter-hats","","","Winter Lacrosse Hats | Wool Winter Hats with Pom | Skull Caps","","Fast, Easy, FREE SHIPPING Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW for Winter Lacrosse Hats. KEEP your Dome warm while looking good.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"College","Root Category/Apparel/LACROSSE SHORTS","1","Yes","college-lacrosse-shorts","<h1><span style=""color: #227799;"">Lax Unlimited College Lacrosse Shorts</span></h1>
+<p><span style=""font-family: helvetica;""><span style=""font-size: medium;"">At Lacrosse Unlimited we carry all top 10 college lacrosse programs and more.&nbsp;</span><span style=""font-size: medium;"">Syracuse, Duke, Maryland, Hopkins, UVA, and UNC to name a few. Use our ""Shop By"" menu on the left&nbsp;</span><span style=""font-size: medium;"">to shop for your favorite college&nbsp;</span><span style=""font-size: medium;"">lacrosse team, by color or size.&nbsp;</span></span></p>","","College Lacrosse Shorts - Licensed College Shorts By Nike, Lax Unlimited & Fit2Win","","Shop a wide variety of College Lacrosse Shorts From Nike & Lacrosse Unlimited. Top College Lacrosse Teams Duke, Syracuse, UNC & More. Free Shipping on 100\'s of Items.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Supplies","Root Category/Shop By/Coaching","14","Yes","supplies","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Air Horns","Root Category/Shop By/Coaching","1","Yes","air-horns","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Cones","Root Category/Shop By/Coaching","2","Yes","cones","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Dry Erase","Root Category/Shop By/Coaching","3","Yes","dry-erase","","","","","","Yes","Products only","","No","","","No layout updates",""
+"First Aid","Root Category/Shop By/Coaching","4","Yes","first-aid","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Scorebooks","Root Category/Shop By/Coaching","5","Yes","scorebooks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Whistles","Root Category/Shop By/Coaching","6","Yes","whistles","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Timers","Root Category/Shop By/Coaching","7","Yes","timers","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Radar","Root Category/Shop By/Coaching","8","Yes","radar","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Training","Root Category/Shop By/Coaching","9","Yes","training","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Backstops","Root Category/Shop By/Coaching","10","Yes","backstops","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Bags","Root Category/Shop By/Coaching","11","Yes","bags","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Custom Team Apparel","Root Category/Shop By/Coaching","12","Yes","custom-team-apparel","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Custom Team Equipment","Root Category/Shop By/Coaching","13","Yes","custom-team-equipment","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Crazy","Root Category/Apparel/PINNIES","1","Yes","crazy-lacrosse-pinnies","","","Crazy Lacrosse Pinnie Designs | Sublimated Pinnies | Crazy Lax Pinnies","lacrosse, pinnies","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW For CRAZY Lacrosse PINNIES.","No","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Youth","Root Category/Shop By/Age","1","Yes","youth","","","","","","Yes","Products only","","No","","","No layout updates",""
+"BUILD YOUR OWN","Root Category/Mens/Sticks","3","No","build-your-own-lacrosse-stick","","","Build Your Own Lacrosse Sticks | Custom Dyed Lacrosse Heads | Custom Lacrosse Stringing","custom lacrosse heads, build your own lacrosse stick, ","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Build Your Own CUSTOM Lacrosse Sticks By The INVENTORS OF CUSTOM LACROSSE!","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"TIMERS","Root Category/Goals & Training/COACHES","5","Yes","timers","","","Lacrosse Timers and Game Clocks","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Timers. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"RADAR","Root Category/Goals & Training/COACHES","9","Yes","radar","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"TRAINING","Root Category/Goals & Training/COACHES","8","Yes","training","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"GOALS","Root Category/Goals & Training/COACHES","3","Yes","lacrosse-goals","","","Lacrosse Goals With Nets | Lacrosse Nets | Practice Lacrosse Goals","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Goals and Nets. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Apparel","Root Category/Shop By/Best Sellers","1","Yes","apparel","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Protective","Root Category/Shop By/Best Sellers","2","Yes","protective","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sticks","Root Category/Shop By/Best Sellers","3","Yes","sticks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Accessories","Root Category/Shop By/Best Sellers","4","Yes","accessories","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Apparel","Root Category/Shop By/Top Rated","1","Yes","apparel","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Protective","Root Category/Shop By/Top Rated","2","Yes","protective","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sticks","Root Category/Shop By/Top Rated","3","Yes","sticks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Accessories","Root Category/Shop By/Top Rated","4","Yes","accessories","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Apparel","Root Category/Shop By/Clearance","1","Yes","apparel","","","","","","Yes","Products only","","No","","","No layout updates",""
+"WHISTLES","Root Category/Goals & Training/COACHES","11","Yes","whistles","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"SCOREBOOK","Root Category/Goals & Training/COACHES","2","Yes","lacrosse-scorebook","","","Lacrosse Scorebooks | Lacrosse Score Keeping Books","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED Scorebooks. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"COMPLETE","Root Category/Mens/Sticks","4","No","complete-lacrosse-sticks","","","Youth Complete Lacrosse Sticks | Womens Lacrosse Sticks | Goalie Sticks","youth lacrosse sticks, womens sticks, goalie sticks, lacrosse stick","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Youth Lacrosse Sticks, Goalie Sticks and Womens Lacrosse Sticks Since 1990. Custom Colors!","No","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"HEADS","Root Category/Mens/Sticks","1","Yes","lacrosse-heads","<h2><span style=""color: #333333; font-size: large;"">10 Top Lacrosse Heads: Which Head Is Best for YOU!</span></h2>
+<p><span style=""font-size: large; color: #333333;"">Checkout All The Hottest Lacrosse Heads on the market!</span></p>","","Lacrosse Heads | Custom Lacrosse Heads | Unstrung Heads | Complete Lacrosse Sticks","Lacrosse Heads, Custom Lacrosse Heads, Unstrung Heads, Complete Lacrosse Sticks ","Shop Warrior, STX, Brine Lacrosse Heads. Fast, Easy, and Free Shipping Over $99. BEST PRICES GUARANTEED. BUILD YOUR STICK YOUR WAY!","Yes","Products only","","Yes","Best Value,Brand,Price,Color,gender","Best Value","No layout updates",""
+"SHAFTS","Root Category/Mens/Sticks","2","Yes","lacrosse-shaft","","2013-Nike-Vandal-Handles-interior_1.png","Lacrosse Shafts | Attack | Middie | Defense | Goalie | Youth | Women | Limited Edition","Brine Lacrosse, Warrior Lacrosse,STX Lacrosse,Nike Lacrosse,Maverik Lacrosse,Under Armour Lacrosse, Gait Lacrosse, Lacrosse Unlimited,attack,middie,defense,goalie,adult,youth,mens,womens,boys,girls,","Fast Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts,Attack,Middie,Defense,Goalie, Youth and Womens Shafts Since 1990 All Colors!","Yes","Products only","","Yes","","","No layout updates",""
+"SUPPLIES","Root Category/Mens/Sticks","5","Yes","lacrosse-stringing-supplies","","","Lacrosse Stringing Supplies | Lacrosse Mesh | Shooting Strings | Lacrosse Leathers","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Get Your Lacrosse Stringing Supplies From The INVENTORS OF CUSTOM LACROSSE!","Yes","Products only","","No","Brand,Price,Color","Brand","No layout updates",""
+"STICK SUPPLIES","Root Category/Mens/Sticks","6","No","lacrosse-stick-supplies","","","Lacrosse Stick Supplies | Pocket Pounder | Tape | Balls","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Lacrosse Stick Supplies...","No","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"MINI LAX","Root Category/Mens/Sticks","7","Yes","mini-lacrosse","","","Mini Lacrosse Sticks | Mini lax Goals | Mini Lax Sticks & Mini Goal Sets","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On CUSTOM Mini Lacrosse Sticks, Mini lacrosse Goals, and Mini Lax Goal Sets Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"RIB PROTECTION","Root Category/Protective/SHOULDER PADS","3","Yes","lacrosse-rib-protection","","","Lacrosse Rib Pads | Warrior Adrenaline X1 Rib Pads","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Rib Pads. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Goggles","Root Category/GIRLS/EQUIPMENT","3","Yes","googles","","","","","","Yes","Products only","","Yes","","","No layout updates",""
+"Replacement Nets","Root Category/Goals & Training/GOALS","3","Yes","lacrosse-goal-replacement-nets","","","Lacrosse Nets | Replacement Nets For Lacrosse Goals","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Deals On Lacrosse Replacement Nets.","Yes","Products only","","Yes","","","No layout updates",""
+"BAGS","Root Category/Goals & Training/COACHES","4","Yes","lacrosse-bags","","","Lacrosse Bags ","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Bags. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"AIR HORNS","Root Category/Goals & Training/COACHES","10","Yes","air-horns","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"DRY ERASE","Root Category/Goals & Training/COACHES","1","Yes","lacrosse-dry-erase-boards","","","Dry Erase Boards For Lacrosse Coaches","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Dry Erase Boards. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"FIRST AID","Root Category/Goals & Training/COACHES","6","Yes","first-aid","","","Lacrosse First Aid Kit","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On First Aid Kits for Lacrosse. Top Quality & Great Selection Since 1990.","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sticks","Root Category/Shop By/Clearance","3","Yes","sticks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Accessories","Root Category/Shop By/Clearance","4","Yes","accessories","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Brine","Root Category/Shop By/Brand","2","Yes","brine-lacrosse-equipment","<h2>Brine Lacrosse Equipment</h2>","","Brine Lacrosse Equipment","","All Brine Lacrosse Equipment Available Now! Great Selection, Quality Products, and Expert Advice Since 1990.","Yes","Products only","","No","","","No layout updates",""
+"Middie","Root Category/Shop By/Position","2","Yes","middie","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Defense","Root Category/Shop By/Position","3","Yes","defense","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goalie","Root Category/Shop By/Position","4","Yes","goalie","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Apparel","Root Category/Shop By/Products","1","Yes","apparel","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Footwear","Root Category/Shop By/Products","2","Yes","footwear","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Sticks","Root Category/Shop By/Products","3","Yes","sticks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Protective","Root Category/Shop By/Products","4","Yes","protective","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goals & Training","Root Category/Shop By/Products","5","Yes","goals-training","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Lifestyle/Gifts","Root Category/Shop By/Products","6","Yes","lifestyle-gifts","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Coaches Corner","Root Category/Shop By/Products","7","Yes","coaches-corner","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Clearance","Root Category/Shop By/Products","8","Yes","clearance","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mens","Root Category/Shop By/Gender","1","Yes","mens","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Womens","Root Category/Shop By/Gender","2","Yes","womens","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Attack","Root Category/Shop By/Position","1","Yes","attack","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Zephyr","Root Category/Shop By/Brand","20","Yes","zephyr","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Cascade","Root Category/Shop By/Brand","3","Yes","cascade","","","","","","Yes","Products only","","No","","","No layout updates",""
+"FlyBy","Root Category/Shop By/Brand","5","Yes","flyby","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Gait","Root Category/Shop By/Brand","6","Yes","gait","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Lacrosse Unlimited","Root Category/Shop By/Brand","7","Yes","lacrosse-unlimited","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Maverik","Root Category/Shop By/Brand","8","Yes","maverik","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mogo","Root Category/Shop By/Brand","9","Yes","mogo","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mueller","Root Category/Shop By/Brand","10","Yes","mueller","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Nike","Root Category/Shop By/Brand","11","Yes","nike","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Shock Doctor","Root Category/Shop By/Brand","15","Yes","shock-doctor","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Skull Candy","Root Category/Shop By/Brand","16","Yes","skull-candy","","","","","","Yes","Products only","","No","","","No layout updates",""
+"STX","Root Category/Shop By/Brand","17","Yes","stx","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Under Armour","Root Category/Shop By/Brand","18","Yes","under-armour","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Warrior","Root Category/Shop By/Brand","19","Yes","warrior","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Unisex","Root Category/Shop By/Gender","3","Yes","unisex","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Goalie Throat Guard","Root Category/Protective/GOALIE GEAR","7","Yes","lacrosse-goalie-throat-guard","","","Lacrosse Goalie Throat Guards | Neck Guards For Goalie Helmets","","FREE SHIPPING ALL ORDERS Over $49! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Throat Guards.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Arm Guards","Root Category/Protective/ARM PROTECTION","2","Yes","lacrosse-arm-guards","","","Lacrosse Arm Guards  | Arm Guards | Lacrosse Arm Protection","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Arm Guards Now. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Arm Pads","Root Category/Protective/ARM PROTECTION","1","Yes","lacrosse-arm-pads","","","Lacrosse Arm Pads | Lacrosse Elbow Pads | Forearm Pads","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop  Lacrosse Arm Pads and Lacrosse Elbow Pads Now. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Womens","Root Category/Protective/GLOVES","3","No","womens","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie","Root Category/Protective/GLOVES","2","Yes","goalie-lacrosse-gloves","","","Goalie Lacrosse Gloves | Lacrosse Gloves for Goalies | Brine King 4 Superlight | Brine King IV Goalie Gloves","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Top Brands Now: Brine King 4 Superlight Goalie Lacrosse Gloves.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Brands","Root Category/Protective/GLOVES","1","Yes","brands","","","Warrior Mac Daddy Lacrosse Gloves | STX Shadow Gloves | Nike Vapor Elite | Brine King 4 | Maverik Maybach Deuce ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Top Brands Now: Warrior, Brine, STX, Nike, Maverik Lacrosse Gloves.","Yes","Products only","","Yes","","","No layout updates",""
+"Accessories","Root Category/Protective/HELMETS","5","Yes","helmet-accessories","<p><strong>All Helmets are CUSTOM Built for your order. Custom Helmets Ship within 48 hours + delivery time.</strong></p>","","Lacrosse Helmet Accessories | Custom Chin Straps | Colored Chin Straps | Mouthpieces","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Lacrosse Helmet Accessories Now: Colored Chin Straps","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Decals","Root Category/Protective/HELMETS","4","Yes","decals","","","","","","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Brand","No layout updates",""
+"Goalie","Root Category/Protective/HELMETS","3","No","goalie","","","","","","No","Products only","","Yes","Brand,Price,Color","","No layout updates",""
+"In-Stock","Root Category/Protective/HELMETS","2","No","in-stock","<p><strong>All Helmets are CUSTOM built for your order and ship within 48 hours + delivery time</strong></p>","","In Stock Lacrosse Helmets | Cascade Lacrosse Helmets | Warrior Lacrosse Helmets","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop In Stock Lacrosse Helmets Now: Cascade CPX-R Lacrosse Helmets.","No","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Custom","Root Category/Protective/HELMETS","1","Yes","custom-lacrosse-helmets","<p><strong><a title=""See Exchange Policy For Custom Lacrosse Helmets."" href=""/exchanges"" target=""_blank"">All Helmets Are CUSTOM Built For your Order.</a> Custom Helmets Ship Within 48 hours + delivery time.</strong></p>","","Lacrosse Helmets | Custom Cascade R Helmet | Custom Warrior Tii | mouthpieces | mouthguards |","","FREE SHIPPING on All Lacrosse Helmets. Shop Custom Lacrosse Helmets Now: Cascade R, CPX-R Lacrosse Helmets with Chrome Facemasks.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Water Bottles","Root Category/Protective/GAME DAY","3","Yes","water-bottles","","","Water Bottles | Lacrosse Waterbottles with Straw","","FREE SHIPPING ALL ORDERS Over $50! Best Price Guaranteed. Top Quality & Great Selection Since 1990. Shop Deals On Water Bottles.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Protective","Root Category/Shop By/Clearance","2","Yes","protective","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Shoulder Liners","Root Category/Protective/SHOULDER PADS","2","Yes","lacrosse-shoulder-pad-liners","","","Lacrosse Shoulder Pad Liners | STX Impact Shoulder Pads | Brine LoPro Superlight","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Top Brands Brine, STX, Warrior Shoulder Pad Liner. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Studs","Root Category/Footwear/Footwear Accesories","4","No","studs","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Elbow Guards","Root Category/Protective/ARM PROTECTION","3","Yes","lacrosse-elbow-guards","","","Lacrosse Elbow Guards | Elbow Pads | Lacrosse Elbow Protection","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Elbow Guards Now. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Shoulder Pads","Root Category/Protective/SHOULDER PADS","1","Yes","lacrosse-shoulder-pads","","","Lacrosse Shoulder Pads | Paul Rabil Shoulder Pads | Youth Lacrosse Shoulder Pads","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Top Brands Paul Rabil, Warior, Brine, STX Shoulder Pads. Best Price Guaranteed!","Yes","Products only","","Yes","","","No layout updates",""
+"Goalie Athletic Cups","Root Category/Protective/GOALIE GEAR","6","Yes","lacrosse-goalie-athletic-cups","","","Lacrosse Atheltic Cups For Goalies | Warrior ToolBox Nutt Hut ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Athletic Cups. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Pants","Root Category/Protective/GOALIE GEAR","5","Yes","lacrosse-goalie-pants","","","Lacrosse Goalie Pants | Goalie Pant Compression Shorts With Thigh Pads","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Pants With Pads. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Shin Guards","Root Category/Protective/GOALIE GEAR","4","Yes","goalie-shin-guards","","","Lacrosse Goalie Shin Pads | Goalie Lacrosse Shin Guards","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Shin Pads and Guards. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Helmets","Root Category/Protective/GOALIE GEAR","3","Yes","goalie-lacrosse-helmets","","","Goalie Lacrosse Helmets ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Goalie Lacrosse Helmets. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Chest Protection","Root Category/Protective/GOALIE GEAR","2","Yes","lacrosse-goalie-chest-protection","","","Lacrosse Goalie Chest Protection | Lacrosse Chest Protectors | Chest Pads","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Chest Protectors. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Gloves","Root Category/Protective/GOALIE GEAR","1","Yes","lacrosse-goalie-gloves","","","Lacrosse Goalie Gloves | Reinforced Thumb For Extra Protection","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Gloves. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie","Root Category/Protective/ATHLETIC CUPS","4","Yes","lacrosse-goalie","","","Lacrosse Goalie Compression Shorts With Cup","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Goalie Compression Shorts. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Cup Only","Root Category/Protective/ATHLETIC CUPS","3","No","cup-only","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Supporter & Cup","Root Category/Protective/ATHLETIC CUPS","2","Yes","supporter-cup","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Compression Shorts","Root Category/Protective/ATHLETIC CUPS","1","Yes","compression-shorts-with-cup","","","Lacrosse Compression Shorts With Cup | Athletic Cup in Compression Shorts","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Compression Shorts. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Cases","Root Category/Protective/MOUTH PIECES","4","Yes","mouthguard-cases","","","Shockdoctor Mouth Guard Case | Holds Your Mouthpiece or Mouthguard","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Cases For Lacrosse Mouthguards Now. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Braces","Root Category/Protective/MOUTH PIECES","3","Yes","mouthguard-for-braces","","","Shockdoctor Gel Max For Braces | Lacrosse Mouthpieces For People With Braces ","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Lacrosse Mouthpieces For Braces Now. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Strapless","Root Category/Protective/MOUTH PIECES","2","Yes","strapless","","","Shockdoctor | Mogo Flavored Mouthpieces | Strapless Lacrosse Mouthpieces ","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Strapped","Root Category/Protective/MOUTH PIECES","1","Yes","strapped-mouthpieces","","","Shockdoctor Gel Max Mouth Guard | Strapped Lacrosse Mouthpieces | Mouthpieces Attach To Helmets","","FREE SHIPPING ALL ORDERS Over $49! Top Quality & Great Selection Since 1990. Shop Deals On Strapped Lacrosse Mouthpieces Now. Best Price Guaranteed!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Deordorizer","Root Category/Footwear/Footwear Accesories","3","No","deordorizer","","","","","","Yes","Products only","","No","","","No layout updates",""
+"No Show","Root Category/Footwear/SOCKS","3","No","no-show","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Coaches","Root Category/Protective/LACROSSE BAGS","3","Yes","coaches","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mid","Root Category/Footwear/SNEAKERS","1","Yes","mid-lacrosse-sneakers","","","Mid Top Sneakers | Nike Nike Air Max 90 | Nike Air Flight Falcon Sneakers","","FREE Shipping ALL Orders Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Nike Air Max 90 and Air Flight Falcons.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Lacrosse Unlimited","Root Category/Protective/LACROSSE BAGS","4","No","lacrosse-unlimited","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Neck Ties","Root Category/Apparel/GIFT IDEAS","1","Yes","neck-ties","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sunglasses","Root Category/Apparel/GIFT IDEAS","2","No","sunglasses","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Headphones","Root Category/Apparel/GIFT IDEAS","3","No","headphones","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Blankets","Root Category/Apparel/GIFT IDEAS","4","No","blankets","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Mid","Root Category/Footwear/CLEATS","1","Yes","mid-lacrosse-cleats","","","Lacrosse Cleats | Mid Height | Mids","","FREE Shipping ALL Orders Over $49! Top Quality & Great Selection Since 1990. Best Price Guaranteed On Lacrosse Cleats From Nike and Warrior.","Yes","Products only","","Yes","","","No layout updates",""
+"Low","Root Category/Footwear/CLEATS","2","Yes","low-top-lacrosse-cleats","","","Lacrosse Cleats | Low Cut | Old School Low Tops","low tops, lacrosse cleats","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On LACROSSE CLEATS Since 1990. Nike Vapor Pro Lacrosse Cleats 1 of 4 Authorized Nike Dealers!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Mid","Root Category/Footwear/TURFS","1","Yes","mid-top-lacrosse-turfs","","","Lacrosse Turfs | Nike Huarache Turfs | Lacrosse Footwear","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On LACROSSE CLEATS Since 1990. Nike Huarache Lacrosse Turfs 1 of 4 Authorized Nike Dealers!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Low","Root Category/Footwear/TURFS","2","Yes","low","","","Lacrosse Turfs | Nike Volt Huarache Turfs | Wmns Team Destroyer 3 | ","","Fast, Easy, and Free Shipping Over $99. BEST PRICE GUARANTEED On LACROSSE Turfs Since 1990. Nike Volt Huarache Turfs 1 of 4 Authorized Nike Dealers!","Yes","Products only","","No","","","No layout updates",""
+"Flip Flops","Root Category/Footwear/SANDALS","1","Yes","flip-flops","","","Rainblow Flip Flops | Lacrosse Lifestyle ","","Fast, Easy, and Free Shipping Over $99. BEST PRICE GUARANTEED On LACROSSE FLIP FLOPS, AND SLIDES Since 1990. Great for Pre and Post Game.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Low","Root Category/Footwear/SNEAKERS","2","Yes","low","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Crew","Root Category/Footwear/SOCKS","1","Yes","crew-socks","<h2><span style=""color: #808080;"">Nike Vapor Crew Socks - Air Jordan Socks- FlyBy Crew Socks - Laxman Crew Socks</span></h2>","","Crew Socks | Nike Vapor | Nike Elite Crew Socks | Air Jordan Socks","","Nike Vapor Elite Crew Socks at Lacrosse Unlimited. FAST Delivery+FREE Shipping on 100s of Items. Service, Selection, Quality You Can Trust.","Yes","Products only","","Yes","","","No layout updates",""
+"Low","Root Category/Footwear/SOCKS","2","Yes","low","","","","","","Yes","Products only","","No","gender","gender","No layout updates",""
+"Backpacks","Root Category/Protective/LACROSSE BAGS","2","Yes","backpacks","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Equipment Bags","Root Category/Protective/LACROSSE BAGS","1","Yes","lacrosse-equipment-bags","","","Lacrosse Equipment Bags | Lacrosse Ball bags and Backpacks","","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW Lacrosse Equipment Bags.","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Crew Neck","Root Category/Apparel/SWEATS","2","No","crew-neck-sweatshirt","","","Crewneck Sweatshirt | Flyby Crewneck","","FREE U.S. STANDARD SHIPPING On ALL ORDERS $50 or Over! Shop Now For CREW NECK SWEATSHIRT. BEST PRICE GUARANTEED Since 1990","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Hoodies","Root Category/Apparel/SWEATS","1","Yes","hooded-sweatshirt","","","Hooded Sweatshirts | College Hooded Sweatshirts | FlyBy Hooded Sweatshirts","","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW for College Lacrosse Youth and Adult Hooded Sweatshirts.","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Jerseys","Root Category/Apparel/PINNIES","3","No","jerseys","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Lifestyle","Root Category/Apparel/PINNIES","2","Yes","lifestyle-lacrosse-pinnies","","","Lifestyle Lacrosse Pinnies | Mesh Tank Tops","","Fast, Easy, FREE SHIPPING Orders Over $50. BEST PRICE GUARANTEED Since 1990. SHOP NOW For Mesh Lacrosse Pinnies.","No","Products only","","Yes","","","No layout updates",""
+"Insoles","Root Category/Footwear/Footwear Accesories","2","No","insoles","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Slides","Root Category/Footwear/SANDALS","2","Yes","slides","","","Nike Benassi Solarsoft Lacrosse Slides | Available in Volt - Carolina - Purple - Black","volt slides, benassi slides, solarsoft slides, Nike Benassi Solarsoft Lacrosse Slides Volt, ","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Nike Benassi Solarsoft Lacrosse Slides Since 1990. Available in Volt-Carolina-Purple-Black","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Laces","Root Category/Footwear/Footwear Accesories","1","No","laces","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Jackets","Root Category/Apparel/PERFORMANCE","5","Yes","jackets","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Full Zip","Root Category/Apparel/SWEATS","3","Yes","full-zip-sweatshirt","","","Full Zip Sweatshirt | FlyBy Eruption Track Jacket","sweatshirt, full zip sweat shirt, track jacket","FREE U.S. STANDARD SHIPPING On ORDERS $50 & Over! Shop Now For FULL ZIP Sweatshirts.Top Selling Flyby Eruption Track Jacket.BEST PRICE GUARANTEED Since 1990","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Pants","Root Category/Apparel/SWEATS","4","Yes","lacrosse-sweatpants","","","Lacrosse Sweatpants | Nike Sweatpants | Lunge Pants | Youth College Sweatpants","","FREE U.S. STANDARD SHIPPING On ORDERS $50 & Over! Shop Now For Lacrosse Sweatpants.Top Selling Nike College Sweatpants.BEST PRICE GUARANTEED Since 1990","Yes","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Athletic Cups","Root Category/Apparel/PERFORMANCE","1","No","athletic-cups","","","","","","Yes","Products only","","No","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Shorts","Root Category/Apparel/PERFORMANCE","2","Yes","performance-shorts","","","Performance Lacrosse Shorts| Nike Dri Fit Shorts | Compression Shorts With Cup | Shockdoctor Core Compression Short","","Shop Now For Performance lacrosse Shorts. FREE U.S. STANDARD SHIPPING On ALL ORDERS $99 & Over! ","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Long Sleeve ","Root Category/Apparel/PERFORMANCE","4","No","long-sleeve","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Short Sleeves","Root Category/Apparel/PERFORMANCE","3","Yes","short-sleeve-shirt","","","Ohio State Florida Texas Oregon Syracuse Hopkins Duke Notre Dame UVA UNC -Nike Dri-Fit T","","FREE U.S. STANDARD SHIPPING On ALL ORDERS $50 & Over! Shop Now For Nike Dri-Fit College T. Notre Dame Cuse Duke and More BEST PRICE GUARANTEED Since 1990.","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Ball","Root Category/Goals & Training/COACHES/BAGS","1","Yes","lacrosse-ball-bags","","","Lacrosse Ball Bags | Bags for Lacrosse Balls","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Ball Bags. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Equipment","Root Category/Goals & Training/COACHES/BAGS","2","Yes","lacrosse-equipment-bags","","","Equipment Bags For Lacrosse","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Equipment Bags. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Travel","Root Category/Goals & Training/COACHES/BAGS","3","Yes","travel-lacrosse-bags","","","Travel Lacrosse Bags | Travel Equipment Bags","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Travel Lacrosse Bags. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Set of 6","Root Category/Goals & Training/COACHES/CONES","1","Yes","set-of-6","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Bulk","Root Category/Goals & Training/COACHES/CONES","2","Yes","bulk","","","","","","No","Products only","","Yes","Brand,Price,Color","","No layout updates",""
+"Mens","Root Category/Goals & Training/COACHES/DRY ERASE","1","Yes","mens-lacrosse-dry-erase-boards","","","Dry Erase Boards For Mens Lacrosse Coaches","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Dry Erase Boards. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Womens","Root Category/Goals & Training/COACHES/DRY ERASE","2","Yes","womens","","","","","","Yes","Products only","","Yes","Brand,Price,Color","","No layout updates",""
+"Balls","Root Category/Mens/Sticks/HEADS","11","Yes","lacrosse-balls","","","Lacrosse Balls | Blue Balls | Pink Balls | White Balls | Yellow Balls","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Lacrosse Balls. You Pick The Color!","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Stoppers","Root Category/Mens/Sticks/STICK SUPPLIES","4","No","stoppers","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Build Your Own","Root Category/Mens/Sticks/MINI LAX","1","No","build-your-own","","","Custom Strung Mini Sticks | Build Your Own Mini Sticks | ","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On CUSTOM Mini Lacrosse Sticks Since 1990. Get Your Mini Stick Custom Strung By the Best!","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mens Strung","Root Category/Mens/Sticks/HEADS","4","Yes","mens-strung-lacrosse-heads","","","Mens Strung Lacrosse Heads","","","No","Products only","","No","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Goal Sets","Root Category/Mens/Sticks/MINI LAX","3","Yes","mini-lacrosse-goal-sets","","","Mini Goal Sets | Mini Sticks & Mini Goals | Mini Lax Sticks & Goal Sets","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On CUSTOM Mini Goal Sets with Mini Lacrosse Sticks Since 1990.  Battle it out in your backyard.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Sticks","Root Category/Mens/Sticks/MINI LAX","2","Yes","mini-lacrosse-sticks","","","Mini Lacrosse Sticks | Nike Lakota Mini Sticks | Custom Mini Protons | Mini Lax","mini lacrosse sticks, mini sticks","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On CUSTOM Mini Lacrosse Sticks Since 1990. Get Your Mini Stick Custom Strung By the Best!","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Balls","Root Category/Mens/Sticks/MINI LAX","4","Yes","mini-lacrosse-balls","","","Mini Lacrosse Ball Sets | Mini Lacrosse Balls | Mini Lax","mini balls, mini lacrosse, mini sets, lacrosse mini balls","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Mini Lacrosse Balls Since 1990. Get Your Mini Lacrosse Balls 2 PACK!","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Arm Guards","Root Category/Clearance/PROTECTIVE/Arm Protection","2","Yes","arm-guards","New Styles added DAILY. Shop Today on Amazing Lacrosse Arm Guards at Clearance Pricing direct from Lacrosse Unlimited. All Lax Arm Pads have Limited Quantities and won\'t Last. ","","Sale Lax Arm Guards | Clearance on Lacrosse Arm Guards | Lax Arm Protection Close-out Sale | Great Deal on Lax Elbow Guards |","Lax,Lacrosse,Sale Arm Guards,Clearance on Arm Guards,Arm Protection Close-out Sale,Great Deal on Elbow Guards,Brine,Warrior,STX,Gait,Under Armour,","Get Amazing Deals on Lacrosse Arm Guards at Clearance Pricing direct from Lacrosse Unlimited and SAVE TODAY","Yes","Products only","","No","","","No layout updates",""
+"Tape","Root Category/Mens/Sticks/SHAFTS","8","Yes","tape","","","Lacrosse Tape | Athletic Tape","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Lacrosse Athletic Tape. You Pick The Color!","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Arm Pads","Root Category/Clearance/PROTECTIVE/Arm Protection","1","Yes","arm-pads","New Styles added DAILY. Shop Today on Amazing Lacrosse Arm Pads at Clearance Pricing direct from Lacrosse Unlimited. All Lax Arm Pads have Limited Quantities and won\'t Last. ","","Clearance Sale on Lacrosse Arm Pads - Get Great Deals on Arm Pads By STX, Warrior and Brine","","Get Amazing Deals on Lacrosse Arm Pads at Clearance Pricing direct from Lacrosse Unlimited and SAVE TODAY","Yes","Products only","","No","","","No layout updates",""
+"Medical Kits","Root Category/Goals & Training/COACHES/FIRST AID","1","Yes","medical-kits","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Tape (Case)","Root Category/Goals & Training/COACHES/FIRST AID","2","Yes","tape-case","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Build a Mesh kit","Root Category/Mens/Sticks/SUPPLIES","1","Yes","build-your-own-lacrosse-mesh-kit","<h2>Build Your Own Custom Lacrosse Mesh Stringing Kits - Pick your own colors!</h2>","","Build Your Own Lacrosse Mesh Kit | Custom Lacrosse Mesh String Kits","","Fast, Easy, Free Shipping Over $99. BEST PRICE GUARANTEED Since 1990! Custom Lacrosse Mesh String Kits. You Pick The COLORS!","Yes","Products only","","No","Best Value,Brand,Price","","No layout updates",""
+"Goalie Strung","Root Category/Mens/Sticks/HEADS","8","No","goalie-strung","","","Complete Goalie Sticks | Youth Goalie Lacrosse Sticks","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Unstrung","Root Category/Mens/Sticks/HEADS","9","Yes","goalie-unstrung-lacrosse-heads","","","Unstrung Goalie Lacrosse Heads | STX Eclipse Head | NEMESIS LYTE","","Fast Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Goalie Unstrung Lacrosse Heads, STX Eclipse & Nemisis Lyte Since 1990. BUILD YOUR OWN STICK!","Yes","Products only","","Yes","","","No layout updates",""
+"Attack","Root Category/Mens/Sticks/SHAFTS","2","Yes","attack-lacrosse-shafts","","","Lacrosse Shafts Attack | Shafts For Attackmen | Attack Handles | Lacrosse Shafts","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts For Attackmen Since 1990 All Colors & Styles!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Middie","Root Category/Mens/Sticks/SHAFTS","3","Yes","middie-lacrosse-shafts","","","Lacrosse Shafts Middies | Shafts For Middies | Middie Handles | Lacrosse Shafts","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts For Middies Since 1990 All Colors & Styles!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Defense","Root Category/Mens/Sticks/SHAFTS","4","Yes","defense-lacrosse-shafts","","","Lacrosse Defense Shafts | Lacrosse Shafts For Defensemen | Defense Handles","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts For Defensemen Since 1990 All Colors & Styles!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Goalie","Root Category/Mens/Sticks/SHAFTS","5","Yes","goalie-lacrosse-shaft","","","Lacrosse Shafts Goalies | Goalie Lacrosse Shafts | Goalie Handles","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts For GOALIES Since 1990 All Colors & Styles!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Womens","Root Category/Mens/Sticks/SHAFTS","6","No","womens-lacrosse-shafts","","","Womens Lacrosse Shafts | Womens Shafts | Womens Handles","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Shafts For Women and Girls Since 1990. All Colors & Styles!","No","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Youth","Root Category/Mens/Sticks/SHAFTS","7","Yes","youth-lacrosse-shaft","","","Youth Lacrosse Shafts | Lacrosse Handles ","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Youth Lacrosse Shafts Since 1990. All Manufacturers and Colors!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Limited Edition","Root Category/Mens/Sticks/SHAFTS","1","Yes","limited-edition-lacrosse-shafts","<h2>These Limited Edition Handles are <span style=""color: #3366ff;"">EXCLUSIVE</span> Lacrosse Unlimited Designs.</h2>
+<p><span style=""font-size: medium;"">Custom Colors and Custom Graphics. What else would you expect from Lacrosse Unlimited the undisputed Kings of Custom. Supplies are limited so</span><span style=""font-size: medium;"">&nbsp;get them while they are HOT!</span></p>","","EXCLUSIVE Limited Edition Lacrosse Shafts | Warrior Krypto C405 Eruption 2 | St. Pattys Day Krypto | Nike Vandal","","Lacrosse Unlimited EXCLUSIVE! LIMITED EDITION Krypto C405 Eruption 2 Lacrosse Shafts, St. Pattys Day Shaft, and Nike Vandal Limited Time Only.","Yes","Products only","","Yes","","","No layout updates",""
+"Womens Unstrung","Root Category/Mens/Sticks/HEADS","7","No","womens-unstrung","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Womens Strung","Root Category/Mens/Sticks/HEADS","6","No","womens-strung","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mens Unstrung","Root Category/Mens/Sticks/HEADS","5","Yes","mens-unstrung-lacrosse-heads","","","Mens Unstrung Lacrosse Heads | Unstrung Heads","mens unstrung lacrosse heads, unstrung, heads, lacrosse heads, lacrosse sticks","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On UNSTRUNG Lacrosse Heads & Mesh Kits Since 1990. BUILD YOUR STICK YOUR WAY!","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Dyes","Root Category/Mens/Sticks/HEADS","2","Yes","dyed-heads","<h2>Customize Your Lacrosse Stick With A Dyed Head. Only From Lacrosse Unlimited.</h2>",""," Dyed Lacrosse Heads | Customize Your Own Lacrosse Stick | You Pick Your Colors","","Fast, Easy, Free Shipping Over $99. Build Your Own Dyed Lacrosse Stick From The INVENTORS OF CUSTOM LACROSSE!","Yes","Products only","","Yes","Best Value,Brand,Price,Color","Best Value","No layout updates",""
+"Custom Pockets","Root Category/Mens/Sticks/HEADS","3","Yes","custom-lacrosse-stringing","<h2><span style=""color: #7799cc;""><span style=""font-size: large;"">Lacrosse Heads Custom Strung By Our Expert</span>&nbsp;Stringers.</span></h2>
+<p><strong><span style=""font-size: medium; color: #7799cc;"">Here is how custom Stringing works.....</span></strong></p>
+<p><strong style=""color: #7799cc; font-size: small;""><span style=""font-size: medium;"">You pick: </span></strong></p>
+<ul>
+<li><strong style=""color: #7799cc; font-size: small;""><span style=""font-size: medium;"">Your Stringing Style</span></strong></li>
+<li><strong style=""color: #7799cc; font-size: small;""><span style=""font-size: medium;"">Your Favorite Head</span></strong></li>
+<li><strong style=""color: #7799cc; font-size: small;""><span style=""font-size: medium;"">Your Favorite Colors</span></strong></li>
+</ul>
+<p><strong style=""color: #7799cc; font-size: small;""><span style=""font-size: medium;"">We do the rest...</span><span>.</span></strong></p>","","Custom Strung Lacrosse Heads | Custom GOLD WAX Lacrosse Mesh Stringing | Lacrosse Traditional Stringing","","Shop Now For Custom Lacrosse Stringing. New Pockets To Fit Every Players Game. Trust Your Head Use THE BEST! Always Custom Since 1990.","Yes","Products only","","Yes","","","No layout updates",""
+"Mini Sticks","Root Category/Mens/Sticks/HEADS","12","No","mini-stick","","","Mini Lacrosse Sticks | Nike Lakota Mini Sticks | Custom Mini Protons | Mini Lax","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Build Your Own CUSTOM MINI Lacrosse Sticks By The INVENTORS OF CUSTOM LACROSSE!","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Limited Edition ","Root Category/Mens/Sticks/BUILD YOUR OWN","1","No","limited-edition","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mens","Root Category/Mens/Sticks/COMPLETE","1","No","mens","","","Mens Complete Lacrosse Sticks | Mens Factory Lacrosse Sticks","mens lacrosse sticks, mens sticks","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Mens Lacrosse Sticks Since 1990. Custom Colors Available! ","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Womens","Root Category/Mens/Sticks/COMPLETE","2","No","womens-complete-lacrosse-sticks","","","Complete Girls Lacrosse Sticks | Lacrosse Sticks For Women","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Complete Girls Lacrosse Sticks Since 1990. Custom Colors Available! ","No","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Youth","Root Category/Mens/Sticks/COMPLETE","3","No","youth-complete-lacrosse-sticks","","","Youth Complete Sticks | Begginner Lacrosse Sticks | Youth Lacrosse Sticks","youth lacrosse sticks, youth lax sticks, youth sticks","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Complete Youth Lacrosse Sticks Since 1990. Custom Colors Available!","No","Products only","","Yes","Brand,Price,Color","Brand","No layout updates",""
+"Goalie","Root Category/Mens/Sticks/COMPLETE","4","No","goalie","","","Complete Goalie Lacrosse Sticks | Lacrosse Goalie Sticks","","Fast, Easy and Free Shipping Over $50. BEST PRICE GUARANTEED On Complete GOALIE Lacrosse Sticks Since 1990. Custom Colors Available!","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Build Your Own","Root Category/Mens/Sticks/HEADS","1","No","build-your-own","","","Build Your Own Lacrosse Stick | Custom Made Lacrosse Sticks","","Fast, Easy, and Free Shipping Over $50. BEST PRICE GUARANTEED On Custom Strung Lacrosse Sticks & Mesh Kits Since 1990. BUILD YOUR OWN LACROSSE STICK!","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Custom Mesh Kit","Root Category/Mens/Sticks/HEADS","10","Yes","build-your-own-mesh-kit","","","Custom Dura Lacrosse Mesh Kit | Custom Monster Lacrosse Mesh | Custom Canadian Lacrosse Mesh ","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Build Your Own Custom Lacrosse Mesh Kits. By The INVENTORS OF CUSTOM LACROSSE!","Yes","Products only","","Yes","Best Value,Brand,Price","","No layout updates",""
+"Attack Mesh","Root Category/Mens/Sticks/SUPPLIES","2","Yes","attack-lacrosse-mesh","<h2><span style=""font-size: medium;"">Check out our new GOLD Lacrosse Mesh. Higher quality mesh to up your game. </span></h2>","","Attack Lacrosse Mesh | GOLD Lacrosse Dura Mesh | Attack Monster Mesh ","","Lacrosse Mesh. High Quality Mesh. FAST Delivery + FREE Shipping on 100s of Items. Quality, Selection, Service You Can Trust.","Yes","Products only","","No","Best Value,Brand,Price","","No layout updates",""
+"Stop Watch","Root Category/Goals & Training/COACHES/TIMERS","2","Yes","stop-watch","","","Timers For 40 Yard Dash | Stop Watch","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Lacrosse Stopwatches. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Game Clock","Root Category/Goals & Training/COACHES/TIMERS","1","Yes","game-clock","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Score Keeping","Root Category/Goals & Training/COACHES/SCOREBOOK","3","Yes","lacrosse-score-keeping","","","Lacrosse Score Keeping Books","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Womens","Root Category/Goals & Training/COACHES/SCOREBOOK","2","Yes","womens-lacrosse-scorebook","","","Womens Scorebooks | Score Keeping For Womens Lacrosse","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Womens Lacrosse Scorebooks. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mens","Root Category/Goals & Training/COACHES/SCOREBOOK","1","Yes","mens-lacrosse-scorebook","","","Mens Scorebooks | Score Keeping For Mens Lacrosse","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Mens Lacrosse Scorebooks. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Mohawk Sets","Root Category/Protective/HELMETS/Decals","1","Yes","cascade-helmet-mohawks","","","","","","Yes","Products only","","No","","","No layout updates",""
+"VentCal Sets","Root Category/Protective/HELMETS/Decals","2","Yes","cascade-helmet-vents","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Back Panels","Root Category/Protective/HELMETS/Decals","3","Yes","back-panels","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Ice Packs (Case)","Root Category/Goals & Training/COACHES/FIRST AID","4","No","ice-packs","","","","","","Yes","Products only","","Yes","Brand,Price,Color","","No layout updates",""
+"Pocket","Root Category/Goals & Training/COACHES/RADAR","1","Yes","pocket","","","","","","No","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Hand Held","Root Category/Goals & Training/COACHES/RADAR","2","No","hand-held","","","","","","Yes","Products only","","No","","","No layout updates",""
+"Game","Root Category/Goals & Training/COACHES/GOALS","1","Yes","game-lacrosse-goals","","","Game Lacrosse Goals ","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Game Lacrosse Goals and Nets. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Goalie Mesh","Root Category/Mens/Sticks/SUPPLIES","3","Yes","lacrosse-goalie-mesh","","","Goalie Lacrosse Mesh | Goalie Monster Mesh | Goalie Hard Mesh","","Fast, Easy, Free Shipping Over $99. EXCLUSIVE Long Island Goalie Lacrosse Mesh Only From Lacrosse Unlimited.","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Sidewall String","Root Category/Mens/Sticks/SUPPLIES","4","Yes","lacrosse-sidewall-string","","","Lacrosse Sidewall Strings | Lacrosse Top String | Strings",""," Worlds Largest Selection Of Lacrosse Sidewall String. Available In ALL COLORS! Fast, Easy, Free Shipping Over $99.","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Shooting Strings","Root Category/Mens/Sticks/SUPPLIES","5","Yes","lacrosse-shooting-strings","","","Lacrosse Shooting Strings | Lacrosse Hockey Laces","","Fast, Easy, Free Shipping Over $99. BEST PRICE GUARANTEED Since 1990! Lacrosse Hockey Laces In ALL COLORS!","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Traditional Strings","Root Category/Mens/Sticks/SUPPLIES","6","Yes","lacrosse-traditional-strings","","","Lacrosse Nylons For Traditional Gut String | Lacrosse Gut String","","Fast, Easy, Free Shipping Over $99. BEST PRICE GUARANTEED Since 1990! Lacrosse Traditional Gut String In ALL COLORS!","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Leathers","Root Category/Mens/Sticks/SUPPLIES","7","Yes","lacrosse-leathers","","","Lacrosse Leathers For Traditional Sticks | Lacrosse Leathers Tan Black White Yellow","","Fast, Easy, Free Shipping Over $99. BEST PRICE GUARANTEED Since 1990! Lacrosse Leathers For Traditional Pockets. In White Black Tan Yellow and More!","No","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Buttends","Root Category/Mens/Sticks/STICK SUPPLIES","1","No","buttends","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Head Screw","Root Category/Mens/Sticks/STICK SUPPLIES","2","No","head-screw","","","","","","Yes","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Pocket Pounder","Root Category/Mens/Sticks/SUPPLIES","8","No","pocket-pounder","","","Lacrosse Pocket Pounder | Pocket Pounder ","","Fast, Easy, Free Shipping Over $50. BEST PRICE GUARANTEED Since 1990! Lacrosse Pocket Pounder.  What The Pros Use For A Great Pocket.","No","Products only","","No","Brand,Price,Color","Price","No layout updates",""
+"Foldable","Root Category/Goals & Training/COACHES/GOALS","2","Yes","foldable-lacrosse-goals","","","Foldable Lacrosse Goals | Collapsible Lacrosse Goals ","","Fast, Easy, & Free Shipping Over $50. BEST PRICE GUARANTEED On Collapsible Lacrosse Goals and Nets. Top Quality & Great Selection Since 1990.","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""
+"Pre-Wrap (Case)","Root Category/Goals & Training/COACHES/FIRST AID","3","Yes","pre-wrap-case","","","","","","Yes","Products only","","Yes","Brand,Price,Color","Price","No layout updates",""

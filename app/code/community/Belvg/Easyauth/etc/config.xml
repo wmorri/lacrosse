@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * BelVG LLC.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ *
+ /***************************************
+ *         MAGENTO EDITION USAGE NOTICE *
+ *****************************************/
+ /* This package designed for Magento COMMUNITY edition
+ * BelVG does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BelVG does not provide extension support in case of
+ * incorrect edition usage.
+ /***************************************
+ *         DISCLAIMER   *
+ *****************************************/
+ /* Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future.
+ *****************************************************
+ * @category   Belvg
+ * @package    Belvg_Easyauth
+ * @copyright  Copyright (c) 2010 - 2011 BelVG LLC. (http://www.belvg.com)
+ * @license    http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+   */-->
+
+<config>
+
+
+
+	<modules>
+		<Belvg_Easyauth>
+			<version>1.2.1</version>
+		</Belvg_Easyauth>
+	</modules>
+	<blocks>
+            <easyauth><class>Belvg_Easyauth_Block</class></easyauth>
+        </blocks>
+	<admin>
+		<routers>
+			<easyauth>
+				<use>admin</use>
+				<args>
+					<module>Belvg_Easyauth</module>
+					<frontName>easyauth</frontName>
+				</args>
+			</easyauth>
+                </routers>
+	</admin>
+	<frontend>
+		<layout>
+		    <updates>
+			    <easyauth>
+				    <file>easyauth.xml</file>
+			    </easyauth>
+		    </updates>
+           </layout>
+	</frontend>
+    <adminhtml>
+	    <layout>
+		    <updates>
+			    <easyauth>
+				    <file>belvg_easyauth.xml</file>
+			    </easyauth>
+		    </updates>
+           </layout>        
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<easyauth>
+							<title>Easyauth Module</title>
+							<sort_order>200</sort_order>
+						</easyauth>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+
+
+    </adminhtml>
+    <global>
+
+	    <blocks>
+		    <easyauth>
+			    <class>Belvg_Easyauth_Block</class>
+		    </easyauth>
+                                  
+	    </blocks>
+            
+
+             <resources>
+                <easyauth_setup>
+                    <setup>
+                            <module>Belvg_Easyauth</module>
+                    </setup>
+                    <connection>
+                            <use>core_setup</use>
+                    </connection>
+                </easyauth_setup>
+                <easyauth_write>
+                    <connection><use>core_write</use></connection>
+                </easyauth_write>
+                <easyauth_read>
+                    <connection><use>core_read</use></connection>
+                </easyauth_read>
+            </resources>
+	    <models>
+		    <easyauth>
+			    <class>Belvg_Easyauth_Model</class>
+			    <resourceModel>easyauth_mysql4</resourceModel>
+		    </easyauth>
+                   
+		    <easyauth_mysql4>
+			    <class>Belvg_Easyauth_Model_Mysql4</class>
+                                <entities>
+                                    <fields>
+                                        <table>belvg_easyauth_fields</table>
+                                    </fields>
+                                    <orders>
+                                        <table>belvg_easyauth_orders</table>
+                                    </orders>
+                                </entities>
+		    </easyauth_mysql4>
+            </models>
+	    <helpers>
+		    <easyauth>
+			    <class>Belvg_Easyauth_Helper</class>
+		    </easyauth>
+	    </helpers>
+            <rewrite>
+                <ea_login>
+
+                                    <from><![CDATA[#^/ea/user/#]]></from>
+                                    <to>/easyauth/user/</to>
+
+                </ea_login>
+            </rewrite>
+    </global>
+
+
+
+</config>
+

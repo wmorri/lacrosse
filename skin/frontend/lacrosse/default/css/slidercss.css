@@ -1,0 +1,4 @@
+.cycle-slideshow,.cycle-slideshow *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.cycle-slideshow{width:622px;margin:auto;padding:0}
+.cycle-slideshow:after{display:block; content:""; clear:both;}
+.cycle-slideshow>div{position:absolute;top:0;left:0;width:100%;padding:0}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<tr>
+    <td colspan="10" width="470">
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+<script>
+     latitude = parseFloat($('latitude').getValue());        
+     longtitude = parseFloat($('longtitude').getValue());
+     zoom_value = parseInt($('zoom_level').getValue());         
+</script>
+    
+<div class="magestore-map" id="magestore-map">
+     <a href="javascript:void(0)" onclick="showmap()" id="click-show-map"><?php echo $this->__('Click here to show map'); ?></a>
+     <input type="hidden" id="zoom_level_value" name="zoom_level_value">
+     <input type="hidden" id="store_latitude_value" name="store_latitude_value">
+     <input type="hidden" id="store_longtitude_value" name="store_longtitude_value">
+     <div id="button-reset" style="margin-top:20px; margin-bottom: -12px; display:none"><button type="button" onclick="resetMap()"><span><?php echo $this->__('Reset Google Map')?></span></button></div>        
+     <div id="notice-map"></div>        
+     <div id="googleMap" style="display: none;"></div>
+</div>     
+
+<script>
+    <?php if (!$this->getRequest()->getParam('id')): ?>
+        $('magestore-map').setStyle({display:'none'});
+    <?php endif; ?>   
+         gMap = new Storelocator(latitude, longtitude, zoom_value);
+       
+      function showmap(){                    
+          $('button-reset').setStyle({display:"block"});
+          $('googleMap').setStyle({display:"block"});
+          google.maps.event.trigger(gMap.map, 'resize');
+          $('click-show-map').hide();
+      }  
+       
+        
+      function resetMap(){
+          <?php $location = $this->getCoodinates();?>
+          <?php if($location):?>
+          latOld = <?php echo $location['lat']?>;
+          longOld = <?php echo $location['lng']?>;                
+          zoomOdl = 12;
+          $('store_latitude_value').value = latOld;
+          $('latitude').value = latOld;
+          $('store_longtitude_value').value = longOld;
+          $('longtitude').value = longOld;
+          $('zoom_level_value').value = 12;
+          $('zoom_level').value = 12;
+          $('latitude').setStyle({background: 'rgb(250, 230, 180)'});
+          $('longtitude').setStyle({background: 'rgb(250, 230, 180)'});
+          $('zoom_level').setStyle({background: 'rgb(250, 230, 180)'});
+           //var location = new google.maps.LatLng(results[0].geometry.location.lat(),results[0].geometry.location.lng());
+           gMap = new Storelocator(latOld, longOld, 12);
+           gMap.initGoogleMap();
+           var request = {
+               location: gMap.stockholm          
+           };
+           <?php endif; ?>
+          // service = new google.maps.places.PlacesService(gMap.map);
+          /// service.textSearch(request, callback);
+           
+                 
+      }            
+</script>
+    </td>
+</tr>

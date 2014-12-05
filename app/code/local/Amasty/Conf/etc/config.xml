@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Amasty_Conf>
+            <version>3.5.5</version>
+        </Amasty_Conf>
+    </modules>
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Amasty_Conf>
+                    <files>
+                        <default>Amasty_Conf.csv</default>
+                    </files>
+                </Amasty_Conf>
+            </modules>
+        </translate>
+        
+        <layout>
+            <updates>
+                <amconf>
+                    <file>amconf.xml</file>
+                </amconf>
+            </updates>
+        </layout>
+        
+        <routers>
+            <amconf>
+                <use>standard</use>
+                <args>
+                    <module>Amasty_Conf</module>
+                    <frontName>amconf</frontName>
+                </args>
+            </amconf>
+        </routers>
+    </frontend>
+    <adminhtml>
+        <layout>
+            <updates>
+                <amconf>
+                    <file>amconf.xml</file>
+                </amconf>
+            </updates>
+        </layout>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <amconf translate="title" module="amconf">
+                                            <title>Image-Based Dynamic Configurable Products</title>
+                                        </amconf>
+                                    </children>
+                                </config>
+                            </children>
+                        </system> 
+                     </children>
+                </admin> 
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <Amasty_Conf>
+                    <files>
+                        <default>Amasty_Conf.csv</default>
+                    </files>
+                </Amasty_Conf>
+            </modules>
+        </translate>
+    </adminhtml>
+    
+    <global>
+    
+        <models>
+            <amconf>
+                <class>Amasty_Conf_Model</class>
+                <resourceModel>amconf_mysql4</resourceModel>
+            </amconf>
+            
+            <amconf_mysql4>
+                <class>Amasty_Conf_Model_Mysql4</class>
+                <entities>
+                    <attribute>
+                        <table>amasty_amconf_attribute</table>
+                    </attribute>
+                    <product_attribute>
+                        <table>amasty_amconf_product_attribute</table>
+                    </product_attribute>
+                </entities>
+            </amconf_mysql4>
+
+        </models>
+        
+		<resources>
+             <amconf_setup>
+                <setup>
+                    <module>Amasty_Conf</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </amconf_setup>
+		    <amconf_write>
+		        <connection><use>core_write</use></connection>
+		    </amconf_write>
+		    <amconf_read>
+		        <connection><use>core_read</use></connection>
+		    </amconf_read>
+		</resources>
+		  
+        <blocks>
+            <amconf>
+                <class>Amasty_Conf_Block</class>
+            </amconf>
+            
+            <adminhtml>
+                <rewrite>
+                    <catalog_product_attribute_edit_tabs>Amasty_Conf_Block_Adminhtml_Catalog_Product_Attribute_Edit_Tabs</catalog_product_attribute_edit_tabs>
+                </rewrite>
+            </adminhtml>
+            
+            <catalog>
+                <rewrite>
+                    <product_view_type_configurable>Amasty_Conf_Block_Catalog_Product_View_Type_Configurable</product_view_type_configurable>
+                </rewrite>
+            </catalog>
+        </blocks>
+        
+        <helpers>
+            <amconf>
+                <class>Amasty_Conf_Helper</class>
+            </amconf>
+        </helpers>
+        
+        <events>
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <amconf>
+                        <class>amconf/observer</class>
+                        <method>onListBlockHtmlBefore</method>
+                    </amconf>
+                    <super_product_attributes_configuration>
+                        <class>amconf/observer</class>
+                        <method>onSuperProductAttributesConfigurationAfter</method>
+                    </super_product_attributes_configuration>
+                </observers>
+            </core_block_abstract_to_html_after>
+            <catalog_product_prepare_save>
+                <observers>
+                    <super_product_attributes_prepare_save>
+                        <class>amconf/observer</class>
+                        <method>onSuperProductAttributesPrepareSave</method>
+                    </super_product_attributes_prepare_save>
+                </observers>
+            </catalog_product_prepare_save>
+       </events>
+        
+    </global>
+    
+    <default>
+        <amconf>
+           <general>
+                <hide_dropdowns>0</hide_dropdowns>
+                <reload_images>1</reload_images>
+                <reload_name>1</reload_name>
+                <show_clear>1</show_clear>
+                <oneselect_reload>0</oneselect_reload>
+                <enable_list>0</enable_list>
+                <listimg_size>18</listimg_size>
+				<show_title_view>1</show_title_view>
+                <show_title_list>1</show_title_list>
+				<show_attribute_title>1</show_attribute_title>
+           </general>
+           <size>
+                <thumb>56</thumb>
+                <preview>265</preview>
+           </size>
+           <product_image_size>
+               <thumb>56</thumb>
+           </product_image_size>
+           <zoom>
+                <enable>1</enable>
+                <position>right</position>
+                <viewer_width>265</viewer_width>
+                <viewer_height>265</viewer_height>
+                <viewer_margin>30</viewer_margin>
+                <show_product_name>1</show_product_name>
+                <zoom_activation>mouse</zoom_activation>
+           </zoom>
+           <lightbox>
+                <enable>1</enable>
+                <change_main_img>1</change_main_img>
+           </lightbox>
+        </amconf>
+    </default>
+</config>

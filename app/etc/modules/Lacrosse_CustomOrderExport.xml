@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Lacrosse_CustomOrderExport>
+      <active>true</active>
+      <codePool>local</codePool>
+    </Lacrosse_CustomOrderExport>
+  </modules>
+</config>

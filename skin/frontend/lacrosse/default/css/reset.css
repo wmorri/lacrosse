@@ -1,0 +1,129 @@
+ 
+
+*,
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt, u, ul, var {
+/*	background: transparent;
+*/	 
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+ol, ul {
+	margin:0px;
+	padding:0px;
+	
+ }
+ 
+table, table td {
+	padding:0;
+	border:none;
+ }
+img {
+ 	border:0px;
+ 
+}
+ 
+
+/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video{ display: block; }
+mark, rp, rt, ruby, summary, time{ display: inline }
+
+
+/*================================= Custom css ========================================*/
+
+ 
+
+
+/* --------------------- set focus for: safari and chrome --------------------- */
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus {
+  outline:0 none;
+}
+
+a:focus{outline:0px;}
+
+/* --------------------- custom --------------------- */
+
+.clear{clear:both;}
+.input{border:1px solid #ccc; padding:2px }
+.page-break,.print-only{display:none;}
+.point{cursor:pointer;}
+.f_left{float:left;}
+.f_right{float:right;}
+.aligncenter{text-align:center;}
+.alignleft{text-align:left;}
+.alignright{text-align:right;}
+.relative{position:relative;}
+
+/* --------------------- links --------------------- */
+
+ 
+ a img{border:0;}
+ a:focus{ outline:0px;}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+@font-face {
+    font-family: 'MyriadProSemiboldCondensed';
+    src: url('fonts/myriadpro-semiboldcond_1-webfont.eot');
+    src: url('fonts/myriadpro-semiboldcond_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/myriadpro-semiboldcond_1-webfont.woff') format('woff'),
+         url('fonts/myriadpro-semiboldcond_1-webfont.ttf') format('truetype'),
+         url('fonts/myriadpro-semiboldcond_1-webfont.svg#MyriadProSemiboldCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('fonts/bebasneue_1-webfont.eot');
+    src: url('fonts/bebasneue_1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/bebasneue_1-webfont.woff') format('woff'),
+         url('fonts/bebasneue_1-webfont.ttf') format('truetype'),
+         url('fonts/bebasneue_1-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/roboto-bold_0-webfont.eot');
+    src: url('fonts/roboto-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-bold_0-webfont.woff') format('woff'),
+         url('fonts/roboto-bold_0-webfont.ttf') format('truetype'),
+         url('fonts/roboto-bold_0-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bignoodletitlingregular';
+    src: url('fonts/big_noodle_titling-webfont.eot');
+    src: url('fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/big_noodle_titling-webfont.woff') format('woff'),
+         url('fonts/big_noodle_titling-webfont.ttf') format('truetype'),
+         url('fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ImpactRegular';
+    src: url('fonts/impact_3.eot');
+    src: url('fonts/impact_3.eot') format('embedded-opentype'),
+         url('fonts/impact_3.woff') format('woff'),
+         url('fonts/impact_3.ttf') format('truetype'),
+         url('fonts/impact_3.svg#ImpactRegular') format('svg');
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Lacrosse_CustomTallyExport>
+			<version>1.0.4</version>
+		</Lacrosse_CustomTallyExport>
+	</modules>
+	
+	<admin>
+        <routers>
+            <Lacrosse_CustomTallyExport>
+                <use>admin</use>
+                <args>
+                    <module>Lacrosse_CustomTallyExport</module>
+                    <frontName>customtallyexport</frontName>
+                </args>
+            </Lacrosse_CustomTallyExport>
+        </routers>
+    </admin>
+    
+    <adminhtml>
+        <events>
+            <core_block_abstract_prepare_layout_before>
+                <observers>
+                    <Lacrosse_CustomTallyExport_Model_Observer_addMassaction>
+                        <type>model</type>
+                        <class>Lacrosse_CustomTallyExport_Model_Observer</class>
+                        <method>addMassaction</method>
+                    </Lacrosse_CustomTallyExport_Model_Observer_addMassaction>
+                </observers>
+            </core_block_abstract_prepare_layout_before>
+        </events>
+
+        <translate>
+            <modules>
+                <Lacrosse_CustomTallyExport>
+                    <files>
+                        <default>Lacrosse_CustomTallyExport.csv</default>
+                    </files>
+                </Lacrosse_CustomTallyExport>
+            </modules>
+        </translate>
+    </adminhtml>
+    
+    <global>
+        <models>
+            <lacrosse_customtallyexport>
+                <class>Lacrosse_CustomTallyExport_Model</class>
+            </lacrosse_customtallyexport>
+        </models>
+    </global>
+</config>

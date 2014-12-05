@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Magestore
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Magestore.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.magestore.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category 	Magestore
+ * @package 	Magestore_Storelocator
+ * @copyright 	Copyright (c) 2012 Magestore (http://www.magestore.com/)
+ * @license 	http://www.magestore.com/license-agreement.html
+ */
+-->
+<config>
+    <tabs>
+        <magestore translate="label">
+            <label>Magestore Extension</label>
+            <sort_order>400</sort_order>
+        </magestore>
+    </tabs>
+    <sections>
+        <storelocator translate="label" module="storelocator">
+            <class>separator-top</class>
+            <label>Store Locator</label>
+            <tab>magestore</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>299</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label">
+                    <label>General Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>		
+                        <enable translate="label">
+                            <label>Enable</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>1</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </enable>	
+                        <gkey translate="label">
+                            <label>Google Map API key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>2</sort_order>							
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </gkey>
+                        <allow_face translate="label">
+                            <label>Allow Facebook comment</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>3</sort_order>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>							
+                        </allow_face>      
+                        <language translate="label">
+                            <label>Language for Facebook comment</label>
+                            <source_model>storelocator/system_config_language</source_model>
+                            <frontend_type>select</frontend_type>              
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment></comment>
+                        </language>                                          
+                        <facekey translate="label">
+                            <label>Facebook API key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>5</sort_order>							
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[<script type="text/javascript">
+                                                                if($("storelocator_general_allow_face").value == 1){
+                                                                    $('storelocator_general_facekey').up().up().show();
+                                                                    $('storelocator_general_language').up().up().show();
+                                                                }else{
+                                                                    $('storelocator_general_facekey').up().up().hide();    
+                                                                    $('storelocator_general_language').up().up().hide();
+                                                                }
+                                                                Event.observe($("storelocator_general_allow_face"),'change',
+                                                                     function(){var showFace = $("storelocator_general_allow_face").value; 
+                                                                            if (showFace==1) {
+                                                                                $('storelocator_general_facekey').up().up().show();
+                                                                                $('storelocator_general_language').up().up().show();                                                                                
+                                                                                }
+                                                                            else{
+                                                                                $('storelocator_general_facekey').up().up().hide();
+                                                                                $('storelocator_general_language').up().up().hide();
+                                                                                } })
+                                                                    </script>]]>
+                            </comment>
+                        </facekey>
+                        <choose_search translate="label">
+                            <label>Choose criteria for search</label>
+                            <frontend_type>multiselect</frontend_type>                                                        
+                            <source_model>storelocator/select_search</source_model>
+                            <sort_order>6</sort_order>							
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>These are criteria to search for store in frontend.</comment>
+                        </choose_search>	                        
+                        <search_radius translate="label">
+                            <label>Radius options  for search</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>8</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </search_radius>                       
+                        <search_radius_default translate="label">
+                            <label>Default Radius for search</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </search_radius_default>
+                        <distance_unit translate="label">
+                            <label>Distance Unit</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>storelocator/system_config_distance</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </distance_unit>
+                        <sort_store translate="label">
+                            <label>List Stores by</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <source_model>storelocator/system_config_sortstore</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sort_store>
+                        <default_country translate="label">
+                            <label>Default Country</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>11</sort_order>
+                            <source_model>storelocator/system_config_defaultcountry</source_model>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </default_country>                       
+                        <page_title translate="label">
+                            <label>Page title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>13</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+							<comment>This is the title of the Store List page and Store Detail pages.</comment>
+                        </page_title>                        
+                    </fields>				
+                </general>
+            </groups>
+        </storelocator>
+    </sections>
+</config>

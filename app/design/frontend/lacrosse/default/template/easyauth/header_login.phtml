@@ -1,0 +1,88 @@
+<?php
+/**
+ * BelVG LLC.
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ *
+ ***************************************
+ *         MAGENTO EDITION USAGE NOTICE *
+ *****************************************
+ /* This package designed for Magento COMMUNITY edition
+ * BelVG does not guarantee correct work of this extension
+ * on any other Magento edition except Magento COMMUNITY edition.
+ * BelVG does not provide extension support in case of
+ * incorrect edition usage.
+ /***************************************
+ *         DISCLAIMER   *
+ *****************************************
+ /* Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future.
+ *****************************************************
+ * @category   Belvg
+ * @package    Belvg_Easyauth
+ * @copyright  Copyright (c) 2010 - 2011 BelVG LLC. (http://www.belvg.com)
+ * @license    http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ */
+?>
+
+<?php  	$storeUrl = "http://devrack.lacrosseunlimited.com/";
+		//$storeUrl = "http://192.168.100.94/jitendra/lacrosseunlimited/pro/";
+?>
+<?php 
+// get customer information
+if (Mage::app()->isInstalled() && Mage::getSingleton('customer/session')->isLoggedIn()) {
+   $user = $this->__('Welcome, %s!', Mage::getSingleton('customer/session')->getCustomer()->getEmail());
+} else {
+   $user = "";
+}
+?>
+
+<ul class="scl-li">
+<?php if(strlen($user)>1):?>
+<li>  <a href="<?php echo $storeUrl."customer/account"?>"><?php echo $user; ?>&nbsp;&nbsp;|</a></li>
+<?php else:?>
+<li> <a href="<?php echo $storeUrl."customer/account/create"?>">Sign Up &nbsp;&nbsp;|</a> </li>
+<?php endif;?>
+<?php if($this->helper('customer')->isLoggedIn()):?>
+<li><a href="<?php echo $storeUrl."customer/account/logout"?>">Logout:</a></li>
+<?php else:?>
+<li><a href="<?php echo $storeUrl."customer/account/login"?>">Login or just use your:</a></li>
+<?php endif;?>
+<li class="small-slide"> 
+<!-- slideshow --> 
+<span class="prevControl"><img src="<?php echo $this->getSkinUrl('images/black-arrow.png'); ?>" alt="back"></span>
+<div class="cycle-slideshow" data-allow-wrap="false" data-cycle-paused="true" data-cycle-fx="scrollHorz" data-cycle-prev=".prevControl" data-cycle-next=".nextControl" data-cycle-timeout="4500" data-speed="1400" data-cycle-slides="> div" >
+<div> <a href="#" onclick="signwith('twitter')"><img src="<?php echo $this->getSkinUrl('images/social-icon1.png'); ?>" alt="social"></a> <a href="#" onclick="signwith('facebook')"><img src="<?php echo $this->getSkinUrl('images/social-icon2.png'); ?>" alt="social"></a> <a href="#" onclick="signwith('google')"><img src="<?php echo $this->getSkinUrl('css/belvg/img/Google.png');?>" alt="social" height="15px" width="15px"> </a> </div>
+<?php /* ?><div> <a href="#" onclick="signwith('aol')"><img src="<?php echo $this->getSkinUrl('css/belvg/img/aol.png'); ?>" height="15px" width="15px" alt="social"></a> <a href="#" onclick="signwith('yahoo')"><img src="<?php echo $this->getSkinUrl('css/belvg/img/Yahoo-icon.png'); ?>" height="15px" width="15px" alt="social"></a> <a href="#" onclick="signwith('myopenid')"><img src="<?php echo $this->getSkinUrl('css/belvg/img/OpenID.png'); ?>" height="15px" width="15px" title="OpenId"></a> </div><?php */?>
+</div>
+<span class="nextControl"><img src="<?php echo $this->getSkinUrl('images/black-arrow-next.png'); ?>" alt="next"></span> 
+<!-- prev/next links -->
+</li>
+</ul>
+<script type="text/javascript">
+     signwith = function(param){
+        popupWin = window.open("<?php echo Mage::getBaseUrl()?>ea/user/main/?p="+param, "openId", "location,width=400,height=300,top=0");
+        popupWin.focus();
+		$('circle').hide();
+		$('hdw').hide();
+     }
+</script>
+
+<?php /*?>            
+<div class='item ico-1'> <a href="#" class="icon" onclick="signwith('google')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/Google.png" width="512" height="512" alt="Google" title="Google" /></a> </div>
+<div class='item ico-2'>  <a href="#" class="icon" onclick="signwith('facebook')"> <img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/Facebook.png"  alt="Facebook" title="Facebook"/></a></div>
+  <div class='item ico-3'> <a href="#" class="icon" onclick="signwith('twitter')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/Twitter.png" alt="Twitter" title="Twitter"/></a></div>
+  <div class='item ico-4'> <a href="#" class="icon" onclick="signwith('aol')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/aol.png"  alt="aol" title="aol" /></a></div>
+  <div class='item ico-5'> <a href="#" class="icon" onclick="signwith('clavid')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/m0_clavid_sw.png"  alt="clavid" title="clavid"/></a></div>
+  <div class='item ico-6'> <a href="#" class="icon" onclick="signwith('livejournal')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/icon_livejournal.png" alt="livejournal" title="livejournal" /></a></div>
+  <div class='item ico-7'> <a href="#" class="icon" onclick="signwith('myopenid')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/OpenID.png" alt="OpenID" title="OpenID"/></a></div>
+  <div class='item ico-8'> <a href="#" class="icon" onclick="signwith('wordpress')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/wordpress-icon.png"  alt="wordpress" title="wordpress"/></a></div>
+  <div class='item ico-9'> <a href="#" class="icon" onclick="signwith('flickr')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/flickr_icon.png" alt="flickr" title="flickr" /></a></div>
+  <div class='item ico-10'> <a href="#" class="icon" onclick="signwith('yahoo')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/Yahoo-icon.png" alt="Yahoo" title="Yahoo" /></a></div>
+  <div class='item ico-11'> <a href="#" class="icon" onclick="signwith('myspace')"><img src="http://192.168.100.94/jitendra/magento_1702_test/skin/frontend/default/default/css/belvg/img/MySpace.png"  alt="MySpace" title="MySpace"/></a></div>
+<?php */?>

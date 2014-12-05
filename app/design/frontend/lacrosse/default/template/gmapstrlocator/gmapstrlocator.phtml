@@ -1,0 +1,1129 @@
+
+
+<?php
+$zipcode = null;
+$zipcode = $_POST['zip_code'];
+?>
+
+<script type="text/javascript">
+<?php if($zipcode!==NULL){?>
+jQuery(document).ready( function () {
+	document.getElementById('zipcode_address').value = '<?php echo $zipcode;?>';
+	searchbyzipcode();
+});
+<?php }?>
+</script>
+
+<?php
+$apikey_source = '';
+$distancecounter = 2;
+if(Mage::helper('gmapstrlocator')->getGMapAPIKey() != ''):
+
+$apikey_source = 'http://maps.google.com/maps/api/js?key='.Mage::helper('gmapstrlocator')->getGMapAPIKey().'&sensor=false';
+
+else :
+
+$apikey_source = 'http://maps.google.com/maps/api/js?sensor=false';
+
+endif;
+
+?>
+
+<script type="text/javascript" src="<?php echo $apikey_source; ?>"></script>
+<script type="text/javascript" src="<?php echo $this->getJsUrl('gmapstrlocator/googlemarkerInfobox.js'); ?>"></script>
+
+
+
+
+<?php
+
+    $Stores = $this->getAllStores();
+    if($Stores){
+	foreach($Stores as $key => $value){
+	    $Stores[$key]['store_description'] = Mage::helper('gmapstrlocator')->getWysiwygFilter($Stores[$key]['store_description']);
+	}
+    }
+    
+    //Config values
+    $standard_lat = Mage::helper('gmapstrlocator')->getGMapStandardLatitude();
+    $standard_long = Mage::helper('gmapstrlocator')->getGMapStandardLongitude();
+    
+    //direction button text
+    $direction_button_text = Mage::helper('gmapstrlocator')->getDirectionButtonText();
+    if($direction_button_text == ''): $direction_button_text = 'Get Direction'; endif;
+    
+    //GMap Marker Image
+    $gmap_marker_image = Mage::helper('gmapstrlocator')->getGMapMarkerSrc(); 
+    if(!Mage::helper('gmapstrlocator')->getGMapMarkerExist()): $gmap_marker_image = $this->getSkinUrl('images/gmapstrlocator/ib_icon.png'); endif;
+    
+    //Popup Primary BG Image
+    $popup_primary_image = Mage::helper('gmapstrlocator')->getGMapPopupBgprimarySrc();
+    if(Mage::helper('gmapstrlocator')->getGMapPopupBgprimaryExist()):
+?>
+
+    <style title="text/css"> .izi_map .popup .inner .map_popup_top1, .map_popup_top1 { background: url("<?php echo $popup_primary_image; ?>") !important; </style>
+
+<?php
+
+    endif;
+    
+    if(Mage::helper('gmapstrlocator')->getGMapPopupBgsecondaryExist()):
+	$popup_secondary_image = Mage::helper('gmapstrlocator')->getGMapPopupBgsecondarySrc();
+    else:
+	$popup_secondary_image =  $this->getSkinUrl('images/gmapstrlocator/map_popup_bottom.png'); 
+    endif;
+?>
+		
+    <script src="<?php echo $this->getJsUrl('gmapstrlocator/jquery.tinyscrollbar.min.js'); ?>" type="text/javascript"></script>
+    <script type="text/javascript">
+	jQuery(document).ready(function(){
+				jQuery('#scrollbar1').tinyscrollbar();			
+				
+			});
+	
+	
+	
+    </script>
+    
+<section class="main-page clearfix">
+<!-- <div class="bred-curum"><ul><li><a href="<?php echo $this->getUrl();?>">Home</a>  &gt; </li><li><a href="<?php echo $this->getUrl('').'store-locator.html';?>">Stores</a> &gt;</li> <li>Lacrosse Unlimited in Hauppauge, NY 11788</li></ul></div> -->
+		
+		<div class="top_title">
+				<h1><?php echo Mage::helper('gmapstrlocator')->getGMapPageHeading(); ?></h1>
+				<p class="head-content"><?php echo Mage::helper('gmapstrlocator')->getGMapPageSubheading(); ?></p>
+		</div>
+		
+		<div id="main">
+		    
+		    
+			<div class="form">
+				
+				<?php if(Mage::helper('gmapstrlocator')->isSearchByProductEnable()): ?>
+				<div class="field1">
+				    <p><?php echo Mage::helper('gmapstrlocator')->__('Search for Products'); ?></p>
+				    <input type="text" class="input" name="prod_search" id="prod_search">
+				    <input type="button" class="button" value="<?php echo Mage::helper('gmapstrlocator')->__('Search'); ?>" name="" onclick="searchByProducts(this.value)">
+				</div>
+				<?php endif; ?>
+				
+				<?php if(Mage::helper('gmapstrlocator')->isSearchByZipcodeEnable()): ?>
+				<div class="field2">
+				    <p><?php echo Mage::helper('gmapstrlocator')->__('Search By Zip Code'); ?></p>
+				    <input type="text" class="input" id="zipcode_address" name="zipcode_address"  >
+				    <input id="search_by_zipcode_address_btn" type="button" class="button" value="<?php echo Mage::helper('gmapstrlocator')->__('Search'); ?>" name="" onclick="searchbyzipcode(this.value);">    
+				</div>
+				<?php endif; ?>
+				
+				<?php if(Mage::helper('gmapstrlocator')->isSearchByAddressEnable()): ?>
+				<div class="field2">
+				    <p><?php echo Mage::helper('gmapstrlocator')->__('Search By Address, State'); ?></p>
+				    <input type="text" class="input" name="" onkeypress="return MalikScript(event)" id="s_address" name="s_address"  >
+				    <input id="search_by_address_btn" type="button" class="button" value="<?php echo Mage::helper('gmapstrlocator')->__('Search'); ?>" name="" onclick="validatepost(this.value);">    
+				</div>
+				<?php endif; ?>
+				
+				<?php if(Mage::helper('gmapstrlocator')->isSearchStoreSelectEnable()): ?>
+				<div class="jump_menu1">
+				    <p><?php echo Mage::helper('gmapstrlocator')->__('Store(s)'); ?></p>
+				    <select class="jump_menu" id="store" onchange="updatemap('store')">
+					<option value=""><?php echo $this->__('CHOOSE A STORE'); ?></option>
+					 <?php $Storelatlong = array();$newStorelatlong = array();
+						    $i=0;$j=-1;
+							foreach($Stores as $Store): 
+							$Storelatlong[]='('.$Store['latitude'].','.$Store['longitude'].')';
+							if($i++%25 == 0){
+							    $j++;
+							}
+							$newStorelatlong[$j][]='('.$Store['latitude'].','.$Store['longitude'].')';
+						    ?>
+					    
+					    <option value="<?php echo $Store['store_name'] ;?>"><?php echo $Store['store_name']; ?></option>
+					
+					<?php endforeach;  ?>
+				    </select>				    
+				</div>
+				<?php endif; ?>
+				
+				<div onclick="updatemap('all')" class="total_maps" id="total_maps">
+					   <?php echo __('STORES'); ?> 
+				</div>
+				
+				<div class="clear"></div>
+			</div>    
+			
+			
+			<!------------------------------>			
+			    <div class="filter-select" style="display:none;">				    
+				    <div class="">
+					<dl id="narrow-by-list">
+					    <dd class="odd" style="display: none;">
+						<select id="region" class="selectBox" onchange="updatemap('region')">
+						    <option value=""><?php echo $this->__('SELECT A DISTRICT'); ?></option>
+						    <?php 
+							foreach($States as $statekey => $state):
+						    ?>
+							<option value="<?php echo $statekey ;?>"><?php echo  $state; ?></option>
+						    <?php endforeach; ?>
+						</select>
+					    </dd>
+					    <dd class="odd" style="display: none;">
+						<select id="store" class="selectBox" onchange="updatemap('store')">
+						    <option value=""><?php echo $this->__('CHOOSE A STORE'); ?></option>
+						    <?php $Storelatlong = array();$newStorelatlong = array();
+						    $i=0;$j=-1;
+							foreach($Stores as $Store): 
+							$Storelatlong[]='('.$Store['latitude'].','.$Store['longitude'].')';
+							if($i++%25 == 0){
+							    $j++;
+							}
+							$newStorelatlong[$j][]='('.$Store['latitude'].','.$Store['longitude'].')';
+						    ?>
+							<option value="<?php echo $Store['store_name'] ;?>"><?php echo $Store['store_name']; ?></option>
+						    <?php endforeach;?>
+						</select>
+					    </dd>
+					    <dd class="odd" style="display: none;">
+						    <input  type="text" class="input-text" onkeypress="return MalikScript(event)" id="postcode" name="postcode" style="width:170px; float:left; padding-left:10px;" value="Enter the Postal Code" onfocus="if (this.value == 'Enter the Postal Code') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter the Postal Code';}"  title="Enter the Postal Code"/>
+						    <img id="flag_image" src="<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton.png')?>" onmouseover="this.src='<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton_over.png')?>'" onmouseout="this.src='<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton.png')?>'"  style="margin-left: -1px; cursor:pointer;" onclick="validatepost(this.value);"/>
+					    </dd>
+					    <dd class="odd" >
+						    <input  type="text" class="input-text" onkeypress="return MalikScript(event)" id="s_address" name="s_address" style="width:170px; float:left; padding-left:10px;" value="Enter Address" onfocus="if (this.value == 'Enter Address') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter Address';}"  title="Enter Address"/>
+						    <img id="flag_image" src="<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton.png')?>" onmouseover="this.src='<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton_over.png')?>'" onmouseout="this.src='<?php echo $this->getSkinUrl('images/gmapstrlocator/mapserchbutton.png')?>'"  style="margin-left: -1px; cursor:pointer;" onclick="validatepost(this.value);"/>
+					    </dd>
+					    
+					    
+					    
+					</dl>
+				    </div>
+				    <div onclick="updatemap('all')" class="total_maps" id="total_maps">
+					    TOTAL STORES
+				    </div>
+			    </div>
+			    <div class="resultado" id="result_map" style="display:none;">
+				    <h1><?php echo $this->__('Result:');?></h1>   <?php echo $this->__(' We found,');?> <span id='results_tal'><?php echo $this->__('25 Stores');?> </span><div id="result_over" style="float:right;display:none">&nbsp;<?php echo $this->__('near its');?> <span id='result_loc'><?php echo $this->__(' Location');?></span></div>
+			    </div>
+			<!------------------------------>
+			
+			
+			<div class="stores" >			
+			    <div id="scrollbar1">
+				    <div class="scrollbar">
+				      <div class="track">
+					<div class="thumb_new">
+					  <div class="end"></div>
+					</div>
+				      </div>
+				    </div>
+				
+				    <div class="viewport">
+					<div class="overview"> 
+					    <div class="content" id="gmap-store-list">
+						
+						<div class="store" id="gmap-notfound" style="display:none; border-bottom:none;"><p><?php echo __('Sorry Nothing found'); ?></p></div>
+						
+						<?php $i=0; foreach($Stores as $s_value): ?>
+						<?php //echo "<pre>"; print_r($s_value); echo "</pre>"; exit; ?>
+						    <div class="store" id="<?php echo 'gmap-store-'.$s_value['gmapstrlocator_id'] ?>">
+						    
+							<a href="javascript: " onclick="showFromList('<?php echo $s_value['gmapstrlocator_id'] ?>'),showStoreDetail('<?php echo $s_value['store_name'] ?>')" ><?php echo $s_value['store_name']; ?></a>
+							<p><?php echo $s_value['address']; ?><br/><?php echo $s_value['district']; ?><?php if($s_value['state']){ echo $this->__(', '.$s_value['state']); }  ?><?php echo __(' '.$s_value['postal_code']); ?> <?php //echo ', '.$s_value['country']; ?><br/>
+								<?php if($s_value['store_phone'] != '') { echo __('P: '); echo $s_value['store_phone']; }?><?php if($s_value['store_fax'] != ''){ echo __(', Fax: '); echo $s_value['store_fax']; } ?> </p>
+							<a target="_blank" href="<?php echo $this->getUrl(strtolower($s_value['district']) . '-' . strtolower($s_value['state'])) ?>">View store page</a>
+							<?php /*?><p id="<?php echo 'store_list_distance_'.$i; ?>">&nbsp;</p><?php */?>
+							<div id="store_detail_<?php echo $s_value['gmapstrlocator_id']?>" style="display: none;"></div>
+						    </div>
+						
+						<?php  $i++; endforeach; ?>
+					
+					    </div>
+					</div>
+				    </div>
+			    
+			    
+			    </div>
+			</div>
+			
+			
+			<aside class="right-inter">	
+				<div class="imgone">	    
+			        <div id="map_canvas" style="width:438px;height:550px;" ></div>
+			    </div>
+			</aside>
+			
+			
+			
+			
+		</div>
+		    
+		<div id="control"></div>
+		
+		
+		
+		
+	<script type="text/javascript">
+	var clientlat= '';
+	var clientlon='';
+	var marker, i;var map;
+	var locations = <?php echo json_encode($Stores); ?>;
+	var states = <?php echo json_encode($States); ?>;
+	var Storelatlong =  <?php echo json_encode($Storelatlong); ?>;
+	var destinationIcon = '<?php echo $gmap_marker_image; ?>';
+	var geocoder;
+	var client_current_latlang='';
+	var stores_from_distances = [];
+	var search_markerArray = [];
+	<?php //if(count($newStorelatlong)>1): ?>
+	var totalStoreslatlong = <?php echo count($newStorelatlong); ?>;
+	var Storeslatlongarray = new Array();
+	<?php $i=0; foreach($newStorelatlong as $latlong): ?>
+	 Storeslatlongarray[<?php echo $i; ?>] = <?php echo json_encode($latlong); ?>;
+	<?php $i++; endforeach; ?>
+	<?php  //endif; ?>
+	geocoder = new google.maps.Geocoder();
+	
+	
+	
+	var naddress;
+	var loc='';
+	var result_to = 0;
+	var shortest = new Array();
+	var distancecounter =1;
+		$('total_maps').update('VIEW ALL '+locations.length + ' STORES');
+		if($('total_maps_top')) $('total_maps_top').update(locations.length);
+		updatemap('client');
+	
+		
+	      
+	function calculateRoute(index) {
+		var stop = locations[index]['latitude'] + ',' + locations[index]['longitude'];
+		var start = clientlat + ',' + clientlon;
+		
+		if(!clientlat){
+			updatemap('all');
+			return;		
+		}
+		var map;
+		var directionsDisplay;
+		var directionsService;
+		var stepDisplay;
+		var markerArray = [];
+		
+		directionsService = new google.maps.DirectionsService();
+		
+		
+		/******  Standard Latitude and Longitude from Config  ********/
+		
+		
+		  // Create a map and center it on Manhattan.
+		  var portugal = new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>);
+		  var myOptions = {
+		    zoom: <?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>,
+		    mapTypeId: google.maps.MapTypeId.ROADMAP,
+		    center: portugal
+		  }
+		  
+		  
+		  
+		  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+		  // Create a renderer for directions and bind it to the map.
+		  var rendererOptions = {
+		    map: map
+		  }
+		  directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions)
+		
+		  // Instantiate an info window to hold step text.
+		  stepDisplay = new google.maps.InfoWindow();
+		
+				 // First, clear out any existing markerArray
+		  // from previous calculations.
+		  for (i = 0; i < markerArray.length; i++) {
+		    markerArray[i].setMap(null);
+		  }
+		
+		var request = {
+		    origin:start, 
+		    destination:stop,
+		    travelMode: google.maps.DirectionsTravelMode.DRIVING
+		};
+		  // Route the directions and pass the response to a
+		  // function to create markers for each step.
+		  directionsService.route(request, function(response, status) {
+		    if (status == google.maps.DirectionsStatus.OK) {
+		      updateMessage(1 , locations[index]['district']);
+		      directionsDisplay.setDirections(response);
+			
+			var route = response.routes[0];
+			
+			var 	href = 'saddr=';
+				href +=route.legs[0].start_address;
+				href +='&daddr=';
+				href +=locations[index]['postal_code'] + ' ' +locations[index]['district'] + ',' + locations[index]['country'];
+				href +='&pw=2';
+			var nhref ='http://maps.google.com/maps?'+href;
+			var MainDiv = document.createElement('div');
+			var directinControl = new DirectionControl(MainDiv, map , nhref);
+		      
+			MainDiv.index = 1;
+			map.controls[google.maps.ControlPosition.TOP_RIGHT].push(MainDiv);
+		    }else{
+			updatemap('all');
+			return;
+		  }
+		  });
+		
+	}
+	function DirectionControl(maincontrolDiv, map , href) {
+
+		maincontrolDiv.style.padding = '5px';
+	      
+		var directioncontrolUI = document.createElement('div');
+		directioncontrolUI.style.backgroundColor = 'white';
+		directioncontrolUI.style.borderStyle = 'solid';
+		directioncontrolUI.style.borderWidth = '1px';
+		directioncontrolUI.style.cursor = 'pointer';
+		directioncontrolUI.style.textAlign = 'center';
+		directioncontrolUI.title = 'Click here to print directions';
+		maincontrolDiv.appendChild(directioncontrolUI);
+	      
+		var controlText = document.createElement('div');
+		controlText.style.fontFamily = 'Arial,sans-serif';
+		controlText.style.fontSize = '12px';
+		controlText.style.padding = '2px 4px';
+		controlText.innerHTML = '<strong>Print directions<strong>';
+		directioncontrolUI.appendChild(controlText);
+	      
+		google.maps.event.addDomListener(directioncontrolUI, 'click', function() {
+		  window.open(href); 
+		});
+	}
+	
+	function MalikScript(e) {
+		if (e.keyCode == 13) {
+		  validatepost();
+		    return false;
+		}
+	}
+	
+	//search by address, state, city, country
+	function validatepost() {
+		$('control').hide();
+		
+			var postcode =  document.getElementById('s_address').value;
+			if(postcode == ''){
+				alert('Address Required');
+				return false;
+			}
+			
+			//alert(postcode);
+			//concate country there
+			var paddress = postcode;  
+			var locate;
+			var result_to=0;
+			var  pgeocoder = new google.maps.Geocoder();
+			$('result_over').hide();
+			initialize();
+			var loc='';
+			var j;
+			var isexact=false;
+			jQuery('#gmap-store-list div').each(function(){
+					    this.hide();					    
+			});
+			for (j = 0; j < locations.length; j++) {
+				var latlng = new google.maps.LatLng(locations[j]['latitude'], locations[j]['longitude']);
+				
+				var curr_state = locations[j]['state'];
+				if(curr_state != null){
+				    
+					if((locations[j]['address'].toLowerCase().search(paddress.toLowerCase()) >= 0) || (locations[j]['state'].toLowerCase().search(paddress.toLowerCase()) >= 0))
+					{
+						
+						isexact=true;
+						loc = locations[j]['district'];
+						result_to++;
+						creatmarkers(latlng , j, map , locations[j]);
+						map.setCenter(latlng);
+						map.setZoom(12); <?php //echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+												
+						
+						jQuery('#gmap-store-'+locations[j]['gmapstrlocator_id']).show();
+					}
+				}else{
+				    
+					if((locations[j]['address'].toLowerCase().search(paddress.toLowerCase()) >= 0))
+					{
+						
+						isexact=true;
+						loc = locations[j]['district'];
+						result_to++;
+						creatmarkers(latlng , j, map , locations[j]);
+						map.setCenter(latlng);
+						map.setZoom(12); <?php //echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+												
+						
+						jQuery('#gmap-store-'+locations[j]['gmapstrlocator_id']).show();
+					}
+				    
+				    
+				}
+			}
+			if(!isexact){
+				
+				isexact=false;
+				//checkpost(paddress);
+				<?php if(Mage::helper('gmapstrlocator')->getGMapNearestAddressEnabled()):?>
+				checkpost(paddress);
+				<?php else: ?>
+				jQuery('#gmap-notfound').show();
+				map.setCenter(new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>));
+				map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+				<?php endif; ?>
+				
+			}
+			//updateMessage(result_to , loc);
+		//}
+		
+		jQuery('#scrollbar1').tinyscrollbar_update();
+	}
+	
+	
+	function searchbyzipcode() {
+	   $('control').hide();			
+			
+			//checkpost();			
+			var postcode =  document.getElementById('zipcode_address').value;
+			if(postcode == ''){
+				alert('Zip Code Required');
+				return false;
+			}
+			
+			//alert(postcode);
+			//concate country there
+			var paddress = postcode;  
+			var locate;
+			var result_to=0;
+			var  pgeocoder = new google.maps.Geocoder();
+			$('result_over').hide();
+			initialize();
+			var loc='';
+			var j;
+			var isexact=false;
+			jQuery('#gmap-store-list div').each(function(){
+					    this.hide();					    
+			});
+			for (j = 0; j < locations.length; j++) {
+				var latlng = new google.maps.LatLng(locations[j]['latitude'], locations[j]['longitude']);
+				
+				//Client custom work
+				//var current_store_dis = parseFloat(stores_from_distances[j].replace(/\,/g,''));
+				//current_store_dis < 96.56
+				
+				if(locations[j]['postal_code'].toLowerCase().search(paddress.toLowerCase()) >= 0){
+					
+					
+					isexact=true;
+					loc = locations[j]['district'];
+					result_to++;
+					creatmarkers(latlng , j, map , locations[j]);
+					map.setCenter(latlng);
+					map.setZoom(12); <?php //echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+					jQuery('#gmap-notfound').hide();
+					jQuery('#gmap-store-'+locations[j]['gmapstrlocator_id']).show();
+					
+					
+				}
+			}
+			if(!isexact){
+				
+				isexact=false;
+				<?php if(Mage::helper('gmapstrlocator')->getGMapNearestZipEnabled()):?>
+				checkpost(paddress);
+				<?php else: ?>
+				jQuery('#gmap-notfound').show();
+				map.setCenter(new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>));
+				map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+				<?php endif; ?>
+			}
+			//updateMessage(result_to , loc);
+		//}
+		
+		jQuery('#scrollbar1').tinyscrollbar_update();
+	}
+	
+	
+	
+	
+	
+	function initialize() {
+		
+		var opts = {
+			//zoom: 6,
+			//center: new google.maps.LatLng(40, -5),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById('map_canvas'), opts);
+				  
+	}
+	
+	function checkpost(paddress) {
+		shortest = new Array();
+		distancecounter =1;
+		var  pgeocoder = new google.maps.Geocoder();
+		pgeocoder.geocode( { 'address': paddress}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					locate = results[0].geometry.location;
+					//alert(locate);
+					checkdistance(locate, Storeslatlongarray[0]);
+					
+				}
+		});
+		
+	}
+	function checkdistance(start, stop){
+		var service = new google.maps.DistanceMatrixService();
+		service.getDistanceMatrix(
+		  {
+		    origins: [start],
+		    destinations: stop,
+		    travelMode: google.maps.TravelMode.DRIVING,
+		    avoidHighways: false,
+		    avoidTolls: false
+		  }, getdistance);
+		
+		 
+	}
+	
+	function getdistance(response, status) {
+		if (status != google.maps.DistanceMatrixStatus.OK) {
+			updatemap('all');
+			return false;
+		} else {
+			var origins = response.originAddresses;
+			var destinations = response.destinationAddresses;
+			var distances = []; 
+			for (var i = 0; i < origins.length; i++) {
+				var results = response.rows[i].elements;
+				for (var j = 0; j < results.length; j++) {
+					if(results[j].distance != undefined){
+					    
+					    distances[j]=parseFloat(results[j].distance.text.replace("km", "").replace(/\,/g,'')); //reg exp removes the thousand seperator
+					    
+					    //alert(distances[j]);
+					}
+				}
+			}
+			
+			var ni=distances.indexOf(distances.min());
+			
+			
+			if(locations[ni] != undefined){
+			    if(totalStoreslatlong == 1){
+				    jQuery('#gmap-store-list div').each(function(){
+					this.hide();					    
+				    });						
+				     
+				    jQuery('#gmap-store-'+locations[ni]['gmapstrlocator_id']).show();			
+				    var nlatlng =new google.maps.LatLng(locations[ni]['latitude'], locations[ni]['longitude']);						
+				    addNewMark(nlatlng , ni);
+			    }else{
+				
+				if(distancecounter < totalStoreslatlong){
+				    shortest[distancecounter - 1]=Storeslatlongarray[distancecounter - 1][ni];
+				    checkdistance(locate, Storeslatlongarray[distancecounter]);
+				    distancecounter = distancecounter + 1;
+				    
+				}else{
+				    if(distancecounter == totalStoreslatlong){
+					shortest[distancecounter-1]=Storeslatlongarray[distancecounter-1][ni];
+					distancecounter = distancecounter + 1;
+					checkdistance(locate, shortest);
+				    }else{
+					var pointer='';
+					for( var i = 0, len = locations.length; i < len; i++ ) {
+					    var nlatlng ="(" +locations[i]['latitude'] + "," + locations[i]['longitude'] + ")";
+					    if( nlatlng == shortest[ni] ) {
+						pointer = i;
+						break;
+					    }
+					}
+					jQuery('#gmap-store-list div').each(function(){
+					    this.hide();					    
+					});						
+					 
+					jQuery('#gmap-store-'+locations[pointer]['gmapstrlocator_id']).show();			
+					var nlatlng =new google.maps.LatLng(locations[pointer]['latitude'], locations[pointer]['longitude']);						
+					addNewMark(nlatlng , pointer);
+				    }
+				}
+			    }
+			}
+		    return false;
+		}
+	}
+
+	function addNewMark(method , ni){
+		result_to = 0;
+		var opts = {
+		      zoom: <?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>,
+		      center: method,
+		  mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById('map_canvas'), opts);
+		creatmarkers(method , ni, map , locations[ni]);
+		result_to++;
+		loc = locations[ni]['district'];
+		updateMessage(result_to , loc);
+	}
+	
+	function updateByAddress(){
+	    
+	    
+	}
+	
+	
+	function showFromList(store_id){
+		
+		initialize();
+		
+		for (i = 0; i < locations.length; i++) {
+		    
+		    if(store_id == locations[i]['gmapstrlocator_id']){
+			loc = locations[i]['district'];
+			
+			var latlng = new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']);
+			
+					
+			creatmarkers(latlng , i, map , locations[i]);
+			map.setCenter(new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']));
+			map.setZoom(12); <?php //echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+		    }
+		    
+		}
+	}
+	
+	
+	function updatemap(method){
+		//alert(method)
+		$('control').hide();
+		$('result_over').hide();
+		initialize();
+		
+		result_to=0;
+		
+		for (i = 0; i < locations.length; i++) {
+			var region = document.getElementById('region').value;
+			var store =  document.getElementById('store').value;
+			var postcode =  document.getElementById('postcode').value;
+			var latlng = new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']);
+			
+			
+			
+			if(region !='' && method == 'region' || (region !='' && method == 'store' && store == '' )){
+				if(region == locations[i]['district']){
+					loc = region;
+					result_to++;
+					creatmarkers(latlng , i, map , locations[i]);
+				}
+				naddress = region + ',' + locations[i]['country'];
+				geocoder.geocode( { 'address': naddress}, function(results, status) {
+					if (status == google.maps.GeocoderStatus.OK) {
+					  map.setCenter(results['store_name'].geometry.location);
+					  map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+					 
+					}
+				});
+			}else if((store !='' && method == 'store') || (store !='' && method == 'region' && region == '' )){
+				if(store == locations[i]['store_name']){
+					loc = locations[i]['district'];
+					result_to++;
+					
+					jQuery('#gmap-store-list div').each(function(){
+					    this.hide();					    
+					});
+					
+					jQuery('#gmap-store-'+locations[i]['gmapstrlocator_id']).show();					
+					
+					creatmarkers(latlng , i, map , locations[i]);
+					map.setCenter(new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']));
+					map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+				}
+			
+			}else if(method == 'by_name'){
+			    
+				if(store == locations[i]['store_name']){
+					loc = locations[i]['district'];
+					result_to++;
+					creatmarkers(latlng , i, map , locations[i]);
+					map.setCenter(new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']));
+					map.setZoom(12); <?php // echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+					
+				}
+				
+				
+			}else if(method == 'client'){
+					map.setCenter(new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>));
+					map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+							
+					/* jQuery('#map_canvas').gmap({ 'zoom':<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>,'center':new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>), 'callback': function() {
+					updatemap('all');
+					var self = this;
+					self.getCurrentPosition(function(position, status) {
+						if ( status === 'OK' ) {
+							clientlat = position.coords.latitude;
+							clientlon = position.coords.longitude;
+							var clientlatlng = new google.maps.LatLng(clientlat, clientlon);
+							
+							setCurrentPositionOfClient(clientlatlng);
+							findDistanceFromClientToStores();
+							
+							geocoder.geocode({'latLng': clientlatlng}, function(results, status) {
+							  
+							  if (status == google.maps.GeocoderStatus.OK) {
+							    if (results[1]) { 
+							    
+							      checkpost(results[1].formatted_address);
+							    } 
+							  } 
+							});
+						}
+					});
+					
+				    }});*/
+				
+				
+				
+				break;
+			}
+			else{
+				
+				jQuery('#gmap-store-list div').each(function(){
+					    this.show();						    
+				});
+				jQuery('#gmap-notfound').hide();
+				result_to++;
+				map.setCenter(new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>));
+				map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+				creatmarkers(latlng , i, map , locations[i]);
+			}
+
+			jQuery('#store_detail_'+locations[i]['gmapstrlocator_id']).html('');
+		}
+		
+		jQuery('#scrollbar1').tinyscrollbar();
+		jQuery('#scrollbar1').tinyscrollbar_update();
+		
+		updateMessage(result_to , loc);
+		
+		
+	}
+
+	// custom by Jitendra
+	function showStoreDetail(store_name){
+		$('control').hide();
+		$('result_over').hide();
+		initialize();
+		
+		result_to=0;
+		
+		for (i = 0; i < locations.length; i++) {
+			
+			var store =  store_name;			
+			var latlng = new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']);
+			method = 'store';
+			
+			
+			if((store !='' && method == 'store') || (store !='' && method == 'region' && region == '' )){
+				if(store == locations[i]['store_name']){
+					loc = locations[i]['district'];
+					result_to++;
+					
+					jQuery('#gmap-store-list div').each(function(){
+					    this.hide();					    
+					});
+					
+					jQuery('#gmap-store-'+locations[i]['gmapstrlocator_id']).show();	
+								
+					
+					creatmarkers(latlng , i, map , locations[i]);
+					map.setCenter(new google.maps.LatLng(locations[i]['latitude'], locations[i]['longitude']));
+					map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+
+					storedetailID = locations[i]['gmapstrlocator_id'];
+				}
+			
+			}else{
+				
+				jQuery('#gmap-store-list div').each(function(){
+					    this.show();						    
+				});
+				jQuery('#gmap-notfound').hide();
+				result_to++;
+				map.setCenter(new google.maps.LatLng(<?php echo $standard_lat; ?>,<?php echo $standard_long; ?>));
+				map.setZoom(<?php echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>);
+				creatmarkers(latlng , i, map , locations[i]);
+			}
+
+			//alert(locations[i]['store_name'])
+			if(store_name==locations[i]['store_name']){
+				jQuery('#store_detail_'+locations[i]['gmapstrlocator_id']).html(locations[i]['store_description']);
+				$('store_detail_'+locations[i]['gmapstrlocator_id']).show();
+			}else{
+				$('store_detail_'+locations[i]['gmapstrlocator_id']).hide();
+			}
+			
+		}
+		
+		jQuery('#scrollbar1').tinyscrollbar();
+		jQuery('#scrollbar1').tinyscrollbar_update();
+		
+		updateMessage(result_to , loc, storedetailID);
+	}
+	
+	function updateMessage(result_to , loc) {
+		$('results_tal').update(result_to+' Store ');
+		if(loc !=''){
+			$('result_over').show();				
+			$('result_loc').update('Location ('+loc+')');	
+		}else{
+			$('result_over').hide();
+		}	
+		
+		return;
+	}
+	
+	//--------------------------------------------------------
+	//Current position of client
+	function setCurrentPositionOfClient(client_latlang){
+	       
+	    client_current_latlang = client_latlang;
+	    
+	}
+	
+	function getCurrentPositionOfClient(){
+	    
+	    return client_current_latlang;
+	}
+	
+	function findDistanceFromClientToStores(){
+	    
+	    
+	    var service = new google.maps.DistanceMatrixService();
+	    service.getDistanceMatrix(
+		  {
+		    origins: [client_current_latlang],
+		    destinations: Storelatlong,
+		    travelMode: google.maps.TravelMode.DRIVING,
+		    avoidHighways: false,
+		    avoidTolls: false
+		  }, calculatedistance);
+	    
+	    
+	    
+	}
+	function calculatedistance(response, status) {
+		if (status != google.maps.DistanceMatrixStatus.OK) {
+			return false;
+		} else {
+			var origins = response.originAddresses;
+			var destinations = response.destinationAddresses;
+			
+			var distances = [0]; 
+			for (var i = 0; i < origins.length; i++) {
+				var results = response.rows[i].elements;
+				for (var j = 0; j < results.length; j++) {
+					
+					if(results[j].distance != undefined){
+					    
+					    distances[j]=results[j].distance.text;
+					    stores_from_distances[j] = distances[j];
+					
+					
+					    //Update/add the distance to leftbar list of stores
+					    if($('store_list_distance_'+j))
+						{$('store_list_distance_'+j).update('Distance : '+stores_from_distances[j]);}
+					    //alert(stores_from_distances[j]);
+					}
+				}
+			}
+			
+			
+			
+			return false;
+		}
+		
+	}
+	
+	
+	
+	//-----------------------------------------------------
+	
+	
+	function creatmarkers(latlng , i, map , description) {
+		marker = new google.maps.Marker({
+			  position: latlng,
+			  icon:destinationIcon,
+			  map: map
+			});
+		
+		search_markerArray.push(marker);
+		
+		google.maps.event.addListener(marker, 'click', (function(marker, i) {
+			return function() {
+				var boxText ="";
+				var s_distance = "";
+				var s_image = "";
+				var s_phone = '';
+				var s_fax = '';
+				var s_state= ',';
+				
+				if(stores_from_distances[i])
+				    s_distance = '<span><b>Distance : </b> '+stores_from_distances[i]+'</span>';
+				
+				if(description['store_image']){
+				    s_image_path = "<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'gmapstrlocator/' ?>";
+				    s_image_path = s_image_path+description['gmapstrlocator_id']+'/thumb/'+description['store_image'];
+				    s_image = "<div class='store-thumb'><img src='"+s_image_path+"'></div>";
+				}
+				if(description['store_phone'] != ''){
+				    s_phone = '<span><b><?php echo __('Phone:  '); ?></b></span> '+ description['store_phone']+'<br />';
+				}
+				if(description['store_fax'] != ''){
+				    s_fax = '<span><b><?php echo __('Fax:  '); ?></b></span> '+ description['store_fax']+'<br />';
+				}
+				if(description['state'] == '' || description['state'] == null){
+				    s_state = ', ';
+				}else{
+				    s_state = ', '+ description['state']+'';				    
+				}
+				
+				
+				boxText = document.createElement("div");
+				/*================ old ============
+				boxText.innerHTML ='<div id="pop_div" class="map_popup_top1"><h1>'+description['store_name']+'</h1>'+ description['store_description'] + '<div class="store-more-info">'+s_phone+s_fax+'<span><b><?php echo __('Address:  '); ?></b></span> '+ description['address'] +', '+ description['postal_code']+', '+ description['district']+s_state+ description['country']+'<br />'+s_distance+'</div>'+s_image+'<div class="getting_directions"><div class="clear"></div><a onClick="calculateRoute('+ i +')" href="#"><?php echo $direction_button_text; ?></a></div></div>';
+				*/
+				boxText.innerHTML ='<div id="pop_div" class="map_popup_top1"><h1>'+description['store_name']+'</h1><div class="store-more-info">'+s_phone+s_fax+'<span><b><?php echo __('Address:  '); ?></b></span> '+ description['address'] +'<br/>'+ description['district']+''+s_state+' '+description['postal_code']+'<br/>'+ description['country']+'</div><div class="getting_directions"><div class="clear"></div><a onClick="calculateRoute('+ i +')" href="#"><?php echo $direction_button_text; ?></a></div></div>';
+				var box = boxText.innerHTML + '<div class="map_popup_bottom"><img src="<?php echo $popup_secondary_image; ?>" alt="" width="290px;" /></div>';
+				
+				var myOptions = {
+					content: box
+					,disableAutoPan: false
+					,maxWidth: 0
+					,pixelOffset: new google.maps.Size(0, -290)
+					,zIndex: null
+					,boxStyle: { 
+						background: "url('<?php echo $this->getSkinUrl('images/gmapstrlocator/map_popup_top.png')?>') no-repeat"
+						,opacity: 1
+						,width: "295px"
+						,height:"170px"
+					}
+					,closeBoxMargin: "-13px -5px 2px"
+					,closeBoxURL: "<?php echo $this->getSkinUrl('images/gmapstrlocator/close_black.png')?>"
+					,close_onmouseover :"<?php echo $this->getSkinUrl('images/gmapstrlocator/close_icon.png')?>"
+					,close_onmouseout :"<?php echo $this->getSkinUrl('images/gmapstrlocator/close_black.png')?>"
+					,infoBoxClearance: new google.maps.Size(1, 1)
+					,isHidden: false
+					,pane: "floatPane"
+					,enableEventPropagation: true
+				};
+				var ib = new InfoBox(myOptions);
+				ib.open(map, marker);
+			}
+		})(marker, i));
+
+	}
+	
+	//----Search Stores By Product -----------------------------------------------------
+	
+	function searchByProducts(){
+	    
+	    var search_text = jQuery('#prod_search').val();
+	    if(search_text == '' || search_text == null){
+		
+		alert('Search Contents Required');
+		return false;		
+	    }else{
+		
+		//send the ajax call to index controller
+		
+		jQuery.ajax({
+			type: "POST",
+			url: "<?php echo $this->getUrl('gmapstrlocator/index/searchprod'); ?>",
+			data: { query_string: search_text },
+			dataType: "json",
+			success: function(data) {
+			   			   
+			   //alert(data);
+			   showStoresByLatLang(data);
+		      }
+		      });
+		
+	    }	    
+	    
+	}
+	
+	
+	function showStoresByLatLang(arr){
+	    
+	    var is_matched = false;
+	    
+	    //Remove all stores from list
+	    jQuery('#gmap-store-list div').each(function(){
+		
+		this.hide();		
+		
+	    });
+	   
+	   
+	   //Remove existing markers
+	   
+	   for(var k=0; k<search_markerArray.length; k++){
+		
+		search_markerArray[k].setMap(null);
+	   }
+	   
+	   
+	   
+	    for(var i=0; i<arr.length; i++){
+		
+		
+		for (j = 0; j < locations.length; j++) {
+				
+				var cur_latlang = arr[i]['latitude']+','+arr[i]['longitude'];
+				var s_latlang = locations[j]['latitude']+','+locations[j]['longitude'];
+				
+				
+				var latlng = new google.maps.LatLng(locations[j]['latitude'], locations[j]['longitude']);
+				if(cur_latlang == s_latlang){
+					
+					is_matched = true;
+					jQuery('#gmap-notfound').hide();
+					jQuery('#gmap-store-'+arr[i]['gmapstrlocator_id']).show();
+					loc = latlng;
+					result_to++;
+					creatmarkers(latlng , j, map , locations[j]);
+					map.setCenter(latlng);
+					map.setZoom(12); <?php //echo Mage::helper('gmapstrlocator')->getGMapZoom(); ?>
+					
+				}
+		}
+	    
+	    }
+	    
+	    if(is_matched == false){
+		
+		jQuery('#gmap-notfound').show();
+		
+	    }
+	    
+	    
+	    jQuery('#scrollbar1').tinyscrollbar_update();
+	}
+	
+	
+	
+	
+	
+        </script>
+        
+        
+<div class="clear"></div>

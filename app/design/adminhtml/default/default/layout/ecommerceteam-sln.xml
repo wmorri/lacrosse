@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+	<adminhtml_catalog_product_attribute_edit>
+		<reference name="head">
+    		<action method="addJs"><script>lib/flex.js</script></action>
+    		<action method="addJs"><script>lib/FABridge.js</script></action>
+    		<action method="addJs"><script>mage/adminhtml/flexuploader.js</script></action>
+    	</reference>
+	</adminhtml_catalog_product_attribute_edit>
+</layout>

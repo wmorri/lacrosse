@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: zamablogfacebook\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-12 08:13-0000\n"
+"PO-Revision-Date: 2013-02-22 16:06-0000\n"
+"Last-Translator: Edmond TIENDREBEOGO <edmond.dezmonde@gmail.com>\n"
+"Language-Team: Dezmonde Agence Web <translate@dezmonde.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: facebook-likebox-widget.php:64
+msgid "en_US"
+msgstr "pt_PT"
+
+#: facebook-likebox-widget.php:65
+msgid "Donation for Facebook Likebox Widget"
+msgstr "Doações para Facebook Likebox Widget"
+
+#: facebook-likebox-widget.php:66
+msgid "1"
+msgstr "1"
+
+#: facebook-likebox-widget.php:68
+msgid "en"
+msgstr "pt"
+
+#: facebook-likebox-widget.php:69
+msgid "Provided by Dakola : "
+msgstr "Fornecido por Dakola"
+
+#: facebook-likebox-widget.php:74
+msgid "webmaster tools and resources"
+msgstr "ferramentas e recursos para webmasters"
+
+#: facebook-likebox-widget.php:77
+msgid "websites directory"
+msgstr "diretório sites"
+
+#: facebook-likebox-widget.php:80
+msgid "voi.ci - url shortening"
+msgstr "voi.ci - encurtamento de url"
+
+#: facebook-likebox-widget.php:83
+msgid "webmaster tools"
+msgstr "ferramentas para webmasters"
+
+#: facebook-likebox-widget.php:86
+msgid "pagerank check"
+msgstr "pagerank "
+
+#: facebook-likebox-widget.php:89
+msgid "whois lookup"
+msgstr "whois "
+
+#: facebook-likebox-widget.php:92
+msgid "qr code generator"
+msgstr "gerador de código do qr"
+
+#: facebook-likebox-widget.php:95
+msgid "my ip address"
+msgstr "meu endereço de ip"
+
+#: facebook-likebox-widget.php:98
+msgid "website's ip address"
+msgstr "endereço ip site"
+
+#: facebook-likebox-widget.php:101
+msgid "alexa rank display"
+msgstr "alexa rank"
+
+#: facebook-likebox-widget.php:104
+msgid "free banner exchange"
+msgstr "troca da bandeira livre"
+
+#: facebook-likebox-widget.php:217
+msgid "Facebook Like Box Widget"
+msgstr "Facebook Like Box Widget"
+
+#: facebook-likebox-widget.php:223
+msgid "Add a Facebook Like Box to your site."
+msgstr "Adicionar um Facebook Like Box ao seu site"
+
+#: facebook-likebox-widget.php:261
+msgid "Title"
+msgstr "Título"
+
+#: facebook-likebox-widget.php:262
+msgid "Facebook Page URL"
+msgstr "Página Endereço Facebook"
+
+#: facebook-likebox-widget.php:263
+msgid "Width (in pixels)"
+msgstr "Largura (em pixels)"
+
+#: facebook-likebox-widget.php:264
+msgid "Height (in pixels)"
+msgstr "Altura (em pixels)"
+
+#: facebook-likebox-widget.php:265
+msgid "Color scheme"
+msgstr "Tema Cor"
+
+#: facebook-likebox-widget.php:266
+msgid "Show Faces"
+msgstr "Ver os rostos"
+
+#: facebook-likebox-widget.php:267
+msgid "Show stream"
+msgstr "Mostrar o fluxo de atividades"
+
+#: facebook-likebox-widget.php:268
+msgid "Show header"
+msgstr "Mostrar encabezado"
+
+#: facebook-likebox-widget.php:269
+msgid "Lite"
+msgstr "Limpar"
+
+#: facebook-likebox-widget.php:270
+msgid "Dark"
+msgstr "oEscur"

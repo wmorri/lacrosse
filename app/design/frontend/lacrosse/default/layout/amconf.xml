@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <catalog_product_view>
+        <reference name="head">            
+            <action method="addCss"><stylesheet>css/amasty/amconf.css</stylesheet></action>
+            <action method="addJs"><stylesheet>amasty/amconf/zoomer.js</stylesheet></action>
+            <action method="addItem"><type>js_css</type><name>amasty/amconf/css/lightbox.css</name><params/></action>
+            <action method="addJs" ifconfig="amconf/general/show_title_view"><script>amasty/amconf/bubleTooltip.js</script></action>
+            <action method="addItem" ifconfig="amconf/general/show_title_view"><type>js_css</type><name>amasty/amconf/css/bubleTooltip.css</name><params/></action>
+        </reference>
+        <reference name="product.info.media">
+            <action method="setTemplate"><template>amconf/media.phtml</template></action>
+        </reference>
+        <reference name="content">
+           <block type="amconf/catalog_product_tooltip" name="tooltip" template="amconf/tooltip.phtml"/>
+        </reference>
+    </catalog_product_view>
+    <catalog_category_default>
+        <reference name="head">            
+            <action method="addCss" ifconfig="amconf/general/enable_list"><stylesheet>css/amasty/amconf.css</stylesheet></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/product.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/configurable.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/formList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/configurableList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/show_title_list"><script>amasty/amconf/bubleTooltip.js</script></action>
+            <action method="addItem" ifconfig="amconf/general/show_title_list"><type>js_css</type><name>amasty/amconf/css/bubleTooltip.css</name><params/></action>
+        </reference>
+        <reference name="content">
+           <block type="amconf/catalog_product_tooltip" name="tooltip" template="amconf/tooltip.phtml"/>
+        </reference>
+    </catalog_category_default>  
+    
+    <catalogsearch_result_index>
+        <reference name="head">            
+            <action method="addCss" ifconfig="amconf/general/enable_list"><stylesheet>css/amasty/amconf.css</stylesheet></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/product.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/configurable.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/formList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/configurableList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/show_title_list"><script>amasty/amconf/bubleTooltip.js</script></action>
+            <action method="addItem" ifconfig="amconf/general/show_title_list"><type>js_css</type><name>amasty/amconf/css/bubleTooltip.css</name><params/></action>
+        </reference>
+        <reference name="content">
+           <block type="amconf/catalog_product_tooltip" name="tooltip" template="amconf/tooltip.phtml"/>
+        </reference>
+    </catalogsearch_result_index>  
+    
+    <catalog_category_layered>
+        <reference name="head">            
+            <action method="addCss" ifconfig="amconf/general/enable_list"><stylesheet>css/amasty/amconf.css</stylesheet></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/product.js</script></action>
+            <!-- <action method="addJs" ifconfig="amconf/general/enable_list"><script>varien/configurable.js</script></action> -->
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/formList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/enable_list"><script>amasty/amconf/configurableList.js</script></action>
+            <action method="addJs" ifconfig="amconf/general/show_title_list"><script>amasty/amconf/bubleTooltip.js</script></action>
+           <action method="addItem" ifconfig="amconf/general/show_title_list"><type>js_css</type><name>amasty/amconf/css/bubleTooltip.css</name><params/></action>
+         </reference>
+         <reference name="content">
+           <block type="amconf/catalog_product_tooltip" name="tooltip" template="amconf/tooltip.phtml"/>
+        </reference>
+    </catalog_category_layered> 
+    
+    <amconf_media_gallery translate="label">
+        <label>Catalog Product Image Gallery Popup</label>
+        <!-- Mage_Catalog -->
+        <reference name="root">
+            <action method="setTemplate"><template>page/popup.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="catalog/product_gallery" name="catalog_product_gallery" template="catalog/product/gallery.phtml"/>
+        </reference>
+    </amconf_media_gallery>
+</layout>

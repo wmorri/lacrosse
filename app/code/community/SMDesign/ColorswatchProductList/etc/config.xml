@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<SMDesign_ColorswatchProductList>
+			<version>1.0.0</version>
+		</SMDesign_ColorswatchProductList>
+	</modules>
+	<global>
+		<helpers>
+			<colorswatchproductlist>
+				<class>SMDesign_ColorswatchProductList_Helper</class>
+			</colorswatchproductlist>
+		</helpers>
+	  <blocks>
+	      <colorswatchproductlist><class>SMDesign_ColorswatchProductList_Block</class></colorswatchproductlist>
+	  </blocks>
+	  
+		<models>
+			<colorswatchproductlist><class>SMDesign_ColorswatchProductList_Model</class></colorswatchproductlist>
+		</models>
+		
+      <resources>
+            <colorswatchproductlist_setup>
+                <setup>
+                    <module>SMDesign_ColorswatchProductList</module>
+                </setup>
+            </colorswatchproductlist_setup>
+
+        </resources>
+        
+  </global>
+  
+  <frontend>
+     <routers>
+          <colorswatchproductlist>
+              <use>standard</use>
+              <args>
+                  <module>SMDesign_ColorswatchProductList</module>
+                  <frontName>colorswatchproductlist</frontName>
+              </args>
+          </colorswatchproductlist>
+      </routers>
+      
+      <layout>
+           <updates>
+                <colorswatchproductlist>
+                      <file>colorswatchproductlist.xml</file>
+                </colorswatchproductlist>
+           </updates>
+      </layout>
+	  
+  </frontend>
+  
+<!--	START DEFAULTS	-->
+	<default>
+		<smdesign_colorswatch>
+			<product_list>
+				<enabled>1</enabled>
+				<max_swatches>4</max_swatches>
+				<enable_zoom>1</enable_zoom>
+				<list_image_width>135</list_image_width>
+				<list_image_height>135</list_image_height>
+			</product_list>
+			
+
+		</smdesign_colorswatch>
+	</default>
+  
+<!--	END DEFAULTS	-->
+</config>

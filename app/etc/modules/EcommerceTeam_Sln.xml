@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * EcommerceTeam.com
+    *
+    * Seo Layered Navigation
+    *
+    * @category     Magento Extension
+    * @copyright    Copyright (c) 2011 Ecommerce Team (http://www.ecommerce-team.com)
+    * @author       Ecommerce Team
+    * @version      3.0
+    */
+ -->
+<config>
+    <modules>
+        <EcommerceTeam_Sln>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Catalog />
+            </depends>
+        </EcommerceTeam_Sln>
+    </modules>
+</config>

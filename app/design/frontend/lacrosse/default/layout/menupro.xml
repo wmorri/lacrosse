@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default >
+        <reference name="head" >
+			<!-- <action method="addItem" ifconfig="menupro/setting/enable"><type>skin_js</type><name>menupro/js/jquery-1.8.2.min.js</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_js</type><name>menupro/js/bootstrap.min.js</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_js</type><name>menupro/js/jquery.menupro.js</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_js</type><name>menupro/js/menupro-frontend.js</name></action>
+			
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_css</type><name>menupro/css/reset.bootstrap.css</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_css</type><name>menupro/css/nav.bootstrap.css</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_css</type><name>menupro/css/menucreatorpro.css</name></action>
+			<action method="addItem" ifconfig="menupro/setting/enable"><type>skin_css</type><name>menupro/css/ie7.css</name></action> -->
+		</reference>
+		
+		<!-- <reference name="top.menu" >
+			<action method="unsetChild"  ifconfig="menupro/setting/enable"><name>catalog.topnav</name></action>
+			
+			<block type="menupro/menu" ifconfig="menupro/setting/enable" name="menupro_dropdown"  template="menupro/dropdown.phtml" >
+				<action method="setData" ifconfig="menupro/setting/enable"><name>group_id</name><value>1</value></action>
+			</block>
+        </reference> -->
+        <!-- <reference name="left" >
+			<block type="menupro/menu" ifconfig="menupro/setting/enable" name="menupro_sidebar"  template="menupro/sidebar.phtml" before=''>
+				<action method="setData" ifconfig="menupro/setting/enable"><name>group_id</name><value>1</value></action>
+			</block>
+        </reference>
+       
+        <reference name="left" >
+			<block type="menupro/menu" ifconfig="menupro/setting/enable" name="menupro_accordion"  template="menupro/accordion.phtml" before='' >
+				<action method="setData" ifconfig="menupro/setting/enable"><name>group_id</name><value>3</value></action>
+			</block>
+        </reference> -->
+    </default>
+</layout>   

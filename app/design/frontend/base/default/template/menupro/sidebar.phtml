@@ -1,0 +1,307 @@
+<?php
+$isDisableFrontEnd = Mage::getStoreConfig('menupro/setting/enable');
+if ($isDisableFrontEnd == 0) {
+	return;
+}
+/* Get store Id */
+$storeId = Mage::app ()->getStore ()->getStoreId ();
+/* Get Group Permission Id of current login */
+$permission = Mage::helper ( "menupro" )->authenticate ();
+/* Get Group Menu Id form layout file: frontend/../layout/menupro.xml */
+$groupId = $this->getGroupId ();
+$menuCollection = $this->getMenuCollection ( $groupId, $permission, $storeId );
+$isDisabledResponsive = Mage::helper ( 'menupro' )->isDisableResponsive ();
+$DHTML = "";
+$RHTML = "";
+if ($menuCollection != NULL) {
+	$disableResClass = "";
+	if ($isDisabledResponsive) {
+		$disableResClass = 'disabled-responsive';
+	}
+	$DHTML .= '<div class="navsidebar sidebar_desktop ' . $disableResClass . '" id="sidebar_' . $groupId . '">';
+	$DHTML .= '<div class="navbar-inner">';
+	$DHTML .= "<ul class='nav nav-tabs  nav-stacked level0'>";
+	foreach ( $menuCollection as $menu ) {
+		if ($menu->getParentId () == 0) {
+			$data = $this->getMenuData ( $menu, $permission, $storeId );
+			// ==== Level 0 ====== //
+			$fullParent = "";
+			if ($menu->getDropdownColumns () == 100) {
+				$fullParent = "parent_has_full";
+			}
+			$DHTML .= '<li class="' . $data ['liClasses'] . ' level0 ' . $fullParent . '">';
+			$RHTML .= '<li class="' . $data ['liClasses'] . ' level0 ' . $fullParent . '">';
+			if ($data ['block'] != '') {
+				$DHTML .= "<div class='static-block'>" . $data ['block'] . "</div>";
+				$RHTML .= "<div class='static-block'>" . $data ['block'] . "</div>";
+			} else {
+				if (count ( $data ['childcollection'] ) > 0) {
+					$aContent = $data ['aIcon'] . $data ['aImage'] . $data ['aText'];
+					$DHTML .= '<a data-hover="dropdown" href=" ' . $data ['aHref'] . '"> ' . $aContent . $this->_rightIcon . '</a>';
+					$RHTML .= '<a class="dropdown-toggle" href=" ' . $data ['aHref'] . '"> ' . $aContent . '</a>' . $this->_plus;
+				} else {
+					/**
+					 * With menu level = 0; when select autosub; show dropdown
+					 * menu like default*
+					 */
+					$dataHover = $caret = $dropdownT  = $plus = "";
+					if ($data['isAutoShowSub'] == true) {
+						$dataHover = $this->_data_hover;
+						$dropdownT = $this->_dropdown_toggle;
+						$caret = $this->_rightIcon;
+						$plus = $this->_plus;
+					}
+					$aContent = $data ['aIcon'] . $data ['aImage'] . $data ['aText'];
+					$DHTML .= "<a href='" . $data ['aHref'] . "' " . $dataHover . ">" . $aContent . $caret ."</a>";
+					$RHTML .= "<a href='" . $data ['aHref'] . "' ". $dropdownT .">" . $aContent ."</a>" . $plus;
+					if ($data['isAutoShowSub'] == true) {
+						$DHTML .= $this->autoSub ( $menu->getUrlValue (), $menu->getAutosub () );
+						$RHTML .= $this->autoSubResponsive ( $menu->getUrlValue (), $menu->getAutosub () );
+					}
+				}
+			}
+			if (count ( $data ['childcollection'] ) > 0) {
+				$columnLayout = "";
+				if (array_key_exists($menu->getDropdownColumns(), $this->_columnLayout)) {
+					$columnLayout = $this->_columnLayout[$menu->getDropdownColumns()];
+				}
+				$DHTML .= "<div class='dropdown-menu sub_" . $columnLayout . "'>";
+				$RHTML .= "<div class='dropdown-menu sub_" . $columnLayout . "'>";
+				
+				foreach ( $data ['childcollection'] as $menu1 ) {
+					// ======= Sub Header Item (as Level 1) =========//
+					$headerData = $this->getMenuData ( $menu1, $permission, $storeId );
+					// Get dropdown as column unit
+					$DHTML .= "<div class='s_w" . $headerData ['dropdown_columns'] . " ". $headerData['liClasses'] ."'>";
+					$RHTML .= "<div class='s_w" . $headerData ['dropdown_columns'] . " ". $headerData['liClasses'] ."'>";
+					if ($menu1->getType () != 6) {
+						if ($headerData ['hide_sub_header'] != 1) {
+							// Check hide header item or not
+							if ($menu1->getType () == 8) {
+								$DHTML .= "<span class='divider'></span>";
+								$RHTML .= "<span class='divider'></span>";
+							} else {
+								$aContent = $headerData ['aIcon'] . $headerData ['aImage'] . $headerData ['aText'];
+								$DHTML .= "<a class='nav-header' href='" . $headerData ['aHref'] . "'>" . $aContent . "</a>";
+								if ($headerData['isAutoShowSub']) {
+									$RHTML .= "<a class='nav-header' href='" . $headerData ['aHref'] . "'>" . $aContent . "</a>" .$this->_plus;
+								} else {
+									$RHTML .= "<a class='nav-header' href='" . $headerData ['aHref'] . "'>" . $aContent . "</a>";
+								}
+							}
+						}
+						//Not show menu has type = static block//
+						$normalArray = array();
+						foreach ($headerData['childcollection'] as $menuItem) {
+							if ($menuItem->getType() != 6)	{
+								$normalArray [] = $menuItem->getMenuId();
+							}								
+						}
+						if (count ( $normalArray ) > 0) {
+							$DHTML .= "<ul>";
+							$RHTML .= "<ul>";
+							//$DHTML .= $this->getAutoSubMenuLi ( $menu1->getUrlValue (), $menu1->getAutosub () );
+							foreach ( $headerData['childcollection'] as $menu2 ) {
+								if (in_array ( $menu2->getMenuId (), $normalArray )) {
+									if ($menu2->getType () == 8) {
+										$DHTML .= "<li class='divider'></li>";
+										$RHTML .= "<li class='divider'></li>";
+									} else {
+										$data1 = $this->getMenuData ( $menu2, $permission, $storeId );
+										// =========== Level 2 ===============
+										$hasSub = "";
+										if (count ( $data1 ['childcollection'] ) > 0 || $data1 ['isAutoShowSub'] == true) {
+											$hasSub = "has-submenu";
+										}
+										$DHTML .= "<li class='" . $data1 ['liClasses'] . $hasSub . "'>";
+										$RHTML .= "<li class='" . $data1 ['liClasses'] . "'>";
+										if (count ( $data1 ['childcollection'] ) > 0) {
+											$aContent = $data1 ['aIcon'] . $data1 ['aImage'] . $data1 ['aText'];
+											$DHTML .= "<a data-hover='dropdown' href='" . $data1 ['aHref'] . "' target='" . $data1 ['target'] . "'>" . $aContent . "</a>";
+											$DHTML .= "<ul class='dropdown-menu'>";
+											//$DHTML .= $this->getAutoSubMenuLi ( $menu2->getUrlValue (), $menu2->getAutosub () );
+											$RHTML .= "<a class='dropdown-toggle' href='" . $data1 ['aHref'] . "' target='" . $data1 ['target'] . "'>" . $aContent . "</a>" . $this->_plus;
+											$RHTML .= "<ul>";
+											foreach ( $data1 ['childcollection'] as $menu3 ) {
+												if ($menu3->getType () == 8) {
+													$DHTML .= "<li class='divider'></li>";
+													$RHTML .= "<li class='divider'></li>";
+												} else {
+													$data2 = $this->getMenuData ( $menu3, $permission, $storeId );
+													// ============ Level 3
+													$hasSub = "";
+													if (count ( $data2 ['childcollection'] ) > 0 || $data2 ['isAutoShowSub'] == true) {
+														$hasSub = "has-submenu";
+													}
+													$DHTML .= "<li class='" . $data2 ['liClasses'] . $hasSub . "'>";
+													$RHTML .= "<li class='" . $data2 ['liClasses'] . "'>";
+													if (count ( $data2 ['childcollection'] ) > 0) {
+														$aContent = $data2 ['aIcon'] . $data2 ['aImage'] . $data2 ['aText'];
+														$DHTML .= "<a data-hover='dropdown' href='" . $data2 ['aHref'] . "' target='" . $data2 ['target'] . "'>" . $aContent . "</a>";
+														$DHTML .= "<ul class='dropdown-menu'>";
+														//$DHTML .= $this->getAutoSubMenuLi ( $menu3->getUrlValue (), $menu3->getAutosub () );
+														$RHTML .= "<a class='dropdown-toggle' href='" . $data2 ['aHref'] . "' target='" . $data2 ['target'] . "'>" . $aContent . "</a>" . $this->_plus;
+														$RHTML .= "<ul>";
+														foreach ( $data2 ['childcollection'] as $menu4 ) {
+															$data3 = $this->getMenuData ( $menu4, $permission, $storeId );
+															if ($menu4->getType () == 8) {
+																$DHTML .= "<li class='divider'></li>";
+																$RHTML .= "<li class='divider'></li>";
+															} else {
+																// =============== Level 4
+																$DHTML .= "<li class='" . $data3 ['liClasses'] . $hasSub . "'>";
+																$RHTML .= "<li class='" . $data3 ['liClasses'] . $hasSub . "'>";
+																if (count ( $data3 ['childcollection'] ) > 0) {
+																	$aContent = $data3 ['aIcon'] . $data3 ['aImage'] . $data3 ['aText'];
+																	$DHTML .= "<a data-hover='dropdown' href='" . $data3 ['aHref'] . "' target='" . $data3 ['target'] . "'>" . $aContent . "</a>";
+																	$DHTML .= "<ul class='dropdown-menu'>";
+																	//$DHTML .= $this->getAutoSubMenuLi ( $menu4->getUrlValue (), $menu4->getAutosub () );
+																	$RHTML .= "<a class='dropdown-toggle' href='" . $data3 ['aHref'] . "' target='" . $data3 ['target'] . "'>" . $aContent . "</a>" . $this->_plus;
+																	$RHTML .= "<ul>";
+																	foreach ( $data3 ['childcollection'] as $menu5 ) {
+																		if ($menu5->getType () == 8) {
+																			$DHTML .= "<li class='divider'></li>";
+																			$RHTML .= "<li class='divider'></li>";
+																		} else {
+																			$data4 = $this->getMenuData ( $menu5, $permission, $storeId );
+																			// ========
+																			// Level
+																			// 5
+																			// ================//
+																			$hasSub = "";
+																			if (count ( $data4 ['childcollection'] ) > 0 || $data4 ['isAutoShowSub'] == true) {
+																				$hasSub = "has-submenu";
+																			}
+																			$DHTML .= "<li class='" . $data4 ['liClasses'] . $hasSub . "'>";
+																			$DHTML .= "<a href='" . $data4 ['aHref'] . "' target='" . $data4 ['target'] . "'></a>";
+																			$DHTML .= "</li>";
+																			$RHTML .= "<li class='" . $data4 ['liClasses'] . "'>";
+																			$RHTML .= "<a href='" . $data4 ['aHref'] . "' target='" . $data4 ['target'] . "'></a>";
+																			$RHTML .= "</li>";
+																		}
+																	}
+																	$DHTML .= "</ul>";
+																} else {
+																	if ($data3 ['block'] != "") {
+																		$DHTML .= '<div class="static-block">' . $data3 ['block'] . '</div>';
+																	} else {
+																		$dataHover = $dropdownT = $plus = "";
+																		if ($data3 ['isAutoShowSub'] == true) {
+																			$dataHover = $this->_data_hover;
+																			$dropdownT = $this->_dropdown_toggle;
+																			$plus = $this->_plus;
+																		}
+																		$aContent = $data3 ['aIcon'] . $data3 ['aImage'] . $data3 ['aText'];
+																		$DHTML .= "<a href='" . $data3 ['aHref'] . "' target='" . $data3 ['target'] . "' " . $dataHover . "> " . $aContent . "</a>";
+																		$RHTML .= "<a href='" . $data3 ['aHref'] . "' target='" . $data3 ['target'] . "' " . $dropdownT . "> " . $aContent ."</a>" . $plus;
+																	}
+																	if ($data3['isAutoShowSub']) {
+																		$DHTML .= $this->autoSub ( $menu4->getUrlValue (), $menu4->getAutosub () );
+																		$RHTML .= $this->autoSubResponsive ( $menu4->getUrlValue (), $menu4->getAutosub () );
+																	}
+																}
+																$DHTML .= '</li>';
+																$RHTML .= '</li>';
+															}
+														}
+														$DHTML .= "</ul>";
+														$RHTML .= "</ul>";
+													} else {
+														if ($data2 ['block'] != "") {
+															$DHTML .= '<div class="static-block">' . $data2 ['block'] . '</div>';
+														} else {
+															$dataHover = $dropdownT = $plus = "";
+															if ($data2 ['isAutoShowSub'] == true) {
+																$dataHover = $this->_data_hover;
+																$dropdownT = $this->_dropdown_toggle;
+																$plus = $this->_plus;
+															}
+															$aContent = $data2 ['aIcon'] . $data2 ['aImage'] . $data2 ['aText'];
+															$DHTML .= "<a href='" . $data2 ['aHref'] . "' target='" . $data2 ['target'] . "' " . $dataHover . "> " . $aContent . "</a>";
+															$RHTML .= "<a href='" . $data2 ['aHref'] . "' target='" . $data2 ['target'] . "' " . $dropdownT . "> " . $aContent . "</a>" . $plus;
+														}
+														if ( $data2['isAutoShowSub'] ) {
+															$DHTML .= $this->autoSub ( $menu3->getUrlValue (), $menu3->getAutosub () );
+															$RHTML .= $this->autoSubResponsive ( $menu3->getUrlValue (), $menu3->getAutosub () );
+														}
+														
+													}
+													$DHTML .= "</li>";
+													$RHTML .= "</li>";
+												}
+											}
+											$DHTML .= "</ul>";
+											$RHTML .= "</ul>";
+										} else {
+											/**Check menu has selected auto show sub and has sub menu**/
+											$dataHover = $dropdownT = $plus = "";
+											if ($data1 ['isAutoShowSub'] == true) {
+												$dataHover = $this->_data_hover;
+												$dropdownT = $this->_dropdown_toggle;
+												$plus = $this->_plus;
+											}
+											$aContent = $data1 ['aIcon'] . $data1 ['aImage'] . $data1 ['aText'];
+											$DHTML .= "<a href='" . $data1 ['aHref'] . "' target='" . $data1 ['target'] . "' " . $dataHover . "> " . $aContent . "</a>";
+											$RHTML .= "<a href='" . $data1 ['aHref'] . "' target='" . $data1 ['target'] . "' " . $dropdownT . "> " . $aContent . "</a>" .$plus;
+											if ($data1 ['isAutoShowSub'] == true) {
+												$DHTML .= $this->autoSub ( $menu2->getUrlValue (), $menu2->getAutosub () );
+												$RHTML .= $this->autoSubResponsive ( $menu2->getUrlValue (), $menu2->getAutosub () );
+											}
+										}
+										$DHTML .= "</li>";
+										$RHTML .= "</li>";
+									}
+								}
+							}
+							$DHTML .= "</ul>";
+							$RHTML .= "</ul>";
+						} else {
+							if ($headerData['isAutoShowSub']) {
+								$showMenuInLevel2 = true;
+								$DHTML .= $this->autoSub ( $menu1->getUrlValue (), $menu1->getAutosub (), $showMenuInLevel2 );
+								$RHTML .= $this->autoSubResponsive ( $menu1->getUrlValue (), $menu1->getAutosub () );
+							}
+						}
+					} else {
+						$DHTML .= '<div class="static-block">' . $headerData ['block'] . '</div>';
+						$RHTML .= '<div class="static-block">' . $headerData ['block'] . '</div>';
+					}
+					$DHTML .= "</div>";
+					$RHTML .= "</div>";
+				}
+				$DHTML .= "</div>";
+				$RHTML .= "</div>";
+			}
+			$DHTML .= "</li>";
+			$RHTML .= "</li>";
+		}
+	}
+	$DHTML .= "</ul>";
+	$DHTML .= "</div>";
+	$DHTML .= "</div>";
+}
+//-----------Destop HTML----------
+echo "<div class='mst'>";
+echo $DHTML;
+echo "</div>";
+//-----------Destop HTML----------
+
+//-----------Responsive HTML------------
+if (!$isDisabledResponsive) {
+	//Responsive HTML
+	$RESPONSIVEHTML = '<div class="nav-accordion dropdown_responsive">';
+	$RESPONSIVEHTML .= '<div class="navbar-inner">';
+	$RESPONSIVEHTML .= '<a class="brand show_menu">' . $this->__('Menu') . '</a>';
+	$RESPONSIVEHTML .= '<div class="nav-collapse">';
+	$RESPONSIVEHTML .= '<ul id="accordion" class="nav nav-tabs  nav-stacked accordion">';
+	$RESPONSIVEHTML .= $RHTML;
+	$RESPONSIVEHTML .= '</ul>';
+	$RESPONSIVEHTML .= '</div>';
+	$RESPONSIVEHTML .= '</div>';
+	$RESPONSIVEHTML .= '</div>';
+	echo "<div class='mst'>";
+	echo $RESPONSIVEHTML;
+	echo "</div>";
+}
+//-----------Responsive HTML------------
+?>

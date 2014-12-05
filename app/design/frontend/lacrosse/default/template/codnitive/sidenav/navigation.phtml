@@ -1,0 +1,173 @@
+<?php
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Sidenav
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2011 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+
+/**
+ * Sidebar menu
+ *
+ * @see Codnitive_sidenav_Block_Navigation
+ */
+?>
+<?php /*if ($categories = $this->getCategoriesNavMenu()): ?>
+<div id="firstpane" class="menu_list">
+							<!--Code for menu starts here-->
+							<h3>shop by category</h3>
+<ul>					
+<?php echo $categories; ?>
+</ul>		
+							<!-- <ul>
+								<li><span class="menu_head">Footwear</span>
+									<ul class="menu_body">
+										<li><a href="#">Cleats</a>
+											<ul>
+												<li><a href="#">MIds</a></li>
+												<li><a href="#">Lows</a></li>
+											</ul></li>
+										<li><a href="#">Turfs</a>
+											<ul>
+												<li><a href="#">MIds</a></li>
+											</ul></li>
+										<li><a href="#">Sneakers</a>
+											<ul>
+												<li><a href="#">MIds</a></li>
+												<li><a href="#">Lows</a></li>
+											</ul></li>
+										<li><a href="#">Sandals</a>
+											<ul>
+												<li><a href="#">MIds</a></li>
+											</ul></li>
+										<li><a href="#">Socks</a>
+											<ul>
+												<li><a href="#">MIds</a></li>
+												<li><a href="#">Lows</a></li>
+											</ul></li>
+									</ul></li>
+									
+								<li><span class="menu_head">Sticks</span>
+									<ul class="menu_body">
+										<li><a href="#">product 1</a></li>
+										<li><a href="#">product 2</a></li>
+										<li><a href="#">product 3</a></li>
+									</ul></li>
+
+								<li><span class="menu_head">Helmets</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+
+								<li><span class="menu_head">gloves</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+								<li><span class="menu_head">down some</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+
+
+								<li><span class="menu_head">apparel</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+								<li><span class="menu_head">apparel</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+								<li><span class="menu_head">goals &amp; training</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+
+								<li><span class="menu_head">lifestyle/gifts</span>
+									<ul class="menu_body">
+										<li><a href="#">category Name1</a></li>
+										<li><a href="#">category Name2</a></li>
+										<li><a href="#">category Name3</a></li>
+									</ul></li>
+							</ul> -->
+						</div>
+<?php endif */ ?>
+						
+<?php /*======================================= magento default ================================================ */?>
+<?php if ($categories = $this->getCategoriesNavMenu()): ?>
+<div id="sidebar-nav" class="menu_list">
+	<!--Code for menu starts here-->
+	<h3>shop by category</h3>
+        <ul id="sidebar-nav-menu">
+        <?php /*if ($this->showHome()): ?>
+            <li class="<?php echo $this->getHomeClasses() ?>">
+                <a href="<?php echo $this->getBaseUrl() ?>"><span class="category_name">Home</span></a>
+            </li>
+        <?php endif; */?>
+        <?php echo $categories; ?>
+        </ul>
+    <?php if ($this->getConfig()->isCollapsible()): ?>
+    <script type="text/javascript" language="javascript">
+    //<![CDATA[
+
+    Codnitive = {
+        expandMenu: function(parent) 
+        {
+            var mode = parent.getElementsByTagName("ul")[0].getAttribute("expanded");
+            (mode == 1) ? Codnitive.collapse(parent) : Codnitive.expand(parent);
+        },
+
+        expand: function(parent)
+        {
+            parent.getElementsByTagName("ul")[0].style.display = "block";
+            parent.getElementsByTagName("span")[0].style.backgroundPosition = "right center";
+            parent.getElementsByTagName("span")[0].className = "active";
+            parent.getElementsByTagName("ul")[0].setAttribute("expanded", "1");
+        },
+
+        collapse: function(parent)
+        {
+            parent.getElementsByTagName("ul")[0].style.display = "none";
+            parent.getElementsByTagName("span")[0].style.backgroundPosition = "left center";
+            parent.getElementsByTagName("span")[0].className = "arrow right";
+            parent.getElementsByTagName("ul")[0].setAttribute("expanded", "0");
+        }
+    };
+
+    //]]>
+    </script>
+    <?php endif; ?>
+</div>
+<?php endif ?>
+<?php /*===================================== END =====================================*/?>
